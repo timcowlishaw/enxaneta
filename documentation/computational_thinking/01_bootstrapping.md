@@ -3,7 +3,7 @@
 Since we're interested in learning about computational thinking, and in doing so _through practice_, we're going to do so using a computer (although arguably this [isn't strictly necessary](https://www.i-programmer.info/programming/72-theory/3531-sorting-algorithms-as-dances.html)).
 
 
-![Cover of ladybird book: "How it works: The Computer"](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/ct0_computer.jpg)
+![Cover of ladybird book: "How it works: The Computer"](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/ct1_0_computer.jpg)
 
 
 In addition, as broadly-STS aligned folks and infrastructure nerds, and especially ones who have a declared interest in [permacomputing](https://permacomputing.net/), we're not going to just simply "use a computer", but get really into all the detail of getting a computer ready for use, as [infrastructural inversion](https://mitpress.mit.edu/9780262522953/sorting-things-out/), but also as _commitment to the bit_ (citation forthcoming).
@@ -24,7 +24,7 @@ The operating system we're going to install is called *Raspbian* (or [Raspberry 
 
 The second is that it nicely illustates the geneology of the systems and technologies we're working with. GNU might stand for "GNU's Not Unix", but it is, in fact, part of a "Unix-like" operating system. What does this mean? Raspbian, the operating system wee're using today, arose from GNU, a project to re-write the earlier Unix family of operating systems, whose development begun in 1969. This means that the tools, systems, and interfaces you'll be working with for this project, (in common with those used by, i am pretty sure, the vast majority of programmers and computing projects today), share concepts (and actual code) with systems written and in use 55 years ago. A programmer from 1969 could sit down in front of a screen and keyboard connected to this raspberry pi, or to the servers behind pretty much any website you can think of,  and would probably be pretty familiar with them. Correspondingly, after working through this tutorial, you could probably wander into a computer lab at a 1960's university, sit down at a terminal, and have a pretty good idea of what's what.
 
-![Illustration from the ladybird book of a man sat at a 70s computer](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/ct15_gdu.jpg)
+![Illustration from the ladybird book of a man sat at a 70s computer](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/ct1_15_gdu.jpg)
 
 It might not seem like much, but i think it's worth highlighting this contingency and geneology of our modern computer technology, especially in the context of a technology industry that so often likes to portray itself as future focused, innovative and with a schumpterian disregard for what came before. [This diagram](https://upload.wikimedia.org/wikipedia/commons/7/77/Unix_history-simple.svg) is probably worth a look - it maps out the "family tree" of UNIX-like operating systems, into which, after we've installed Raspbian, our little Pi will become enrolled.
 
@@ -32,7 +32,7 @@ A final related thought before we move onto the actual practical business of get
 
 Anyway, on to the practical part.
 
-![Photo from the ladybird book of a very 70s lady inserting an enormous old fashioned disk into a no less enormous computer](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/ct16_disk.jpg)
+![Photo from the ladybird book of a very 70s lady inserting an enormous old fashioned disk into a no less enormous computer](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/ct1_16_disk.jpg)
 
 The first thing we want to do then (If you've kept track during all the asides) is install the Raspbian operating system on our PI. We do that pretty much the same way itś been done since the 60s: put it on a disk, put the disk in the machine, and turn it on, except in the year of Our Lord 2024 the disk is actually a fingernail sized SD card which you'll find in the box, along with an adapter thing which it slots into and should in turn fit into a slot on your computer. Youĺl need these (the card, and the adapter):
 ![An image of the card and the adaptor](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/ct1_1_card_adaptor.jpg)
@@ -185,7 +185,7 @@ Also i mention it because there's another abstraction lurking here: that `print`
 
 First off, why is the function in python that displays some text on the screen called `print`, and not `show` or `display` or something else? it's a convention, and a historical contingency: back in the 60s and 70s if you'd been doing something like this activity, instead of a screen you would have had a printer (one of those dot matrix ones with the spool of perforated paper), and your program would have **literally** printed the text onto the paper. Python here is doing the exact same thing as those historical programs, its simply outputting text to a *terminal*, which could be a printer a screen, or something else. In your case however, its not a screen nor a printer, its a **virtual terminal**, a software simulation of a thing-that-to-python appears a bit like one of those old 60s printers, which, instead of printing on paper, sends the text it receives to another program running on the same machine, which sends it over an SSH session over the WiFi network to PuTTY, running on your computer, which then displays it within a window on your desktop. `print` is itself an abstraction, built on top of hundreds of other abstractions, and presenting itself through the metaphor of an obsolute 50-year-old user interface!
 
-![Photo from the ladybird book of people working a "mini computer system" the size of several fridges, by operating a terminal that is a printer with a keyboard](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/ct17_printer.jpg)
+![Photo from the ladybird book of people working a "mini computer system" the size of several fridges, by operating a terminal that is a printer with a keyboard](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/ct1_17_printer.jpg)
 
 This kinda show to me that the material, historically contingent, detail-focused side of this tutorial ("what's actually happening in the machine?, why is it like that? when did this start?") and the more classically "computational thinking" stuff (the immaterial, quasi-mathematical "what are the appropriate abstractions to use here? how can we combine and compose them?") are actually deeply interlinked, as, at heart, abstraction and computational thinking are ways of dealing with all this massive infrastructural complexity, masking it (black-boxing it?) or translating it. For this reason we're going to walk a bit of a tightrope from here on, trying to develop an awareness and appreciation for all detail and complexity, while also learning how to pragmatically ignore it all through computational thinking.
 
