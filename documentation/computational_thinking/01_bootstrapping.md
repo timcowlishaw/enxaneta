@@ -149,7 +149,7 @@ That is the entirety of your first program (and in fact it's been [pretty much e
 
 ![Screenshot of nano](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/ct1_14_nano_script.png)
 
-Hit ctrl and O (the letter 0, not zero) then press enter to save the file, then ctrl and X to edit nano, you´ll end up back out at the command prompt. We can now have a go at running the program and seeing what happens! Type `python3 hello_world.py` ("run the python interpreter, and give it my hello_world.py file to interpret") and press enter, and you should see:
+Hit ctrl and o (the letter o, not zero) then press enter to save the file, then ctrl and X to edit nano, you´ll end up back out at the command prompt. We can now have a go at running the program and seeing what happens! Type `python3 hello_world.py` ("run the python interpreter, and give it my hello_world.py file to interpret") and press enter, and you should see:
 
 ```
 [tim@bananastand:~]$ python3 hello_world.py
