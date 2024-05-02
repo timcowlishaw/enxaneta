@@ -1,4 +1,4 @@
-# La Pinya 01: Ethnographic Observation
+# _La Pinya_ 01: Ethnographic Observation
 
 This is an opportunity to practice observation while taking fieldnotes. While the primary goal is  to get a handle on systematic documentation, be open to casual interactions and pay attention to your own embodied experiences (hunches, disconcertment, surprise, etc.) as a source of insight.
 
