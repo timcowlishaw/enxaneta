@@ -44,4 +44,4 @@ After completing the observation sessions, read through your full set of fieldno
 
 In looking at what you've produced, we'll aim to debrief, compare insights, and consider the implications of your experiences for our next steps.
 
-Updated: Thursday, 2 May 2024.
+(Updated: Thursday, 2 May 2024)
