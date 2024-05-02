@@ -1,8 +1,8 @@
 # _La Pinya_ 01: Ethnographic Observation
 
-This is an opportunity to practice observation while taking fieldnotes. While the primary goal is  to get a handle on systematic documentation, be open to casual interactions and pay attention to your own embodied experiences (hunches, disconcertment, surprise, etc.) as a source of insight.
-
-Embrace the discomfort of trying a new method, and focus on experimenting and flexing your observation and note-taking muscles. The goal is not to produce perfect fieldnotes or profound insights, but to establish a baseline and identify areas for growth.
+This exercise is an opportunity to practice observation while taking fieldnotes. Although the primary goal is to get a handle on systematic documentation, we're also interested in starting to cultivate an _ethnographic stance/disposition/imagination_, so be open to casual interactions and pay attention to your own embodied experiences (hunches, disconcertment, surprise, etc.) as sources of insight.
+  
+Embrace the discomfort of trying a new method while working through these exercises, and focus on experimenting and flexing your observation and note-taking muscles. It's important to stress that the goal is not to produce perfect fieldnotes or profound insights, but to establish a baseline and identify areas for growth.
 
 ## Observation exercises
 
