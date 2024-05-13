@@ -1,4 +1,4 @@
-# _La Pinya_ 02: Core Concepts and Readings
+# _La Pinya_ 02: Core Concepts
 
 Okay, so running alongside any observation and fieldnote exercises, we're looking to get some key ideas under our belts (_faixes_?) before moving on to look more closely at a specific case (likely to be the Castell Colla App).
 
