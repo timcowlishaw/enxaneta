@@ -64,7 +64,5 @@ If you have time in the next week or so, these are the most important things to 
 
 (Last updated: Monday, 13 May 2024)
 
----
-
 [^1]: Which ties into some ideas for a text I'd like to write with you, for FoAM, which we should talk about at some point.
 [^2]: Have uploaded this to the shared Zotero library.
