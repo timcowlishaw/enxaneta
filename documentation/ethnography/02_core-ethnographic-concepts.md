@@ -2,6 +2,10 @@
 
 Okay, so running alongside any observation and fieldnote exercises, we're looking to get some key ideas under our belts (_faixes_?) before moving on to look more closely at a specific case (likely to be the Castell Colla App).
 
+<< [Session 1](ethnography/01_ethnographic-observation) | [Session 3](ethnography/03_core-ethnographic-concepts-2) >>
+
+## Overview
+
 Having had a big old ramble through the framing and big-picture sequencing of the ethnographic track of this first block last time we spoke, the main topics/concepts I want to get across in the coming weeks are:
 
 1. **Participant observation**
@@ -11,7 +15,7 @@ Having had a big old ramble through the framing and big-picture sequencing of th
 5. Ethnography as **collaborative, ethical inquiry** (as a prelude to a deeper discussion of this later in this first block)
 
 We've both now read anthropologist of sport Mariann Vaczi's 2023 ethnographic monograph _[Catalonia's Human Towers](https://iupress.org/9780253067166/catalonias-human-towers/)_, and Benjamin Bowes' article '[‘What do you mean you haven't got tools?’](https://doi.org/10.3167/ajec.2023.320206)', on liveaboard canal boaters as a community of practice.
-  
+
 
 ## Participant observation and "being there"
 
@@ -48,7 +52,6 @@ Able to draw on some existing teaching resources on different constructions of c
 Before we move on to look at the Castellers, I want to discuss how ethnography could be used to study these communities, and how participant observation can help identify patterns and practices. Some of this might include you reflecting on your own experiences with these communities, and how you see yourself situated within them.
 
 We can refer to the readings by Maja Hojer Bruun and Cathrine Hasse (2022) and Nicolas Nova and Anaïs Bloch (2023) as supplementary resources. There's also the OG, Etienne Wenger, in his 1998 book _Communities of Practice_.
-
 
 
 ### Readings and supporting materials

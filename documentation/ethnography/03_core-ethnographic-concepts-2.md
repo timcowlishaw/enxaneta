@@ -2,6 +2,7 @@
 
 Following up on last week, using any further observational exercises you've had chance to do as an platform for discussion of the remaining concepts we didn't address, and some practical reflections on keeping fieldnotes.
 
+<< [Session 2](ethnography/02_core-ethnographic-concepts) | Session 3 >>
 
 ## Thick description
 
