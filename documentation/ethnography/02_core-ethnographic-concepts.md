@@ -1,4 +1,4 @@
-# _La Pinya_ 02: Core Concepts
+# _La Pinya_ 02: Core Ethnographic Concepts
 
 Okay, so running alongside any observation and fieldnote exercises, we're looking to get some key ideas under our belts (_faixes_?) before moving on to look more closely at a specific case (likely to be the Castell Colla App).
 
@@ -10,7 +10,7 @@ Having had a big old ramble through the framing and big-picture sequencing of th
 4. **Communities of practice**
 5. Ethnography as **collaborative, ethical inquiry** (as a prelude to a deeper discussion of this later in this first block)
 
-We've both now read anthropologist of sport Mariann Vaczi's  2023 ethnographic monograph _[Catalonia's Human Towers](https://iupress.org/9780253067166/catalonias-human-towers/)_, and Benjamin Bowes' article '[‘What do you mean you haven't got tools?’](https://doi.org/10.3167/ajec.2023.320206)', on liveaboard canal boaters as a community of practice.
+We've both now read anthropologist of sport Mariann Vaczi's 2023 ethnographic monograph _[Catalonia's Human Towers](https://iupress.org/9780253067166/catalonias-human-towers/)_, and Benjamin Bowes' article '[‘What do you mean you haven't got tools?’](https://doi.org/10.3167/ajec.2023.320206)', on liveaboard canal boaters as a community of practice.
   
 
 ## Participant observation and "being there"
@@ -19,19 +19,23 @@ We've talked a little bit about participant observation already, but I want to z
 
 Discuss how participant observation can be used to gain a deeper understanding of cultural practices, using examples from Vaczi's book, such as the chapter on touch and the body. What's interesting about Vaczi's work is her positioning in the field of sport ethnography, which can highlight the key tensions in (near-impossibility of?) trying to participate and observe _at the same time_. There's some other material I can refer to here, from studies of surfing, boxing, and mixed martial arts.
 
-It will also be worth talking, albeit briefly, about the options when participation isn't possible (interface ethnography, "studying up", different forms of 'patchwork ethnography' and 'polymorphous engagement'), which is something we can definitely go deeper on and/or return to in future.
+It is also be worth talking, albeit briefly, about the options when participation isn't possible (interface ethnography, "studying up", different forms of 'patchwork ethnography' and 'polymorphous engagement'), which is something we can definitely go deeper on and/or return to in future.
 
 Refer to the BBC podcast "Participating and Observing" (Ep. 4 of _From Savage to Self_, 2016) as a supplementary resource.
 
-## Thick description and fieldnotes
+## Observation exercise: Salou
 
-Introducing the concept of thick description as a criteria of appraisal. We'll talk a bit about the significance of thick description as a point of differentiation for ethnography, where it fits in the process of ethnographic research, and the importance of fieldnotes in producing such 'thick' and detailed accounts.
+Post-session update: We talked through your experiences doing some mobile observations in Salou, a tourist hub 10 minutes away from Taragona by train. Having had a vague hunch/proto-theory about "foreignness" that you'd hoped to poke at, you shared your frustrations about the lack of an obvious epicentre or focus point where you could perch and hang out, and ended up doing something closer to _flânerie_, wandering and drifting through this liminal space.
 
-We'll look at some examples from the Benjamin Bowes article to illustrate how thick description can be used to capture the nuances of social practices, perhaps by exploring the idea of "enskilment" and how it relates to the concept of taskscapes  referenced by Bowes (Ingold).
+You noted that you'd caught yourself trying to prematurely shoehorn your observations into a narrative, perhaps struggling a little with the compression/decompression of observations via fieldnotes absent any strong or pre-existing through-story, or 'hierarchy of salience' (Wolfinger 2002):
 
-We'll discuss different strategies and approaches for taking fieldnotes, the role they play in capturing qualitative data, and how they can be used to inform analysis and writing. For this, I'll pull on some bits from the _Naked Fieldnotes_ book, which too much to ask you to wade through, but has some great weird details.
+> 'Ethnographers frequently choose to record a particular observation because it stands out. Observations often stand out because they are deviant, either when compared to others or with respect to a researcher’s existing knowledge and beliefs. Either way, background knowledge influences which cases are chosen for annotation.' (Wolfinger 2002: 90)
 
-In all of this, it'd be good to be able to draw on your own experiences of observation and note-taking, through the exercises I've thrown at you, with an eye to talking through any challenges or questions you have.
+
+## Fieldsites
+
+Post-session update: We also talked a bit about the 'neatly-bounded' ethnographic fieldsite in an age of digital, mobile, and translocal phenomena. I referenced Matei Candea's concept of the traditional fieldsite as an 'arbitrary location', Paolo Heywood's subsequent work on Bologna as an 'equivocal location' from which to investigate difference in leftist politics, and Jenna Burrell's work on the fieldsite as a network actively constructed by the researcher, incorporating physical, virtual, and imagined spaces (with reference to research on early internet use in Ghana).
+
 
 ## Communities of practice
 
@@ -45,16 +49,9 @@ Before we move on to look at the Castellers, I want to discuss how ethnography c
 
 We can refer to the readings by Maja Hojer Bruun and Cathrine Hasse (2022) and Nicolas Nova and Anaïs Bloch (2023) as supplementary resources. There's also the OG, Etienne Wenger, in his 1998 book _Communities of Practice_.
 
-### Mapping core concepts and developing a shared glossary
-
-As a kind of culmination of this first sub-block, we'll need to review the core concepts discussed in previous sessions (participant observation, thick description, fieldnotes, communities of practice, etc.).
-
-I want to then discuss how these concepts can be used to inform the research design and methodology for your pilot project with the Colla app, with an eye to starting to poke at how the study of software and technologies can challenge and/or extend typical ethnographic methods.
-
-I'm also thinking we start to develop a shared glossary of key terms, ensuring that we both have a common understanding of the concepts (across the ethnography and Python components of all this). Is there somewhere persistent this could live?  
 
 
-### Readings (and listenings)
+### Readings and supporting materials
 
 If you have time in the next week or so, these are the most important things to work through: 
   
@@ -62,7 +59,17 @@ If you have time in the next week or so, these are the most important things to 
 - Maja Hojer Bruun, and Cathrine Hasse, ‘Communities, Collectives, and Categories’ (2022), in _The Palgrave Handbook of the Anthropology of Technology_, Singapore: Springer Nature Singapore.[^2]
 - Nicolas Nova and Anaïs Bloch, '[“My Store is a Laboratory”: Knowledge Produced by Smartphone Repairers](https://doi.org/10.17351/ests2023.1337)' (2023)
 
+- Jenna Burrell, ‘The Field Site as a Network: A Strategy for Locating Ethnographic Research’ (2009), _Field Methods_ 21(2):181–99. doi: 10.1177/1525822X08329699.
+- Matei Candea, ‘Arbitrary Locations: In Defence of the Bounded Field‐site’ (2017), _Journal of the Royal Anthropological Institute_ 13(1): 167–84. doi: 10.1111/j.1467-9655.2007.00419.x.
+- Paolo Heywood, ‘Equivocal Locations: Being “Red” in “Red Bologna”’ (2015), _Journal of the Royal Anthropological Institute_ 21(4): 855–71. doi: 10.1111/1467-9655.12291.
+
+- Nicolas H. Wolfinger, 'On Writing Fieldnotes: Collection Strategies and Background Expectancies’ (2002). _Qualitative Research_ 2(1): 85–93.[^3]
+- Natalie Lawhead, ‘[Make Tiny Weird Software, Please! (All about Desktop Pets, Old Computer Eras, and Virtual Toys)](http://www.nathalielawhead.com/candybox/make-tiny-weird-software-please-all-about-desktop-pets-old-computer-eras-and-virtual-toys)’ (2021)
+
+
+
 (Last updated: Monday, 13 May 2024)
 
 [^1]: Which ties into some ideas for a text I'd like to write with you, for FoAM, which we should talk about at some point.
 [^2]: Have uploaded this to the shared Zotero library.
+[^3]: Ditto. Focus on section titled: 'Two strategies for writing fieldnotes', pp. 89-92.
