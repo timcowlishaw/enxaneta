@@ -23,7 +23,7 @@ Space, actor, activity, object, act, event, time, goal, feeling (Spradley, 1980)
 In all of this, we'll draw on your own experiences of observation and note-taking, through the exercises I've thrown at you, while addressing any challenges or questions you may have that emerged from this.
 
 
-### Mapping core concepts, developing a shared glossary
+## Mapping core concepts, developing a shared glossary
 
 Again, shifting this forward from last week: As a culmination of this first sub-block, we'll briefly review the core concepts discussed in previous sessions (participant observation, thick description, fieldnotes, communities of practice, etc.), with an eye to how these can inform your pilot project with the Colla app.[^1]
 
