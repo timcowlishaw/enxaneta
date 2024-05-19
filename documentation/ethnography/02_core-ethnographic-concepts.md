@@ -2,7 +2,7 @@
 
 Okay, so running alongside any observation and fieldnote exercises, we're looking to get some key ideas under our belts (_faixes_?) before moving on to look more closely at a specific case (likely to be the Castell Colla App).
 
-<< [Session 1](01_ethnographic-observation) | [Session 3](03_core-ethnographic-concepts-2) >>
+<< [Session 1](01_ethnographic-observation.md) | [Session 3](03_core-ethnographic-concepts-2.md) >>
 
 ## Overview
 
