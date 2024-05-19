@@ -66,9 +66,7 @@ If you have time in the next week or so, these are the most important things to 
 - Nicolas H. Wolfinger, 'On Writing Fieldnotes: Collection Strategies and Background Expectancies’ (2002). _Qualitative Research_ 2(1): 85–93.[^3]
 - Natalie Lawhead, ‘[Make Tiny Weird Software, Please! (All about Desktop Pets, Old Computer Eras, and Virtual Toys)](http://www.nathalielawhead.com/candybox/make-tiny-weird-software-please-all-about-desktop-pets-old-computer-eras-and-virtual-toys)’ (2021)
 
-
-
-(Last updated: Monday, 13 May 2024)
+(Last updated: Sunday, 19 May 2024)
 
 [^1]: Which ties into some ideas for a text I'd like to write with you, for FoAM, which we should talk about at some point.
 [^2]: Have uploaded this to the shared Zotero library.

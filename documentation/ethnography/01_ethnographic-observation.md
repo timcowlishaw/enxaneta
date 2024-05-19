@@ -4,6 +4,7 @@ This exercise is an opportunity to practice observation while taking fieldnotes.
   
 Embrace the discomfort of trying a new method while working through these exercises, and focus on experimenting and flexing your observation and note-taking muscles. It's important to stress that the goal is not to produce perfect fieldnotes or profound insights, but to establish a baseline and identify areas for growth.
 
+
 ## Observation exercises
 
 1. Select 2-3 public, well-populated spaces that provide opportunities for observing social interaction and cultural practices (e.g., parks, cafes, markets, public transit). Aim for a diversity of settings and situations. Consider choosing sites that are relevant to your wider interests, such as:
@@ -20,6 +21,7 @@ Embrace the discomfort of trying a new method while working through these exerci
 4. Aim to be an unobtrusive observer, but be open to casual interactions and short conversations if they arise. Be mindful of ethical considerations and power dynamics. If approached, be prepared to explain your purpose, and withdraw if your presence is unwelcome.
 5. Immediately after each observation session, take time to review your jottings and expand them into more detailed fieldnotes while your experiences are still fresh. Aim for a combination of descriptive and interpretive content, with an emphasis on concrete details.
 
+
 ## Fieldnote template
 
 - Date, time, location
@@ -30,6 +32,7 @@ Embrace the discomfort of trying a new method while working through these exerci
 - Methodological notes on the process of observing and writing, any challenges faced, etc.
 
 Consider experimenting with different formats (e.g., narrative, bulleted lists, sketches) to find what works best for you (and we can talk more about these options), but ensure that each entry is clearly dated and contextualised.
+
 
 ## Reflective exercise
 
