@@ -4,6 +4,8 @@ This exercise is an opportunity to practice observation while taking fieldnotes.
   
 Embrace the discomfort of trying a new method while working through these exercises, and focus on experimenting and flexing your observation and note-taking muscles. It's important to stress that the goal is not to produce perfect fieldnotes or profound insights, but to establish a baseline and identify areas for growth.
 
+| [Session 2](documentation/ethnography/02_core-ethnographic-concepts) >>
+
 
 ## Observation exercises
 
