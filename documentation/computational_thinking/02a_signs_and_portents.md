@@ -6,6 +6,7 @@ However, at root, we're composing words together which _make things happen_, whi
 
 ![Representation of aspects of the LISP programming language as the Kabbalistic Sepherot or Tree of life. Origin unknown but widely meme'd](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/ct2_0_lispsephirot.gif)
 
+
 This linguistic, performative aspect of progamming - combining words in order that they _do things_ is probably more key to what it means to _think computationally_ in the way most people use the term than the material, historical stuff we discussed last time, and therefore, while I'm going to try and keep circling back to the materiality of computation throughout this series, I think this week we have to take a turn towards the abstract, the symbolic, the immaterial: what are the elements of the language that we can compose together when we write in python? Throughout this chapter (which we'll go through in a few parts), I'm going to try and provide you with a kind of partial bestiary of the types of things you encounter in a python program, and how you can interact with them.
 
 It all sounds decidedly mystical, so, in the spirit of _commitment to the bit_ (as well as commitment to "making things that actually interest us"), we're going to do this by exploring the tarot.
@@ -371,7 +372,7 @@ For now, to leave the python REPL, and get back to your regular terminal, press 
 ### Things to do / think about:
 
 - Try and take Take what we've done above, and convert it into a python program (ie a file called something like `tarot.py`), which when we run it with `python tarot.py` prints out the names three random arcana from the tarot.
-- Read "The Zen of Python". Which of these lemmas do you feel you understand and which not? is there terminology here that needs explanation? What do we think might be the values or community norms which gave rise to these lemmas? What do we think of them?
+- Read ["The Zen of Python" PEP](https://peps.python.org/pep-0020/) that i mentioned earlier. Which of these lemmas do you feel you understand and which not? is there terminology here that needs explanation? What do we think might be the values or community norms which gave rise to these lemmas? What do we think of them?
 - The REPL, which we've been interacting with above, takes a single _expression_ on each line we type, and _evaluates_ it when we press enter. Having played with it a bit, have a think about how you might describe or define (however provisionally) what an _expression_ is, and what _evaluation_ does. We'll talk more about this when we next chat!
 
 
