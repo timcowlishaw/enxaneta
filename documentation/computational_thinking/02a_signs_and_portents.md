@@ -21,7 +21,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ```
 
-This is a handy mode of the python interpreter - if you run it without specifying a file to interpret (as we did last time with our hello_world.py), it provides this interactive mode, where we can type in python expressions, press return, and have them evaluated immeditely. It's very useful for trying things out. For instance, we could add our "hello world example here":
+This is a handy mode of the python interpreter - if you run it without specifying a file to interpret (as we did last time with our hello_world.py), it provides this interactive mode, where we can type in python expressions, press return, and have them evaluated immeditely. It's very useful for trying things out. For instance, we could add our "hello world" example here:
 
 
 ```
