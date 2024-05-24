@@ -131,7 +131,7 @@ MAJOR_ARCANA = [
  "10 - The Wheel of Fortune",
  "11 - Strength",
  "12 - The Hanged Man",
- "13 - ",
+ "13 - Death",
  "14 - Temperance",
  "15 - The Devil",
  "16 - The Tower",
