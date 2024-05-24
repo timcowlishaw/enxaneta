@@ -376,4 +376,4 @@ For now, to leave the python REPL, and get back to your regular terminal, press 
 - The REPL, which we've been interacting with above, takes a single _expression_ on each line we type, and _evaluates_ it when we press enter. Having played with it a bit, have a think about how you might describe or define (however provisionally) what an _expression_ is, and what _evaluation_ does. We'll talk more about this when we next chat!
 
 
-[^1]: JP: Bilingual Welsh band Rogue Jones released a track titled "[Off By One](https://www.youtube.com/watch?v=zPYOtSj4HhA)" on their 2023 album _Dos Bebés_, which explores the concept in a playful way, highlighting how even seemingly trivial mistakes can have significant consequences.
+[^1]: JP: Bilingual Welsh band Rogue Jones released a track titled "[Off By One](https://www.youtube.com/watch?v=zPYOtSj4HhA)" on their 2023 album _Dos Bebés_, which riffs on the concept, reflecting on how even trivial mistakes can have significant consequences.
