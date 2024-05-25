@@ -15,7 +15,7 @@ flowchart TB
     eth5 --> eth6
     py5 --> cllb2
     cllb4 --> cllb5
-    phase3 --> wrapup
+    cllb5 --> wrapup
     
     subgraph phase1 [1. La Pinya: Skill Development]
         direction LR
