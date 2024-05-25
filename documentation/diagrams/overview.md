@@ -1,10 +1,10 @@
 
 ```mermaid
 flowchart TB
-    prelude(0. Fer Pinya: Preparation)
-    phase1(1. La Pinya: Skill Development)
-    phase2(2. Els Folres i Manilles: Collaborative Exploration)
-    phase3(3. El Tronc: Integration and Application)
+    prelude(0. Fer Pinya)
+    phase1(1. La Pinya)
+    phase2(2. Els Folres i Manilles)
+    phase3(3. El Tronc)
     wrapup(4. Desmuntar)
     
     prelude --> py1
@@ -17,7 +17,7 @@ flowchart TB
     cllb4 --> cllb5
     cllb5 --> wrapup
     
-    subgraph phase1 [1. La Pinya: Skill Development]
+    subgraph phase1 [1. La Pinya]
         direction LR
 
         subgraph py [Computational Thinking 101]
@@ -35,7 +35,7 @@ flowchart TB
         end
     end
 
-    subgraph phase2 [2. Els Folres i Manilles: Collaborative Exploration?]
+    subgraph phase2 [2. Els Folres i Manilles]
         direction TB
         subgraph cllb [Collaborative Exploration?]
             direction TB
