@@ -11,9 +11,9 @@ flowchart TB
     prelude --> eth1
     prelude --> eth2
     phase1 --> cllb1
-    py4 --> py5
+    py5 --> py6_1
     eth5 --> eth6
-    py5 --> cllb2
+    py6_2 --> cllb2
     cllb4 --> cllb5
     cllb5 --> wrapup
     
@@ -22,8 +22,11 @@ flowchart TB
 
         subgraph py [Computational Thinking 101]
             direction TB
-            py1[Bootstrapping with the Raspberry Pi] --> py2[Signs and Portents]
-            py2 --> py3[...] --> py4[...]
+            py1[Bootstrapping with
+            the Raspberry Pi] --> py2[Signs and Portents]
+            py2 --> py3[Python norms
+            and governance] 
+            py2 --> py4[...] --> py5[...]
         end
         
         subgraph eth [Ethnography: Foundations & Dimensions]
@@ -45,9 +48,9 @@ flowchart TB
             cllb3 --> cllb4[Bogostian Carpentry?]
         end
 
-        subgraph py5 [More Python?]
+        subgraph py6 [More Python?]
             direction TB
-            py5_1[...] --> py5_2[...]
+            py6_1[...] --> py6_2[...]
         end
 
         subgraph eth6 [Tim's PhD Research?]
