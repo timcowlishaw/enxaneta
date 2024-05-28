@@ -12,13 +12,15 @@ We'll look at Clifford Geertz's 'Deep play: Notes on the Balinese cock fight'. I
 
 We can also look at some examples from the Benjamin Bowles article to illustrate how thick description can be used to capture the nuances of social practices, perhaps by exploring the idea of 'enskilment' and how it relates to the concept of 'taskscapes' referenced by Bowles, and tying this to your identified communities of practice (permaculture, Tiny Weird Software, etc.).
 
+![Cockfight in Bali, c.1915](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/eth3_1_cockfighting.jpg) ![Exhausting a Place in Paris](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/eth3_1_exhausting.jpg)
 
-### Some questions
+### 🗪 Some prompts and questions
 
 - What makes a cultural description "thick" rather than "thin"?
 - How does Geertz use thick description to interpret the symbolic meanings of the cockfight? What examples illustrate this?
 - How does Geertz balance specific details of the cockfight with broader cultural themes? Does he achieve a meaningful balance?
-- Geertz gained the villagers' trust after the police raid. How does the researcher's positionality and level of acceptance influence the quality of participant observation?> - How does Geertz establish his credibility as an interpreter of Balinese culture? How does he handle the tension between being an outsider and an authoritative voice?
+- Geertz gained the villagers' trust after the police raid. How does the researcher's positionality and level of acceptance influence the quality of participant observation?
+- How does Geertz establish his credibility as an interpreter of Balinese culture? How does he handle the tension between being an outsider and an authoritative voice?
 - Geertz does not explicitly discuss his fieldnote process. How might he have recorded his observations and experiences during and after the cockfights?
 - How would the use of modern technology, such as digital recording devices, change the process and outcomes of ethnographic fieldwork today?
 
