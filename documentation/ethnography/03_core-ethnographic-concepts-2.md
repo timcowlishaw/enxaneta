@@ -12,7 +12,7 @@ We'll look at Clifford Geertz's 'Deep play: Notes on the Balinese cock fight'. I
 
 We can also look at some examples from the Benjamin Bowles article to illustrate how thick description can be used to capture the nuances of social practices, perhaps by exploring the idea of 'enskilment' and how it relates to the concept of 'taskscapes' referenced by Bowles, and tying this to your identified communities of practice (permaculture, Tiny Weird Software, etc.).
 
-![Cockfight in Bali, c.1915](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/eth3_1_cockfighting.jpg =75%x) ![Exhausting a Place in Paris](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/eth3_1_exhausting.jpg =25%x)
+![Cockfight in Bali, c.1915](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/eth3_1_cockfighting.jpg) ![Exhausting a Place in Paris](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/eth3_1_exhausting.jpg)
 
 ### 🗪 Some prompts and questions
 
