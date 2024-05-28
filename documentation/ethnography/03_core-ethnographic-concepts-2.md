@@ -21,7 +21,7 @@ We can also look at some examples from the Benjamin Bowles article to illustrate
 - Geertz gained the villagers' trust after the police raid. How does the researcher's positionality and level of acceptance influence the quality of participant observation?
 - How does Geertz establish his credibility as an interpreter of Balinese culture? How does he handle the tension between being an outsider and an authoritative voice?
 - Geertz does not explicitly discuss his fieldnote process. How might he have recorded his observations and experiences during and after the cockfights?
-- Perec's text reads more like raw fieldnotes than a polished ethnography. What are the implications of publishing one's fieldnotes directly?
+- Perec's text reads more like raw fieldnotes than a polished ethnography. What are the implications of directly publishing one's fieldnotes?[^1]
 - Geertz's work is rooted in a specific cultural event, while Perec's is a sustained observation over three days. How do these differing contexts affect their ability to produce a thick description?
 - How would the use of modern technology, such as digital recording devices, change the process and outcomes of ethnographic fieldwork today?
 
@@ -39,7 +39,7 @@ In all of this, we'll draw on your own experiences of observation and note-takin
 
 ## Mapping core concepts, developing a shared glossary
 
-Again, shifting this forward from last week: As a culmination of this first sub-block, we'll briefly review the core concepts discussed in previous sessions (participant observation, thick description, fieldnotes, communities of practice, etc.), with an eye to how these can inform your pilot project with the Colla app.[^1]
+Again, shifting this forward from last week: As a culmination of this first sub-block, we'll briefly review the core concepts discussed in previous sessions (participant observation, thick description, fieldnotes, communities of practice, etc.), with an eye to how these can inform your pilot project with the Colla app.[^2]
 
 I'm also thinking we start to develop a shared glossary of key terms, ensuring that we both have a common understanding of the concepts (across the ethnography and Python components of all this). Is there somewhere persistent this could live, whether on the GitHub, a shared Obsidian vault, or some online canvas? How public do we want this to be?
 
@@ -53,9 +53,9 @@ Thick description:
 
 Fieldnotes:
 
-- Emerson, R., Fretz, R., Shaw, L. (2011). 'In the field: Participating, observing, and jotting notes', in: _Writing Ethnographic Fieldnotes_ (2nd Ed.), University of Chicago Press, Chicago and London: pp. 21–43.[^2]
-- Jackson, J.E. (1990). '“I am a fieldnote”: Fieldnotes as a symbol of professional identity', in: Sanjek, R. (Ed.), _Fieldnotes: The Makings of Anthropology_, Cornell University Press, Ithaca and London: pp. 3–33.[^3]
-- Timmermans and Tavory, 'Collecting', in: _Data Analysis in Qualitative Research_ (2022), University of Chicago Press, Chicago and London, pp. 47–68.[^4]
+- Emerson, R., Fretz, R., Shaw, L. (2011). 'In the field: Participating, observing, and jotting notes', in: _Writing Ethnographic Fieldnotes_ (2nd Ed.), University of Chicago Press, Chicago and London: pp. 21–43.[^3]
+- Jackson, J.E. (1990). '“I am a fieldnote”: Fieldnotes as a symbol of professional identity', in: Sanjek, R. (Ed.), _Fieldnotes: The Makings of Anthropology_, Cornell University Press, Ithaca and London: pp. 3–33.[^4]
+- Timmermans and Tavory, 'Collecting', in: _Data Analysis in Qualitative Research_ (2022), University of Chicago Press, Chicago and London, pp. 47–68.[^5]
 
 Taskscapes:
 
@@ -63,7 +63,8 @@ Taskscapes:
 
 (Last updated: Tuesday, 28 May 2024)
 
-[^1]: And how the study of software and technologies challenges and/or extends more conventional ethnographic methods.
-[^2]: Have uploaded this to the shared Zotero. Focus on sections titled: ‘What are jottings?’, and ‘Making jottings: How, where, and when’, pp. 29–41.
-[^3]: Also in the Zotero. Revealing summary of responses from a survey of 70 anthropologists' attitudes to fieldnotes; gets a bit repetitive beyond page 15, so just skim it.
-[^4]: As an abductive analysis guy, cannot recommend this book more highly. Look at sections titled: ‘Techniques of focusing’ and ‘Being a field note’, pp. 57–63.
+[^1]: See also: The _Raw Fieldnotes_ book, the editors of whom encountered a real reticence in trying to get (some) researchers to contribute.
+[^2]: And how the study of software and technologies challenges and/or extends more conventional ethnographic methods.
+[^3]: Have uploaded this to the shared Zotero. Focus on sections titled: ‘What are jottings?’, and ‘Making jottings: How, where, and when’, pp. 29–41.
+[^4]: Also in the Zotero. Revealing summary of responses from a survey of 70 anthropologists' attitudes to fieldnotes; gets a bit repetitive beyond page 15, so just skim it.
+[^5]: As an abductive analysis guy, cannot recommend this book more highly. Look at sections titled: ‘Techniques of focusing’ and ‘Being a field note’, pp. 57–63.
