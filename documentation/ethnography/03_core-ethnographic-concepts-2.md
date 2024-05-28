@@ -8,7 +8,7 @@ Following up on last week, using any further observational exercises you've had 
 
 Shifting this forward, as we didn't quite get to it last week: Introducing the concept of thick description as a criteria of appraisal. We'll talk a bit about the significance of thick description as a point of differentiation for ethnography, where it fits in the process of ethnographic research, and the importance of fieldnotes in producing such 'thick', detailed accounts.
 
-We'll look at Clifford Geertz's 'Deep play: Notes on the Balinese cock fight'. In this text, Geertz employs thick description to examine the Balinese cockfight, an apparently straightforward blood sport, revealing its deeper cultural meanings and social function (beyond "two roosters fought, and one won"). It'll do me good to re-read this, and after your experiences last week, I'm keen to put this into dialogue with Perec's "[An Attempt at Exhausting A Place in Paris](https://iitcoa3rdyr.wordpress.com/wp-content/uploads/2014/09/perec_readings.pdf)" (and his concept of the 'infraordinary'?).
+We'll look at Clifford Geertz's "Deep play: Notes on the Balinese cockfight". In this text, Geertz employs thick description to examine the Balinese cockfight, an apparently straightforward blood sport, revealing its deeper cultural meanings and social function (beyond "two roosters fought, and one won"). It'll do me good to re-read this, and after your experiences last week, I'm keen to put this into dialogue with Perec's "[An Attempt at Exhausting A Place in Paris](https://iitcoa3rdyr.wordpress.com/wp-content/uploads/2014/09/perec_readings.pdf)" (and his concept of the '[infra-ordinary](https://www.ubu.com/papers/perec_infraordinary.html)'?).
 
 We can also look at some examples from the Benjamin Bowles article to illustrate how thick description can be used to capture the nuances of social practices, perhaps by exploring the idea of 'enskilment' and how it relates to the concept of 'taskscapes' referenced by Bowles, and tying this to your identified communities of practice (permaculture, Tiny Weird Software, etc.).
 
@@ -18,10 +18,11 @@ We can also look at some examples from the Benjamin Bowles article to illustrate
 
 - What makes a cultural description "thick" rather than "thin"?
 - How does Geertz use thick description to interpret the symbolic meanings of the cockfight? What examples illustrate this?
-- How does Geertz balance specific details of the cockfight with broader cultural themes? Does he achieve a meaningful balance?
 - Geertz gained the villagers' trust after the police raid. How does the researcher's positionality and level of acceptance influence the quality of participant observation?
 - How does Geertz establish his credibility as an interpreter of Balinese culture? How does he handle the tension between being an outsider and an authoritative voice?
 - Geertz does not explicitly discuss his fieldnote process. How might he have recorded his observations and experiences during and after the cockfights?
+- Perec's text reads more like raw fieldnotes than a polished ethnography. What are the implications of publishing one's fieldnotes directly?
+- Geertz's work is rooted in a specific cultural event, while Perec's is a sustained observation over three days. How do these differing contexts affect their ability to produce a thick description?
 - How would the use of modern technology, such as digital recording devices, change the process and outcomes of ethnographic fieldwork today?
 
 
