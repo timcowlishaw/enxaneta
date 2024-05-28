@@ -12,8 +12,7 @@ We'll look at Clifford Geertz's 'Deep play: Notes on the Balinese cock fight'. I
 
 | !Some questions |
 | --------------- |
-| 
-- What makes a cultural description "thick" rather than "thin"?
+| - What makes a cultural description "thick" rather than "thin"?
  - How does Geertz use thick description to interpret the symbolic meanings of the cockfight? What examples illustrate this?
  - How does Geertz balance specific details of the cockfight with broader cultural themes? Does he achieve a meaningful balance?
  - Geertz gained the villagers' trust after the police raid. How does the researcher's positionality and level of acceptance influence the quality of participant observation?> - How does Geertz establish his credibility as an interpreter of Balinese culture? How does he handle the tension between being an outsider and an authoritative voice?
