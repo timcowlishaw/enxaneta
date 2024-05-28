@@ -10,8 +10,7 @@ Shifting this forward, as we didn't quite get to it last week: Introducing the c
 
 We'll look at Clifford Geertz's 'Deep play: Notes on the Balinese cock fight'. In this text, Geertz employs thick description to examine the Balinese cockfight, an apparently straightforward blood sport, revealing its deeper cultural meanings and social function (beyond "two roosters fought, and one won"). It'll do me good to re-read this, and after your experiences last week, I'm keen to put this into dialogue with Perec's "[An Attempt at Exhausting A Place in Paris](https://iitcoa3rdyr.wordpress.com/wp-content/uploads/2014/09/perec_readings.pdf)" (and his concept of the 'infraordinary'?).
 
-> [!NOTE]
-> Some questions 
+> [!Some questions]
 > - What makes a cultural description "thick" rather than "thin"?
 > - How does Geertz use thick description to interpret the symbolic meanings of the cockfight? What examples illustrate this?
 > - How does Geertz balance specific details of the cockfight with broader cultural themes? Does he achieve a meaningful balance?
