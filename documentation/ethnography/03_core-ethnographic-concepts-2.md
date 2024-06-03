@@ -26,13 +26,6 @@ We can also look at some examples from the Benjamin Bowles article to illustrate
 - How would the use of modern technology, such as digital recording devices, change the process and outcomes of ethnographic fieldwork today?
 
 
-## Mapping core concepts, developing a shared glossary
-
-Again, shifting this forward from last week: As a culmination of this first sub-block, we'll briefly review the core concepts discussed in previous sessions (participant observation, thick description, fieldnotes, communities of practice, etc.), with an eye to how these can inform your pilot project with the Colla app.[^2]
-
-I'm also thinking we start to develop a shared glossary of key terms, ensuring that we both have a common understanding of the concepts (across the ethnography and Python components of all this). Is there somewhere persistent this could live, whether on the GitHub, a shared Obsidian vault, or some online canvas? How public do we want this to be?
-
-
 ## Readings and supporting materials
 
 Thick description:
@@ -41,11 +34,8 @@ Thick description:
 - Clifford Geertz. 'Deep Hanging Out'. _The New York Review_, 22 October 1998. https://www.nybooks.com/articles/1998/10/22/deep-hanging-out/
 - Anand Pandian, ‘The World at Hand: Between Scientific and Literary Inquiry’. in _A Possible Anthropology: Methods for Uneasy Times_ (2019). Durham: Duke University Press.
 
-Taskscapes:
+~~Taskscapes: Tim Ingold, ‘The temporality of the landscape’ (1993), World Archaeology 25(2): 152–74. doi: 10.1080/00438243.1993.9980235~~ (not really relevant to what we ended up talking about)
 
-- Tim Ingold, ‘The temporality of the landscape’ (1993), _World Archaeology_ 25(2): 152–74. doi: 10.1080/00438243.1993.9980235
-
-(Last updated: Monday, 3 June 2024)
+(Last updated: Tuesday, 4 June 2024)
 
 [^1]: See also: The _Raw Fieldnotes_ book, the editors of whom encountered a real reticence in trying to get (some) researchers to contribute.
-[^2]: And how the study of software and technologies challenges and/or extends more conventional ethnographic methods.

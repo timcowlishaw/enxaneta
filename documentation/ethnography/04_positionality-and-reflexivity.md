@@ -90,7 +90,7 @@ Reflexivity:
 - Nancy Scheper-Hughes, ‘Ire in Ireland’ (2000), _Ethnography_ 1(1):117–40. doi: 10.1177/14661380022230660.
 - Ed Simpson, 'Is anthropology legal? Earthquakes, blitzkrieg, and ethical futures' (2016), _Focaal_ 74, 113–128. doi:10.3167/fcl.2016.740109
 
-(Last updated: Monday, 3 June 2024)
+(Last updated: Tuesday, 4 June 2024)
 
 [^1]: A line of criticism also levelled against autoethnographic approaches, as I am _sure_ we will discuss further in the coming months.
 [^2]: Beyond joining everyone else in fleeing when the authorities turn up to bust the illegal cockfight you were attending with your wife.
