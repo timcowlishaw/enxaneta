@@ -79,14 +79,9 @@ But by engaging in reflexive practices, you can situate your findings in relatio
 
 ## Readings and supporting materials
 
-Positionality:
-
 - Nungari Mwangi, '‘Good that you are one of us’: Positionality and reciprocity in conducting fieldwork in Kenya’s flower industry, in: Johnstone, L. (Ed.) _The Politics of Conducting Research in Africa: Ethical and Emotional Challenges in the Field_ (2019), Palgrave Macmillan, Cham, Switzerland: pp. 13–33.[^5]
 - Kathryn Besio, 'Steppin’ in it: Postcoloniality in Northern Pakistan' (2003). _Area_ 35 (1): 24–33. doi:10.1111/1475-4762.00107.[^6]
 - Timmermans, S., Tavory, I., 'Collecting', in: _Data Analysis in Qualitative Research_ (2022), University of Chicago Press, Chicago and London, pp. 47–68.[^7]
-
-Reflexivity:
-
 - Nancy Scheper-Hughes, ‘Ire in Ireland’ (2000), _Ethnography_ 1(1):117–40. doi: 10.1177/14661380022230660.
 - Ed Simpson, 'Is anthropology legal? Earthquakes, blitzkrieg, and ethical futures' (2016), _Focaal_ 74, 113–128. doi:10.3167/fcl.2016.740109
 
