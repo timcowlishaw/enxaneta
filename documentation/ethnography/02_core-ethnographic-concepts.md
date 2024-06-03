@@ -36,7 +36,7 @@ You noted that you'd caught yourself trying to prematurely shoehorn your observa
 > 'Ethnographers frequently choose to record a particular observation because it stands out. Observations often stand out because they are deviant, either when compared to others or with respect to a researcher’s existing knowledge and beliefs. Either way, background knowledge influences which cases are chosen for annotation.' (Wolfinger 2002: 90)
 
 
-## Fieldsites
+## Field sites
 
 Post-session update: We also talked a bit about the 'neatly-bounded' ethnographic fieldsite in an age of digital, mobile, and translocal phenomena. I referenced Matei Candea's concept of the traditional fieldsite as an 'arbitrary location', Paolo Heywood's subsequent work on Bologna as an 'equivocal location' from which to investigate difference in leftist politics, and Jenna Burrell's work on the fieldsite as a network actively constructed by the researcher, incorporating physical, virtual, and imagined spaces (with reference to research on early internet use in Ghana).
 
@@ -57,20 +57,20 @@ We can refer to the readings by Maja Hojer Bruun and Cathrine Hasse (2022) and N
 ### Readings and supporting materials
 
 If you have time in the next week or so, these are the most important things to work through: 
-  
+
 - [Participating and Observing](https://www.bbc.co.uk/sounds/play/b06zdkb7), Ep. 4 of _From Savage to Self_ (2016) (14min)
 - Maja Hojer Bruun, and Cathrine Hasse, ‘Communities, Collectives, and Categories’ (2022), in _The Palgrave Handbook of the Anthropology of Technology_, Singapore: Springer Nature Singapore.[^2]
 - Nicolas Nova and Anaïs Bloch, '[“My Store is a Laboratory”: Knowledge Produced by Smartphone Repairers](https://doi.org/10.17351/ests2023.1337)' (2023)
+
+Fieldsites:
 
 - Jenna Burrell, ‘The Field Site as a Network: A Strategy for Locating Ethnographic Research’ (2009), _Field Methods_ 21(2):181–99. doi: 10.1177/1525822X08329699.
 - Matei Candea, ‘Arbitrary Locations: In Defence of the Bounded Field‐site’ (2017), _Journal of the Royal Anthropological Institute_ 13(1): 167–84. doi: 10.1111/j.1467-9655.2007.00419.x.
 - Paolo Heywood, ‘Equivocal Locations: Being “Red” in “Red Bologna”’ (2015), _Journal of the Royal Anthropological Institute_ 21(4): 855–71. doi: 10.1111/1467-9655.12291.
 
-- Nicolas H. Wolfinger, 'On Writing Fieldnotes: Collection Strategies and Background Expectancies’ (2002). _Qualitative Research_ 2(1): 85–93.[^3]
 - Natalie Lawhead, ‘[Make Tiny Weird Software, Please! (All about Desktop Pets, Old Computer Eras, and Virtual Toys)](http://www.nathalielawhead.com/candybox/make-tiny-weird-software-please-all-about-desktop-pets-old-computer-eras-and-virtual-toys)’ (2021)
 
 (Last updated: Sunday, 19 May 2024)
 
 [^1]: Which ties into some ideas for a text I'd like to write with you, for FoAM, which we should talk about at some point.
 [^2]: Have uploaded this to the shared Zotero library.
-[^3]: Ditto. Focus on section titled: 'Two strategies for writing fieldnotes', pp. 89-92.
