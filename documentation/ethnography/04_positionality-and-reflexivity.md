@@ -20,6 +20,8 @@ Your positionality will also be influenced by your personal experiences, values,
 
 Consider what assumptions or expectations you might bring to studying digital practices based on your prior experiences with and knowledge about technology. How might these preconceptions shape what you focus on or overlook.
 
+<img src="https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/eth4_0_jürgenssen.jpg" alt="Ich möchte hier raus! (Birgit Jürgenssen, 1976)" height="350"/>
+
 ### 🚣 "Rivers of Life" exercise
 
 As an exercise in starting to grapple with your positionality, and something for us to call back to later, I want you take a half-hour (or longer?) to sketch the stories of your life and career using the metaphor of a river.
