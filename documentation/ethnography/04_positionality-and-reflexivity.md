@@ -20,7 +20,7 @@ Your positionality will also be influenced by your personal experiences, values,
 
 Consider what assumptions or expectations you might bring to studying digital practices based on your prior experiences with and knowledge about technology. How might these preconceptions shape what you focus on or overlook.
 
-<a href="https://www.centrepompidou.fr/en/ressources/oeuvre/cKj6ae"><img src="https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/eth4_0_jürgenssen.jpg" alt="Ich möchte hier raus! (Birgit Jürgenssen, 1976)" height="350"/><a href="https://www.centrepompidou.fr/fr/ressources/oeuvre/cejBygA"><img src="https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets\images\eth4_0_brancusi.jpg" alt="Autoportrait Dans le train Paris-Le Havre (Constantin Brancusi, 1933)" height="350"/>
+<a href="https://www.centrepompidou.fr/fr/ressources/oeuvre/cejBygA"><img src="https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets\images\eth4_0_brancusi.jpg" alt="Autoportrait Dans le train Paris-Le Havre (Constantin Brancusi, 1933)" height="350"/> <a href="https://www.centrepompidou.fr/en/ressources/oeuvre/cKj6ae"><img src="https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/eth4_0_jürgenssen.jpg" alt="Ich möchte hier raus! (Birgit Jürgenssen, 1976)" height="350"/>
 
 ### 🚣 "Rivers of Life" exercise
 
