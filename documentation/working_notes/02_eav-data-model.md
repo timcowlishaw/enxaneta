@@ -24,21 +24,23 @@
 
 > "0 - The Fool": "Beginnings, innocence, spontaneity. The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future."
 
-`{
-    "0 - The Fool": {
-       "arcanum"[^1]: "Major",
-       "keywords": ["Beginnings", "Innocence", "Spontaneity"],[^2]
-       "description": "The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future.",[^3]
-       "archetype": "The eternal child",[^4]
-       "action": "Embarking on a new adventure",[^5]
-       "emotion": ["wonder", "trust"],[^6]
-       "characteristics": ["eternal child", "free spirit", "faith in the future"][^7]
-    }
-}`
+```json
+{
+  "0 - The Fool": {
+    "arcanum": "Major",
+    "keywords": ["Beginnings", "Innocence", "Spontaneity"],
+    "description": "The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future.",
+    "archetype": "The eternal child",
+    "action": "Embarking on a new adventure",
+    "emotion": ["wonder", "trust"],
+    "characteristics": ["eternal child", "free spirit", "faith in the future"]
+  }
+}
 
 > "1 - The Magician": “Manifestation, resourcefulness, power. The visionary, skillfully wielding the tools of creation. Turning dreams into reality through willpower and inspired action.”
 
-`{
+```json
+{
     "1 - The Magician": {
         "arcanum: "Major",
         "keywords": ["Manifestation", "Resourcefulness", "Power"],
@@ -53,7 +55,8 @@
 
 > "2 - The High Priestess": "Intuition, mystery, the subconscious mind. The guardian of hidden knowledge, sitting between the pillars of duality. Trusting in wisdom that comes through stillness and dreams."
 
-`{
+```json
+{
     "2 - The High Priestess": {
         "arcanum: "Major",
         "keywords": ["Intuition", "Mystery", "The subconscious mind"],
