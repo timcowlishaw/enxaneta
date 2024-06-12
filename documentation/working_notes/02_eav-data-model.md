@@ -22,6 +22,8 @@
 
 ## A couple of examples:
 
+### 0. The Fool
+
 > "0 - The Fool": "Beginnings, innocence, spontaneity. The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future."
 
 {"0 - The Fool": {  
@@ -31,36 +33,37 @@
 &nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The eternal child",[^4]  
 &nbsp;&nbsp;&nbsp;&nbsp;"action": "Embarking on a new adventure",[^5]  
 &nbsp;&nbsp;&nbsp;&nbsp;"emotion": ["wonder", "trust"],[^6]  
-&nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["eternal child", "free spirit", "faith in the future"][^7]  
-&nbsp;&nbsp;&nbsp;&nbsp;}  
+&nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["eternal child", "free spirit", "faith in the future"][^7] }  
 }  
+
+### 1. The Magician
 
 > "1 - The Magician": “Manifestation, resourcefulness, power. The visionary, skillfully wielding the tools of creation. Turning dreams into reality through willpower and inspired action.”
 
 {"1 - The Magician": {  
-        "arcanum: "Major",  
-        "keywords": ["Manifestation", "Resourcefulness", "Power"],  
-        "description": "The visionary, skillfully wielding the tools of creation. Turning dreams into reality through willpower and inspired action.”,  
-        "archetype": "The visionary",  
-        "action": ["wielding the tools of creation", "turning dreams into reality"]  
-        "entities": ["The tools of creation", "willpower"],[^8]  
-        "emotion": "inspired",  
-        "characteristics": ["visionary", "skillful", "inspired"]  
-    }  
+&nbsp;&nbsp;&nbsp;&nbsp;"arcanum: "Major",  
+&nbsp;&nbsp;&nbsp;&nbsp;"keywords": ["Manifestation", "Resourcefulness", "Power"],  
+&nbsp;&nbsp;&nbsp;&nbsp;"description": "The visionary, skillfully wielding the tools of creation. Turning dreams into reality through willpower and inspired action.”,  
+&nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The visionary",  
+&nbsp;&nbsp;&nbsp;&nbsp;"action": ["wielding the tools of creation", "turning dreams into reality"]  
+&nbsp;&nbsp;&nbsp;&nbsp;"entities": ["The tools of creation", "willpower"],[^8]  
+&nbsp;&nbsp;&nbsp;&nbsp;"emotion": "inspired",  
+&nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["visionary", "skillful", "inspired"] }  
 }  
 
 > "2 - The High Priestess": "Intuition, mystery, the subconscious mind. The guardian of hidden knowledge, sitting between the pillars of duality. Trusting in wisdom that comes through stillness and dreams."
 
+### 2. The High Priestess
+
 {"2 - The High Priestess": {  
-        "arcanum: "Major",  
-        "keywords": ["Intuition", "Mystery", "The subconscious mind"],  
-        "description": "The guardian of hidden knowledge, sitting between the pillars of duality. Trusting in wisdom that comes through stillness and dreams.",  
-        "archetype": "The guardian of hidden knowledge",  
-        "action": ["sitting between the pillars of duality", "trusting in wisdom that comes through stillness and dreams"],[^9]  
-        "entities": "The pillars of duality",[^10]  
-        "emotion": "trusting",  
-        "characteristics": ["guardian", "still"]  
-    }  
+&nbsp;&nbsp;&nbsp;&nbsp;"arcanum: "Major",  
+&nbsp;&nbsp;&nbsp;&nbsp;"keywords": ["Intuition", "Mystery", "The subconscious mind"],  
+&nbsp;&nbsp;&nbsp;&nbsp;"description": "The guardian of hidden knowledge, sitting between the pillars of duality. Trusting in wisdom that comes through stillness and dreams.",  
+&nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The guardian of hidden knowledge",  
+&nbsp;&nbsp;&nbsp;&nbsp;"action": ["sitting between the pillars of duality", "trusting in wisdom that comes through stillness and dreams"],[^9]  
+&nbsp;&nbsp;&nbsp;&nbsp;"entities": "The pillars of duality",[^10]  
+&nbsp;&nbsp;&nbsp;&nbsp;"emotion": "trusting",  
+&nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["guardian", "still"] }  
 }  
 
 - [?] How would Ian Bogost handle this? He is interested in how things interact and experience each other, beyond human comprehension. He would approach the tarot cards and their meanings as "aliens": objects/entities in their own right.
