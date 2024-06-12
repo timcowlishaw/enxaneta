@@ -20,6 +20,8 @@
 - Entities (array of entity references)
 - Keywords (text)
 
+- [?] How would Ian Bogost handle this? He is interested in how things interact and experience each other, beyond human comprehension. He would approach the tarot cards and their meanings as "aliens": objects/entities in their own right.
+
 ## A couple of examples:
 
 ### 0. The Fool
@@ -65,8 +67,6 @@
 &nbsp;&nbsp;&nbsp;&nbsp;"emotion": "trusting",  
 &nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["guardian", "still"] }  
 }  
-
-- [?] How would Ian Bogost handle this? He is interested in how things interact and experience each other, beyond human comprehension. He would approach the tarot cards and their meanings as "aliens": objects/entities in their own right.
 
 [^1]: Should any/all of these attributes be singular or plural?
 [^2]: I think the LLMs have provided three primary keywords for each card, which is handy. Need to look into the etymology and origins of "keyword", as a label. If these are immutable features, it'd be good to have them as something we can focus in on, and that user-querent annotations can get stuck to.
