@@ -35,7 +35,7 @@
     "emotion": ["wonder", "trust"],
     "characteristics": ["eternal child", "free spirit", "faith in the future"]
   }
-}
+}```
 
 > "1 - The Magician": “Manifestation, resourcefulness, power. The visionary, skillfully wielding the tools of creation. Turning dreams into reality through willpower and inspired action.”
 
@@ -51,7 +51,7 @@
         "emotion": "inspired",
         "characteristics": ["visionary", "skillful", "inspired"]
     }
-}`
+}```
 
 > "2 - The High Priestess": "Intuition, mystery, the subconscious mind. The guardian of hidden knowledge, sitting between the pillars of duality. Trusting in wisdom that comes through stillness and dreams."
 
@@ -67,7 +67,7 @@
         "emotion": "trusting",
         "characteristics": ["guardian", "still"]
     }
-}`
+}```
 
 - [?] How would Ian Bogost handle this? He is interested in how things interact and experience each other, beyond human comprehension. He would approach the tarot cards and their meanings as "aliens": objects/entities in their own right.
 
