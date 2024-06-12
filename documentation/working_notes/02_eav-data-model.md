@@ -27,8 +27,8 @@
 ```
 {
     "0 - The Fool": {
-       "arcanum": "Major",// [^1]
-       "keywords": ["Beginnings", "Innocence", "Spontaneity"],[^2]
+       "arcanum": "Major",```// [^1]
+       ```"keywords": ["Beginnings", "Innocence", "Spontaneity"],[^2]
        "description": "The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future.",[^3]
        "archetype": "The eternal child",[^4]
        "action": "Embarking on a new adventure",[^5]
