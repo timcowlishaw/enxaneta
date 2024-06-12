@@ -53,9 +53,9 @@
 &nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["visionary", "skillful", "inspired"] }  
 }  
 
-> "2 - The High Priestess": "Intuition, mystery, the subconscious mind. The guardian of hidden knowledge, sitting between the pillars of duality. Trusting in wisdom that comes through stillness and dreams."
-
 ### 2. The High Priestess
+
+> "2 - The High Priestess": "Intuition, mystery, the subconscious mind. The guardian of hidden knowledge, sitting between the pillars of duality. Trusting in wisdom that comes through stillness and dreams."
 
 {"2 - The High Priestess": {  
 &nbsp;&nbsp;&nbsp;&nbsp;"arcanum: "Major",  
