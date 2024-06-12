@@ -25,14 +25,14 @@
 > "0 - The Fool": "Beginnings, innocence, spontaneity. The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future."
 
 {"0 - The Fool": {  
-    "arcanum": "Major",[^1]  
-    "keywords": ["Beginnings", "Innocence", "Spontaneity"],[^2]  
-    "description": "The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future.",[^3]  
-    "archetype": "The eternal child",[^4]  
-    "action": "Embarking on a new adventure",[^5]  
-    "emotion": ["wonder", "trust"],[^6]  
-    "characteristics": ["eternal child", "free spirit", "faith in the future"][^7]  
-    }  
+&nbsp;&nbsp;&nbsp;&nbsp;"arcanum": "Major",[^1]  
+&nbsp;&nbsp;&nbsp;&nbsp;"keywords": ["Beginnings", "Innocence", "Spontaneity"],[^2]  
+&nbsp;&nbsp;&nbsp;&nbsp;"description": "The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future.",[^3]  
+&nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The eternal child",[^4]  
+&nbsp;&nbsp;&nbsp;&nbsp;"action": "Embarking on a new adventure",[^5]  
+&nbsp;&nbsp;&nbsp;&nbsp;"emotion": ["wonder", "trust"],[^6]  
+&nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["eternal child", "free spirit", "faith in the future"][^7]  
+&nbsp;&nbsp;&nbsp;&nbsp;}  
 }  
 
 > "1 - The Magician": “Manifestation, resourcefulness, power. The visionary, skillfully wielding the tools of creation. Turning dreams into reality through willpower and inspired action.”
