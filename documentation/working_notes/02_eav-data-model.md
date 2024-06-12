@@ -20,7 +20,7 @@
 - Entities (array of entity references)
 - Keywords (text)
 
-- [?] How would Ian Bogost handle this? He is interested in how things interact and experience each other, beyond human comprehension. He would approach the tarot cards and their meanings as "aliens": objects/entities in their own right.
+[?] How would Ian Bogost handle this? He is interested in how things interact and experience each other, beyond human comprehension. He would approach the tarot cards and their meanings as "aliens": objects/entities in their own right.
 
 ## A couple of examples:
 
@@ -29,12 +29,12 @@
 > "0 - The Fool": "Beginnings, innocence, spontaneity. The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future."
 
 {"0 - The Fool": {  
-&nbsp;&nbsp;&nbsp;&nbsp;"arcanum": "Major",[^1]  
-&nbsp;&nbsp;&nbsp;&nbsp;"keywords": ["Beginnings", "Innocence", "Spontaneity"],[^2]  
-&nbsp;&nbsp;&nbsp;&nbsp;"description": "The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future.",[^3]  
-&nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The eternal child",[^4]  
-&nbsp;&nbsp;&nbsp;&nbsp;"action": "Embarking on a new adventure",[^5]  
-&nbsp;&nbsp;&nbsp;&nbsp;"emotion": ["wonder", "trust"],[^6]  
+&nbsp;&nbsp;&nbsp;&nbsp;"arcanum": "Major"[^1],  
+&nbsp;&nbsp;&nbsp;&nbsp;"keywords": ["Beginnings", "Innocence", "Spontaneity"][^2],  
+&nbsp;&nbsp;&nbsp;&nbsp;"description": "The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future."[^3],  
+&nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The eternal child"[^4],  
+&nbsp;&nbsp;&nbsp;&nbsp;"action": "Embarking on a new adventure"[^5],  
+&nbsp;&nbsp;&nbsp;&nbsp;"emotion": ["wonder", "trust"][^6],  
 &nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["eternal child", "free spirit", "faith in the future"][^7] }  
 }  
 
@@ -48,7 +48,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;"description": "The visionary, skillfully wielding the tools of creation. Turning dreams into reality through willpower and inspired action.”,  
 &nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The visionary",  
 &nbsp;&nbsp;&nbsp;&nbsp;"action": ["wielding the tools of creation", "turning dreams into reality"]  
-&nbsp;&nbsp;&nbsp;&nbsp;"entities": ["The tools of creation", "willpower"],[^8]  
+&nbsp;&nbsp;&nbsp;&nbsp;"entities": ["The tools of creation", "willpower"][^8],  
 &nbsp;&nbsp;&nbsp;&nbsp;"emotion": "inspired",  
 &nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["visionary", "skillful", "inspired"] }  
 }  
@@ -62,8 +62,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;"keywords": ["Intuition", "Mystery", "The subconscious mind"],  
 &nbsp;&nbsp;&nbsp;&nbsp;"description": "The guardian of hidden knowledge, sitting between the pillars of duality. Trusting in wisdom that comes through stillness and dreams.",  
 &nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The guardian of hidden knowledge",  
-&nbsp;&nbsp;&nbsp;&nbsp;"action": ["sitting between the pillars of duality", "trusting in wisdom that comes through stillness and dreams"],[^9]  
-&nbsp;&nbsp;&nbsp;&nbsp;"entities": "The pillars of duality",[^10]  
+&nbsp;&nbsp;&nbsp;&nbsp;"action": ["sitting between the pillars of duality", "trusting in wisdom that comes through stillness and dreams"][^9],  
+&nbsp;&nbsp;&nbsp;&nbsp;"entities": "The pillars of duality"[^10],  
 &nbsp;&nbsp;&nbsp;&nbsp;"emotion": "trusting",  
 &nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["guardian", "still"] }  
 }  
