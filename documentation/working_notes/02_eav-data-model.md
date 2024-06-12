@@ -24,7 +24,7 @@
 
 > "0 - The Fool": "Beginnings, innocence, spontaneity. The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future."
 
-```json
+```
 {
     "0 - The Fool": {
        "arcanum": "Major",// [^1]
@@ -40,7 +40,7 @@
 
 > "1 - The Magician": “Manifestation, resourcefulness, power. The visionary, skillfully wielding the tools of creation. Turning dreams into reality through willpower and inspired action.”
 
-```json
+```
 {
     "1 - The Magician": {
         "arcanum: "Major",
@@ -57,7 +57,7 @@
 
 > "2 - The High Priestess": "Intuition, mystery, the subconscious mind. The guardian of hidden knowledge, sitting between the pillars of duality. Trusting in wisdom that comes through stillness and dreams."
 
-```json
+```
 {
     "2 - The High Priestess": {
         "arcanum: "Major",
