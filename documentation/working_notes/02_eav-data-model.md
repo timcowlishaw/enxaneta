@@ -12,7 +12,7 @@ Thinking about using an EAV data model for this planned Python tarot-reading pro
 
 The data model is structured using JSON-like notation, with each card represented as an object containing key-value pairs for its attributes. This allows for a flexible and extensible schema, where new attributes can be added without modifying the underlying database structure.
 
-## A Bogostian-Jodorowskian approache to data model prototyping
+## A Bogostian-Jodorowskian approach to data model prototyping
 
 Taking Ian Bogost and Alejandro Jodorowsky as key influences, I aim to integrate their respective philosophies and works into this data model prototyping, in an effort to derive some broader design principles.[^1]
 
