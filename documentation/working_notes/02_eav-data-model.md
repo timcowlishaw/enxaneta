@@ -213,8 +213,8 @@ Instrument fine-grained usage metrics to identify where expressive power is actu
 
 ```json
 {
-  "name": "0 - The Fool",
-  "number": 0,
+  "name": "0 - The Fool", // Split this into indexical ID number and name?
+  "number": 0, // Maybe everything from here on in should be attributes, and a level down??
   "arcanum": "Major", // Which attributes should be singular, and which should be plural?
   "keywords": [ // The LLMs have supplied three keywords for each card, which is handy
     "Beginnings",
@@ -223,7 +223,7 @@ Instrument fine-grained usage metrics to identify where expressive power is actu
   ],
   "description": "The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future.", // All of the LLM-supplied interpretation string, sans keywords
   "archetypes": "The eternal child", // Possible to have multiple archetypes, or none
-  "named_entities": [
+  "named_entities": [ // Or depicted entities?
     "The eternal child", // The fool the guy, rather than "O - The Fool" the card
     "The universe", // In which the fool has wonder and trust
     "A new adventure"
@@ -260,7 +260,7 @@ Instrument fine-grained usage metrics to identify where expressive power is actu
   ],
   "description": "Feeling trapped by limiting beliefs. Avoiding responsibility for one's circumstances.",
   "archetypes": null,
-  "named_entities": null, // I'm guessing this isn't "eight swords"
+  "named_entities": null, // Or depicted entities? I'm guessing this isn't "eight swords"
   "actions": [
     "Feeling trapped", // Is this an action?
     "Avoiding responsibility",
