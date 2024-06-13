@@ -6,7 +6,7 @@
 
 - **Entity**: The specific object/entity being described (e.g. each of the 78 cards of the tarot deck)
 - **Attribute**: The property or characteristic being stored (e.g. name, arcanum, suit, keywords, meanings, archetypes, actions, characteristics)
-- **Value**: The actual value for that attribute of that entity.
+- **Value**: The actual value for that attribute of that entity
 
 The EAV model is useful when entities have a large, varying set of attributes, and new attributes need to be added dynamically, e.g. medical records with diverse patient data. However, the EAV model complicates querying and reporting due to necessary joins across tables. It also requires additional metadata tables to track attribute definitions. Compared to traditional models, it trades query performance for flexibility.
 
@@ -243,6 +243,6 @@ Instrument fine-grained usage metrics to identify where expressive power is actu
 ## Desmuntar
 
 [^1]: Also now thinking about this in relation to valuation studies, because of course.
-[^2]: A "clinamen" is an inclination, bias, or deviation from an otherwise straight path; representing an unpredictable or spontaneous element introducing indeterminacy to an otherwise deterministic system.
+[^2]: A "clinamen" is an inclination or deviation from an otherwise straight path; representing an unpredictable or spontaneous element introduced to an otherwise deterministic system.
 [^3]: For example, my (repeated) insistance that this program will not handle randomisation or card drawing, but/and require a physical tarot deck to use.
 [^4]: We want to use the structure of the EAV model itself to make a procedural argument about how tarot "works"; the choice of entities, attributes and their relationships should reflect a coherent perspective.
