@@ -111,12 +111,12 @@ Querent.py can use this model to provide querents with a grounding in the tarot'
 
 | No. | Description                                                                     |
 | --- | ------------------------------------------------------------------------------- |
-| 1   | **Embody/encode a philosophical stance**[^4]                                    |
-| 2   | **Facilitate fluid, emergent interpretations**                                  |
-| 3   | **Represent interconnectedness through a dense relational structure**           |
-| 4   | **Treat the (data) model as an interactive, expressive, meaning-making system** |
-| 5   | **Balance structure and openness**                                              |
-| 6   | **Design for transformation, not just information retrieval**                   |
+| 1.  | **Embody/encode a philosophical stance**[^4]                                    |
+| 2.  | **Facilitate fluid, emergent interpretations**                                  |
+| 3.  | **Represent interconnectedness through a dense relational structure**           |
+| 4.  | **Treat the (data) model as an interactive, expressive, meaning-making system** |
+| 5.  | **Balance structure and openness**                                              |
+| 6.  | **Design for transformation, not just information retrieval**                   |
 
 ## Trade-offs between expressiveness & technical performance
 
