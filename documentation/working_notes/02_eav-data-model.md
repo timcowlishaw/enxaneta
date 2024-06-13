@@ -215,7 +215,7 @@ Instrument fine-grained usage metrics to identify where expressive power is actu
 {
   "name": "0 - The Fool",
   "number": 0,
-  "arcanum": "Major",
+  "arcanum": "Major", // Which attributes should be singular, and which should be plural?
   "keywords": [ // The LLMs have supplied three keywords for each card, which is handy
     "Beginnings",
     "Innocence",
@@ -226,11 +226,11 @@ Instrument fine-grained usage metrics to identify where expressive power is actu
   "named_entities": [
     "The eternal child", // The fool the guy, rather than "O - The Fool" the card
     "The universe", // In which the fool has wonder and trust
-    "A new adventure",
-  ]
+    "A new adventure"
+  ],
   "actions": "Embarking on a new adventure", // Verbs, basically
-  "emotions": [ // [?] Ontologically trickier; how do emotions work?
-    "innocence", // [?] Is "innocent" an emotion?
+  "emotions": [ // Ontologically trickier; how do emotions work?
+    "innocence", // Is "innocent" an emotion?
     "wonder",
     "trust"
   ],
@@ -252,7 +252,7 @@ Instrument fine-grained usage metrics to identify where expressive power is actu
 {
   "name": "The Eight of Swords",
   "number": 8,
-  "arcanum": "Minor", // [?] Which attributes should be singular, and which should be plural?
+  "arcanum": "Minor",
   "keywords": [
     "Restriction",
     "Imprisonment",
@@ -262,12 +262,10 @@ Instrument fine-grained usage metrics to identify where expressive power is actu
   "archetypes": null,
   "named_entities": null, // I'm guessing this isn't "eight swords"
   "actions": [
-    "Feeling trapped", // [?] Is this an action?
+    "Feeling trapped", // Is this an action?
     "Avoiding responsibility",
   ],
-  "emotions": [
-    "Feeling trapped", // [?] Is this an emotion?
-  ],
+  "emotions": "Feeling trapped", // Is this an emotion?
   "characteristics": [
     "restricted",
     "imprisoned",
@@ -287,7 +285,7 @@ Instrument fine-grained usage metrics to identify where expressive power is actu
 {
   "name": "The Knight of Pentacles",
   "arcanum": "Minor",
-  "court_card": true, // [?] Does this make sense as a Boolean? Might be a better label for it, too.
+  "court_card": true, // Does this make sense as a Boolean? Might be a better label for it, too.
   "keywords": [
     "Reliability",
     "Hard work",
@@ -295,9 +293,7 @@ Instrument fine-grained usage metrics to identify where expressive power is actu
   ],
   "description": "The committed and responsible worker, steadily pursuing his goals with patience and determination. Bringing ideas into physical form through discipline.",
   "archetypes": "The committed and responsible worker",
-  "named_entities": [
-    "The committed and responsible worker", // [?] The knight pentacles the guy, as opposed to "The Knight of Pentacles" the card?
-  ],
+  "named_entities": "The committed and responsible worker", // The knight of pentacles the guy, as opposed to "The Knight of Pentacles" the card?
   "actions": [
     "Steadily pursuing his goals",
     "Bringing ideas into physical form",
