@@ -1,20 +1,20 @@
-# Working Notes 2: Roughing Out an EAV Data Model
+# Working Notes 2: Roughing Out a Data Model
 
 ## Introduction
 
-Thinking about using an EAV data model for this planned Python tarot-reading program.
+ Considering an Entity-Attribute-Value (EAV) data model for this Python tarot-reading program, which is suited for entities with a large, varying set of attributes. Instead of having a fixed table structure with columns for each possible attribute, the EAV model stores data as rows with three main columns:
 
-**Entities**: The 78 cards of the tarot deck, divided into 22 Major Arcana and 56 Minor Arcana.
+- **Entity**: The specific object/entity being described (e.g. each of the 78 cards of the tarot deck)
+- **Attribute**: The property or characteristic being stored (e.g. name, arcanum, suit, keywords, meanings, archetypes, actions, characteristics)
+- **Value**: The actual value for that attribute of that entity.
 
-**Attributes**: Various properties or characteristics associated with each card, such as name, number, arcanum, rank, suit, keywords, meanings, journey stage, outlook, emotions, actions, outcomes, characteristics, advice, archetypes, and entities (related cards).
+The EAV model is useful when entities have a large, varying set of attributes, and new attributes need to be added dynamically, e.g. medical records with diverse patient data. However, the EAV model complicates querying and reporting due to necessary joins across tables. It also requires additional metadata tables to track attribute definitions. Compared to traditional models, it trades query performance for flexibility.
 
-**Values**: The actual data or content corresponding to each attribute for a given card.
-
-The data model is structured using JSON-like notation, with each card represented as an object containing key-value pairs for its attributes. This allows for a flexible and extensible schema, where new attributes can be added without modifying the underlying database structure.
+Our proposed EAV model uses JSON-like notation, with each card as an object with key-value pairs. This allows for a flexible and extensible schema, where new attributes can be added without modifying the underlying database structure.
 
 ## A Bogostian-Jodorowskian approach to data model prototyping
 
-Taking Ian Bogost and Alejandro Jodorowsky as key influences, I aim to integrate their respective philosophies and works into this data model prototyping, in an effort to derive some broader design principles.[^1]
+Taking Ian Bogost and Alejandro Jodorowsky as key influences, I aim to integrate their respective philosophies and works into this round of EAV data model prototyping, in an effort to derive some broader design principles.[^1]
 
 The main goal is to create a data model that is both technically robust and philosophically/ontologically aligned with the spirit of tarot as a tool for self-discovery and personal growth. By stress-testing our understandings of these contrasting influences, we can strengthen the EAV model to better fulfil its intended purpose.
 
@@ -23,24 +23,19 @@ The main goal is to create a data model that is both technically robust and phil
 A "Bogostian" approach to data models focuses on core mechanics and processes over data storage. To extend this to the EAV model, we need to:
 
 1. Consider the essential operations and interactions required for a "meaningful" tarot reading. Focus on how entities, attributes, and values interact systematically.
-
 2. Design the EAV model around key actions, such as drawing cards, laying spreads, and interpreting meanings. Ensure the data structure facilitates these central procedures.
-
 3. Embrace constraints and limitations. Intentionally limit the scope of the entities, attributes, and relationships represented in the model, as a way to force creative thinking about what is _actually_ essential.
-
 4. Incorporate a "clinamen"[^2], an exemption from strict adherence to constraints, providing (limited) flexibility for querents to personalise or supplement the model. The model should be a guide, not a rigid prescription.
-
 5. Model interrelated objects. View the EAV structure as a network of interconnected entity, attribute, and value objects that interact systematically, not just as abstract data types.
-
 6. Recognise that the EAV model and the program's algorithms embody or encode a specific perspective on tarot and divination. Reflect on the ontology the model advances, and how interactions could shape quarents' beliefs.
-
 7. Approach data model prototyping as philosophical "carpentry". Engage directly with the core materials, implementing EAV prototypes in a "low-level" language to grapple with the core complexities. Cycle between implementing prototypes, reflecting on the results, and refining the design based on those insights.
 
-Key parts of Bogost's work, here, are **object-oriented ontology**, **procedural rhetoric**, the embrace of **Oulipian constraints**, and **philosophical carpentry**.
+Key parts of Bogost's work, here, are **procedural rhetoric**, the embrace of **Oulipian constraints**, and **philosophical carpentry**.
 
-Bogost's "_object-oriented ontology_" suggests this framework should try to model the tarot in terms of interrelated objects; complex networks of objects and processes that interact with each other, not just the user/querent. We will need to map out the EAV structure as a network of interconnected entity, attribute, and value objects that interact _systematically_, not just as abstract data types. OOO sees objects as having hidden depths and dynamic interactions. Extending this to the tarot, the EAV model should allow for card meanings and relationships to shift based on context. Attributes could have open-ended or probabilistic values (YIKES) rather than fixed meanings. The program would focus users on how card objects connect, constrain, and create meaning for each other, inviting exploration of their hidden depths and valences. In doing so, it would enable users to experience tarot as an emergent system of objects rather than just a human interpretive framework. Readings would be generative and context-dependent rather than fixed or didactic.
+Bogost's approach suggests modeling the tarot as a network of interacting objects and processes. We will need to map out the EAV structure as a network of interconnected entity, attribute, and value objects that interact _systematically_, not just as abstract data types. OOO sees objects as having hidden depths and dynamic interactions. Extending this to the tarot, the EAV model should allow for card meanings and relationships to shift based on context. Attributes could have open-ended or probabilistic values (YIKES) rather than fixed meanings. The program would focus users on how card objects connect, constrain, and create meaning for each other, inviting exploration of their hidden depths and valences. In doing so, it would enable users to experience tarot as an emergent system of objects rather than just a human interpretive framework. Readings would be generative and context-dependent rather than fixed or didactic.
 
-Bogost's work on "_procedural rhetoric_" involves identifying processes and systems that exist in the real world and representing them in interactive digital form, so people can explore and learn about those systems through play. This means focusing on how the entities, attributes and values interact systematically, not just as abstract data types.
+His work on "_procedural rhetoric_" involves identifying processes and systems that exist in the real world and representing them in interactive digital form, so people can explore and learn about those systems through play. This means focusing on how the entities, attributes and values interact systematically, not just as abstract data types.
+
 In the context of an EAV model for a tarot-reading program, procedural rhetoric manifests in how the data model's structure and the algorithms processing it implement a specific perspective on tarot and divination. The model is not just a database, but a representation/model of a belief system or ontology. It becomes a kind of "writing machine" that generates meaning through its structure and constraints, and not just through the literal card definitions it contains.
 
 So what kind of procedural rhetoric does this EAV model embody or encode? It will carry and represent certain ideas about the tarot, whether tacitly or explicitly, through its structure and dynamics. Bogost would encourage reflecting on what worldview the model advances, and how interaction with it could shape users' beliefs. The key, here, is that the model itself, not just the written descriptions, visual design, or user interface around it, can make persuasive claims about tarot and how it works. **This might include:** which card attributes are included and excluded (and how they relate), the specific randomisation and procedural generation techniques used (if any[^3]), encoded "rules" about which cards or combinations are more or less significant.
@@ -93,17 +88,11 @@ For Jodorowsky, the EAV structure would become a dense semantic network reflecti
 
 - **Computational logic vs. esotericism**: A need to navigate/reconcile the trade-offs between rational, formal structures and the numinous aspects of tarot practice.
 
-#### Admixtures/blends
-
-- **Oulipics ⇆ fluid interpretations**: Defining "fixed" core entities and relationships (as the constraints within which fluid interpretations can emerge), but allowing for open-ended attribute values and user-generated attributes.Using constraints to highlight patterns. Balancing predefined and emergent meanings. Treating the data model itself as an expressive medium (!).
-
-- **OOO ⇆ dense semantic network**: Treating each tarot card as an object with withdrawn potential, in Bogostian terms, only partially revealed through its attributes and relationships; but modeling the tarot system as a _dense relational network_. Tracking inter-object resonances (elemenetal conflict, archetypal reinforcements)? Modeling the querent as an object among objects (YIKES, but there's often a card to represent the querent, right?). Generating provocative questions and prompts for the user to reflect on, extending the reading beyond the immediate session in a sustained dialogue.
-
 ## Overall summary/sales pitch
 
-We're shooting for a kind of interactive, procedural "nomadic cathedral"; a data structure that through its design and constraints generates emergent and evocative meanings in dialogue (perhaps literally) with each individual querent. Procedurally enacting tarot's worldview, in particular, this interplay of structure and openness.
+We're shooting for a kind of interactive, procedural "nomadic cathedral"; a data structure that through its design and constraints generates emergent and evocative meanings in dialogue (perhaps literally) with each individual querent. We want to enact the tarot's worldview procedurally; focusing, in particular, on the interplay of structure and openness.
 
-The program could enact OOO (???) by modeling the tarot system as a network of withdrawn yet interacting object-entities (???), decentring the querent as one object among many. At the same time, it would realize Jodorowsky's vision by surfacing the rich symbolic resonances between cards, and using this semantic density to provoke, jostle, and interpellate the querent, eliciting self-reflection.
+The program could "enact" OOO (???) by modeling the tarot system as a network of withdrawn yet interacting object-entities (???), decentring the querent as one object among many. At the same time, we want to surface the rich symbolic resonances between cards, and using the system's semantic density to provoke, jostle, and interpellate the querent, eliciting self-reflection (yessssss).
 
 Querent.py can use this model to provide querents with a grounding in the tarot's core concepts and patterns, while empowering them to discover their own unique interpretations and associations. Queries and algorithms can highlight connections across the structured entities, surfacing insights and creative readings. The program becomes a tool for both learning the tarot's constraints and exploring its fluid interpretive potential, synthesising Bogost's and Jodorowsky's approaches.
 
@@ -122,11 +111,9 @@ Querent.py can use this model to provide querents with a grounding in the tarot'
 
 Probably going to be the main challenge, with multiple trade-offs to be made.
 
-To capture the fluid interconnections of the tarot, the EAV model needs to represent complex relationships (numerological, elemental, archetypal, etc.) between cards. This might involve relational attributes, mapping tables, and/or dynamic interpretation algorithms.
+To capture the fluid interconnections of the tarot, the EAV model needs to represent complex relationships (numerological, elemental, archetypal, etc.) between cards. This might involve relational attributes, mapping tables, and/or dynamic interpretation algorithms. 
 
-To align with Jodorowsky's participatory, evolutionary approach, and enable emergence and querent-supplied content, the model needs to support open-ended attribute values, user-defined attributes, and the accumulation of personal reflections over time.
-
-At the same time, Bogost's concept of procedural rhetoric suggests the EAV design can make arguments about the nature of tarot, not just store data. The choice of entities, attributes, and their relations will be an expressive medium.
+To align with Jodorowsky's participatory, evolutionary approach, and enable emergence and querent-supplied content, the model needs to support open-ended attribute values, user-defined attributes, and the accumulation of personal reflections over time. At the same time, Bogost's concept of procedural rhetoric suggests the EAV design can make arguments about the nature of tarot, not just store data. The choice of entities, attributes, and their relations will be an expressive medium.
 
 On the technical side, querying and aggregating data across EAV tables can be complex and inefficient compared to conventional schemas, requiring many joins. As the tarot data grows, the model may struggle to deliver responsive query times, especially for real-time, user-facing features.
 
@@ -134,9 +121,7 @@ A lack of strict typing and data validation in EAV can lead to data quality issu
 
 ### Managing these trade-offs
 
-With lots of people inhaling through their teeth at the prospect EAV data models, there's the possibility of adopting a hybrid approach, using conventional schemas for stable, high-volume data and reserving EAV for truly dynamic domains.Card definitions, for example, could be conventionally modeled, with EAV for interpretations and user data.
-
-Aggressively index EAV tables on commonly filtered attributes and pre-materialise frequent aggregation patterns.Judicious denormalisation can also accelerate query performance in exchange for update overhead and storage.
+With lots of people inhaling through their teeth (and shaking their head ruefully) at the prospect of an EAV data model, there's also the possibility of adopting a hybrid approach, using conventional schemas for stable, high-volume data and reserving EAV for truly dynamic domains. Card _definitions_, for example, could be conventionally modelled, with EAV for interpretations and user data.
 
 Push computation from query-time to data ingestion-time where possible. Batch process tarot arrangements and surface key insights to users via caching, rather than computing on-demand. Let the expressive data accrue, and mine it asynchronously (lol).
 
@@ -258,6 +243,6 @@ Instrument fine-grained usage metrics to identify where expressive power is actu
 ## Desmuntar
 
 [^1]: Also now thinking about this in relation to valuation studies, because of course.
-[^2]: DEFINE CLINAMEN HERE.
+[^2]: A "clinamen" is an inclination, bias, or deviation from an otherwise straight path; representing an unpredictable or spontaneous element introducing indeterminacy to an otherwise deterministic system.
 [^3]: For example, my (repeated) insistance that this program will not handle randomisation or card drawing, but/and require a physical tarot deck to use.
 [^4]: We want to use the structure of the EAV model itself to make a procedural argument about how tarot "works"; the choice of entities, attributes and their relationships should reflect a coherent perspective.
