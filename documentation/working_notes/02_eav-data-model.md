@@ -1,5 +1,7 @@
 # Working Notes 2: Roughing Out an EAV Data Model
 
+## Introduction
+
 **Entities**: The 78 cards of the tarot deck, divided into 22 Major Arcana and 56 Minor Arcana.
 
 **Attributes**: Various properties or characteristics associated with each card, such as name, number, arcanum, rank, suit, keywords, meanings, journey stage, outlook, emotions, actions, outcomes, characteristics, advice, archetypes, and entities (related cards).
@@ -44,8 +46,10 @@ Analysis of the kinds of entities, attributes, and relationships that exist in t
 
 Instead of starting with an exhaustive list of entities, attributes and values, consider the fundamental operations and interactions the EAV model needs to enable for a meaningful tarot reading experience. Work backwards from concrete examples of desired readings. This means focusing on how the entities, attributes and values interact systematically, not just as abstract data types.
 
+Design the EAV model around the key actions users take when interacting with the tarot, such as drawing cards, laying spreads, and interpreting meanings. Ensure the data structure facilitates these core procedures.
+
 An Oulipian approach, using constraints and limitations productively. Bogost argues that design constraints and material limitations, rather than total freedom, are a necessary precondition to creativity and meaningful play.
-What are the relevant constraints and material limitations? (clear links here to the Reconstrained Design approach, and permacomputing) Rather than aiming for maximum flexibility, intentionally limit the scope of entities, attributes and relationships represented in the model. Constraints can force innovative thinking about what is truly essential.
+What are the relevant constraints and material limitations? (clear links here to the "Reconstrained Design" approach, and work on permacomputing) Rather than aiming for maximum flexibility, intentionally limit the scope of entities, attributes and relationships represented in the model. Constraints can force innovative thinking about what is truly essential.
 
 **This might involve:** limiting the number of attributes per entity, restricting value types or ranges for certain attributes, or defining a fixed set of high-level entitity types (e.g. card, suit, number)
 
@@ -54,6 +58,8 @@ How can we allow for "clinamen"? A swerve from strict adherence to constraints, 
 Treat the data model itself as a kind of "writing machine" that generates meaning through its structure and constraints, not just through the literal card definitions it contains.
 
 Thoughtfully chosen constraints can foster a greater awareness of the core elements and dynamics of tarot. They can enable a process of working through the essential aspects of a reading.
+
+- [?] How can we _operationalise_ constraints? Limit attributes or force groupings to channel querent engagement?
 
 Modelling the world in terms of interrelated objects; complex networks of objects and processes that interact with each other, not just the user/querent. Need to map out the EAV structure as a network of interconnected entity, attribute, and value objects that interact _systematically_, not just as abstract data types.
 
@@ -136,25 +142,25 @@ Aiming for:
 
 #### Synergies
 
-**Embodying worldviews through structure**: Bogost argues that the very structure and rules of a computational system can express ideas and make arguments. Similarly, Jodorowsky sees the structure of the tarot deck itself, with its arcana and suits, as embodying an esoteric worldview. An EAV model informed by both approaches would embed (encode) a perspective on tarot and divination in its core entities, attributes and relationships.
+- **Embodying worldviews through structure**: Bogost argues that the very structure and rules of a computational system can express ideas and make arguments. Similarly, Jodorowsky sees the structure of the tarot deck itself, with its arcana and suits, as embodying an esoteric worldview. An EAV model informed by both approaches would embed (encode) a perspective on tarot and divination in its core entities, attributes and relationships.
 
-**Emergent meanings through interaction**: For Bogost, the persuasive power of procedural rhetoric emerges through the player's interaction with the rule-based system. Likewise, Jodorowsky emphasises the interaction between the tarot's symbolism and the reader's intuition in generating insights. An EAV model combining these ideas would be designed to enable fluid, emergent interpretations through the dynamic interaction of card data, spreads, and user reflection.
+- **Emergent meanings through interaction**: For Bogost, the persuasive power of procedural rhetoric emerges through the player's interaction with the rule-based system. Likewise, Jodorowsky emphasises the interaction between the tarot's symbolism and the reader's intuition in generating insights. An EAV model combining these ideas would be designed to enable fluid, emergent interpretations through the dynamic interaction of card data, spreads, and user reflection.
 
-**Constraining for expression**: Bogost highlights how creative constraints in a computational system can facilitate meaningful expression, not just limit it. Jodorowsky works within the constraints of the tarot's traditional structure and symbolism to generate new associations and ideas. An EAV model embracing this principle would use the constraints of the 78 cards and their established attributes to inspire insight, not just as a limitation.
+- **Constraining for expression**: Bogost highlights how creative constraints in a computational system can facilitate meaningful expression, not just limit it. Jodorowsky works within the constraints of the tarot's traditional structure and symbolism to generate new associations and ideas. An EAV model embracing this principle would use the constraints of the 78 cards and their established attributes to inspire insight, not just as a limitation. (might we also want to constrain the file size, in line with permacomputing etc.?)
 
 #### Conflicts/tensions
 
-**Procedural vs. associative**: Bridging procedural rhetoric and associative (intuitive?) leaps through the strict entities and attributes of an EAV model may be challenging, and could limit some of the free-form nature of Jodorowsky's "process" (lol).
+- **Procedural vs. associative**: Bridging procedural rhetoric and associative (intuitive?) leaps through the strict entities and attributes of an EAV model may be challenging, and could limit some of the free-form nature of Jodorowsky's "process" (lol).
 
-**Authorial intent vs. reader response**: Querent.py's EAV model will need to balance embedding/encoding a particular perspective with allowing for reader-generated insights and associations.
+- **Authorial intent vs. reader response**: Querent.py's EAV model will need to balance embedding/encoding a particular perspective with allowing for reader-generated insights and associations.
 
-**Computational logic vs. esotericism**: A need to navigate/reconcile the trade-offs between rational, formal structures and the numinous aspects of tarot practice.
+- **Computational logic vs. esotericism**: A need to navigate/reconcile the trade-offs between rational, formal structures and the numinous aspects of tarot practice.
 
 #### Admixtures/blends
 
-**Oulipics ⇆ fluid interpretations**: Defining "fixed" core entities and relationships (as the constraints within which fluid interpretations can emerge), but allowing for open-ended attribute values and user-generated attributes.Using constraints to highlight patterns. Balancing predefined and emergent meanings. Treating the data model itself as an expressive medium (!).
+- **Oulipics ⇆ fluid interpretations**: Defining "fixed" core entities and relationships (as the constraints within which fluid interpretations can emerge), but allowing for open-ended attribute values and user-generated attributes.Using constraints to highlight patterns. Balancing predefined and emergent meanings. Treating the data model itself as an expressive medium (!).
 
-**OOO ⇆ dense semantic network**: Treating each tarot card as an object with withdrawn potential, in Bogostian terms, only partially revealed through its attributes and relationships; but modeling the tarot system as a _dense relational network_. Tracking inter-object resonances (elemenetal conflict, archetypal reinforcements)? Modeling the querent as an object among objects (YIKES, but there's often a card to represent the querent, right?). Generating provocative questions and prompts for the user to reflect on, extending the reading beyond the immediate session in a sustained dialogue.
+- **OOO ⇆ dense semantic network**: Treating each tarot card as an object with withdrawn potential, in Bogostian terms, only partially revealed through its attributes and relationships; but modeling the tarot system as a _dense relational network_. Tracking inter-object resonances (elemenetal conflict, archetypal reinforcements)? Modeling the querent as an object among objects (YIKES, but there's often a card to represent the querent, right?). Generating provocative questions and prompts for the user to reflect on, extending the reading beyond the immediate session in a sustained dialogue.
 
 ## Overall summary/sales pitch
 
@@ -166,28 +172,80 @@ Querent.py can use this model to provide querents with a grounding in the tarot'
 
 ## Core design principles/criteria
 
-> 1. **Embody/encode a philosophical stance**
+> 1. **Embody/encode a philosophical stance**[^1]
 > 2. **Facilitate fluid, emergent interpretations**
 > 3. **Represent interconnectedness through a dense relational structure**
 > 4. **Treat the (data) model as an interactive, expressive, meaning-making system**
 > 5. **Balance structure and openness**
 > 6. **Design for transformation, not just information retrieval**
 
-## A couple of examples:
+## Trade-offs between expressiveness & technical performance
+
+Probably going to be the main challenge, with multiple trade-offs to be made.
+
+To capture the fluid interconnections of the tarot, the EAV model needs to represent complex relationships (numerological, elemental, archetypal, etc.) between cards. This might involve relational attributes, mapping tables, and/or dynamic interpretation algorithms.
+
+To align with Jodorowsky's participatory, evolutionary approach, and enable emergence and querent-supplied content, the model needs to support open-ended attribute values, user-defined attributes, and the accumulation of personal reflections over time.
+
+At the same time, Bogost's concept of procedural rhetoric suggests the EAV design can make arguments about the nature of tarot, not just store data. The choice of entities, attributes, and their relations will be an expressive medium.
+
+On the technical side, querying and aggregating data across EAV tables can be complex and inefficient compared to conventional schemas, requiring many joins. As the tarot data grows, the model may struggle to deliver responsive query times, especially for real-time, user-facing features.
+
+A lack of strict typing and data validation in EAV can lead to data quality issues, hampering the reliability and consistency of tarot interpretations, even in single-querent contexts. The combinatorial explosion of possible tarot arrangements and interpretations enabled by an expressive EAV model may exceed feasible computational limits. Mitigations like partial indexes, materialized views, and ETL checks add development overhead. Intelligent constraints and heuristics will be needed to surface meaningful patterns without excessive latency.
+
+### Managing these trade-offs
+
+With lots of people inhaling through their teeth at the prospect EAV data models, there's the possibility of adopting a hybrid approach, using conventional schemas for stable, high-volume data and reserving EAV for truly dynamic domains.Card definitions, for example, could be conventionally modeled, with EAV for interpretations and user data.
+
+Aggressively index EAV tables on commonly filtered attributes and pre-materialize frequent aggregation patterns.Judicious denormalisation can also accelerate query performance in exchange for update overhead and storage.
+
+Push computation from query-time to data ingestion-time where possible. Batch process tarot arrangements and surface key insights to users via caching, rather than computing on-demand. Let the expressive data accrue, and mine it asynchronously (lol).
+
+Provide clear user guidance on the scope of dynamism and emergence in the model. Expose the philosophical tradeoffs in the UI, so users understand what is fixed vs. fluid. Make the EAV model's expressiveness a feature, not just an implementation detail (love this, yes).
+
+Instrument fine-grained usage metrics to identify where expressive power is actually needed and valued. Progressively optimise performance based on empirical user behavior. _The EAV model should be as expressive as necessary, but no more._
+
+## Examples:
 
 ### 0. The Fool
 
 > "0 - The Fool": "Beginnings, innocence, spontaneity. The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future."
 
+```json
+    {
+      "name": "0 - The Fool",
+      "number": 0,
+      "arcanum": "Major",
+      "keywords": [
+        "Beginnings",
+        "Innocence",
+        "Spontaneity"
+      ],
+      "description": "The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future.",
+      "archetype": "The eternal child",
+      "action": "Embarking on a new adventure",
+      "emotions": [
+        "wonder",
+        "trust",
+      ],
+      "characteristics": [
+        "eternal child",
+        "free spirit",
+        "faith in the future"
+      ],
+    }
+```
+      
+
 {"0 - The Fool": {  
-&nbsp;&nbsp;&nbsp;&nbsp;"number": 0,
-&nbsp;&nbsp;&nbsp;&nbsp;"arcanum": "Major"[^1],  
-&nbsp;&nbsp;&nbsp;&nbsp;"keywords": ["Beginnings", "Innocence", "Spontaneity"][^2],  
-&nbsp;&nbsp;&nbsp;&nbsp;"description": "The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future."[^3],  
-&nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The eternal child"[^4],  
-&nbsp;&nbsp;&nbsp;&nbsp;"action": "Embarking on a new adventure"[^5],  
-&nbsp;&nbsp;&nbsp;&nbsp;"emotion": ["wonder", "trust"][^6],  
-&nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["eternal child", "free spirit", "faith in the future"][^7] }  
+&nbsp;&nbsp;&nbsp;&nbsp;"number": 0,  
+&nbsp;&nbsp;&nbsp;&nbsp;"arcanum": "Major"[^2],  
+&nbsp;&nbsp;&nbsp;&nbsp;"keywords": ["Beginnings", "Innocence", "Spontaneity"][^3],  
+&nbsp;&nbsp;&nbsp;&nbsp;"description": "The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future."[^4],  
+&nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The eternal child"[^5],  
+&nbsp;&nbsp;&nbsp;&nbsp;"action": "Embarking on a new adventure"[^6],  
+&nbsp;&nbsp;&nbsp;&nbsp;"emotion": ["wonder", "trust"][^7],  
+&nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["eternal child", "free spirit", "faith in the future"][^8] }  
 }  
 
 ### 1. The Magician
@@ -195,13 +253,13 @@ Querent.py can use this model to provide querents with a grounding in the tarot'
 > "1 - The Magician": “Manifestation, resourcefulness, power. The visionary, skillfully wielding the tools of creation. Turning dreams into reality through willpower and inspired action.”
 
 {"1 - The Magician": {  
-&nbsp;&nbsp;&nbsp;&nbsp;"number": 1,
+&nbsp;&nbsp;&nbsp;&nbsp;"number": 1,  
 &nbsp;&nbsp;&nbsp;&nbsp;"arcanum: "Major",  
 &nbsp;&nbsp;&nbsp;&nbsp;"keywords": ["Manifestation", "Resourcefulness", "Power"],  
 &nbsp;&nbsp;&nbsp;&nbsp;"description": "The visionary, skillfully wielding the tools of creation. Turning dreams into reality through willpower and inspired action.”,  
 &nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The visionary",  
 &nbsp;&nbsp;&nbsp;&nbsp;"action": ["wielding the tools of creation", "turning dreams into reality"]  
-&nbsp;&nbsp;&nbsp;&nbsp;"entities": ["The tools of creation", "willpower"][^8],  
+&nbsp;&nbsp;&nbsp;&nbsp;"entities": ["The tools of creation", "willpower"][^9],  
 &nbsp;&nbsp;&nbsp;&nbsp;"emotion": "inspired",  
 &nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["visionary", "skillful", "inspired"] }  
 }  
@@ -211,23 +269,24 @@ Querent.py can use this model to provide querents with a grounding in the tarot'
 > "2 - The High Priestess": "Intuition, mystery, the subconscious mind. The guardian of hidden knowledge, sitting between the pillars of duality. Trusting in wisdom that comes through stillness and dreams."
 
 {"2 - The High Priestess": {  
-&nbsp;&nbsp;&nbsp;&nbsp;"number": 2,
+&nbsp;&nbsp;&nbsp;&nbsp;"number": 2,  
 &nbsp;&nbsp;&nbsp;&nbsp;"arcanum: "Major",  
 &nbsp;&nbsp;&nbsp;&nbsp;"keywords": ["Intuition", "Mystery", "The subconscious mind"],  
 &nbsp;&nbsp;&nbsp;&nbsp;"description": "The guardian of hidden knowledge, sitting between the pillars of duality. Trusting in wisdom that comes through stillness and dreams.",  
 &nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The guardian of hidden knowledge",  
 &nbsp;&nbsp;&nbsp;&nbsp;"action": ["sitting between the pillars of duality", "trusting in wisdom that comes through stillness and dreams"],  
-&nbsp;&nbsp;&nbsp;&nbsp;"entities": "The pillars of duality"[^9],  
+&nbsp;&nbsp;&nbsp;&nbsp;"entities": "The pillars of duality"[^10],  
 &nbsp;&nbsp;&nbsp;&nbsp;"emotion": "trusting",  
 &nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["guardian", "still"] }  
 }  
 
-[^1]: Should any/all of these attributes be singular or plural?
-[^2]: I think the LLMs have provided three primary keywords for each card, which is handy. Need to look into the etymology and origins of "keyword", as a label. If these are immutable features, it'd be good to have them as something we can focus in on, and that user-querent annotations can get stuck to.
-[^3]: All of the provided interpretation string, minus the initial keywords/themes.
-[^4]: Is there only ever one archetype for each card? Is the titular entity also an entity, distinct from the card object? Do we need to distinguish between The Fool (the Major Arcanum) and The Fool (the depicted, eponymous entity)? What would it be like if we _didn't_, ontologically?
-[^5]: Verbs, basically.
-[^6]: Trickier. What is the emotion attached to? Is the emotion a property of the card, the archetype, a given entity, or an action? I guess we're aiming for a flat ontology, where it's just kind of floating around in the general vicinity, as more of an _atmosphere_.
-[^7]: Difference between emotion and characteristics might be tricky, even if these are qualities of the card-entity.
-[^8]: Can an attribute of an entity be an entity? Entityception. I _think_ "the tools of creation" makes sense here. "Willpower" might not.
-[^9]: I'm assuming this doesn't need to be: `"entitites": ["One of the pillars of duality", "The other pillar of duality"]`, but who knows.
+[^1]: We want to use the structure of the EAV model itself to make a procedural argument about how tarot "works"; the choice of entities, attributes and their relationships should reflect a coherent perspective.
+[^2]: Should any/all of these attributes be singular or plural?
+[^3]: I think the LLMs have provided three primary keywords for each card, which is handy. Need to look into the etymology and origins of "keyword", as a label. If these are immutable features, it'd be good to have them as something we can focus in on, and that user-querent annotations can get stuck to.
+[^4]: All of the provided interpretation string, minus the initial keywords/themes.
+[^5]: Is there only ever one archetype for each card? Is the titular entity also an entity, distinct from the card object? Do we need to distinguish between The Fool (the Major Arcanum) and The Fool (the depicted, eponymous entity)? What would it be like if we _didn't_, ontologically?
+[^6]: Verbs, basically.
+[^7]: Trickier. What is the emotion attached to? Is the emotion a property of the card, the archetype, a given entity, or an action? I guess we're aiming for a flat ontology, where it's just kind of floating around in the general vicinity, as more of an _atmosphere_.
+[^8]: Difference between emotion and characteristics might be tricky, even if these are qualities of the card-entity.
+[^9]: Can an attribute of an entity be an entity? Entityception. I _think_ "the tools of creation" makes sense here. "Willpower" might not.
+[^10]: I'm assuming this doesn't need to be: `"entities": ["One of the pillars of duality", "The other pillar of duality"]`, but who knows.
