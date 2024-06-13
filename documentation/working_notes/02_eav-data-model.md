@@ -62,8 +62,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;"keywords": ["Intuition", "Mystery", "The subconscious mind"],  
 &nbsp;&nbsp;&nbsp;&nbsp;"description": "The guardian of hidden knowledge, sitting between the pillars of duality. Trusting in wisdom that comes through stillness and dreams.",  
 &nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The guardian of hidden knowledge",  
-&nbsp;&nbsp;&nbsp;&nbsp;"action": ["sitting between the pillars of duality", "trusting in wisdom that comes through stillness and dreams"][^9],  
-&nbsp;&nbsp;&nbsp;&nbsp;"entities": "The pillars of duality"[^10],  
+&nbsp;&nbsp;&nbsp;&nbsp;"action": ["sitting between the pillars of duality", "trusting in wisdom that comes through stillness and dreams"],  
+&nbsp;&nbsp;&nbsp;&nbsp;"entities": "The pillars of duality"[^9],  
 &nbsp;&nbsp;&nbsp;&nbsp;"emotion": "trusting",  
 &nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["guardian", "still"] }  
 }  
