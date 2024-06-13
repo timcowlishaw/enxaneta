@@ -212,81 +212,114 @@ Instrument fine-grained usage metrics to identify where expressive power is actu
 > "0 - The Fool": "Beginnings, innocence, spontaneity. The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future."
 
 ```json
-    {
-      "name": "0 - The Fool",
-      "number": 0,
-      "arcanum": "Major",
-      "keywords": [
-        "Beginnings",
-        "Innocence",
-        "Spontaneity"
-      ],
-      "description": "The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future.",
-      "archetype": "The eternal child",
-      "action": "Embarking on a new adventure",
-      "emotions": [
-        "wonder",
-        "trust",
-      ],
-      "characteristics": [
-        "eternal child",
-        "free spirit",
-        "faith in the future"
-      ],
-    }
+{
+  "name": "0 - The Fool",
+  "number": 0,
+  "arcanum": "Major",
+  "keywords": [ // The LLMs have supplied three keywords for each card, which is handy
+    "Beginnings",
+    "Innocence",
+    "Spontaneity"
+  ],
+  "description": "The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future.", // All of the LLM-supplied interpretation string, sans keywords
+  "archetypes": "The eternal child", // Possible to have multiple archetypes, or none
+  "named_entities": [
+    "The eternal child", // The fool the guy, rather than "O - The Fool" the card
+    "The universe", // In which the fool has wonder and trust
+    "A new adventure",
+  ]
+  "actions": "Embarking on a new adventure", // Verbs, basically
+  "emotions": [ // [?] Ontologically trickier; how do emotions work?
+    "innocence", // [?] Is "innocent" an emotion?
+    "wonder",
+    "trust",
+  ],
+  "characteristics": [ // States or qualities, things that could be otherwise
+    "innocent",
+    "spontaneous",
+    "eternal child",
+    "free spirit",
+    "faith in the future"
+  ],
+}
 ```
-      
 
-{"0 - The Fool": {  
-&nbsp;&nbsp;&nbsp;&nbsp;"number": 0,  
-&nbsp;&nbsp;&nbsp;&nbsp;"arcanum": "Major"[^2],  
-&nbsp;&nbsp;&nbsp;&nbsp;"keywords": ["Beginnings", "Innocence", "Spontaneity"][^3],  
-&nbsp;&nbsp;&nbsp;&nbsp;"description": "The eternal child, filled with wonder and trust in the universe. Embarking on a new adventure with a free spirit and faith in the future."[^4],  
-&nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The eternal child"[^5],  
-&nbsp;&nbsp;&nbsp;&nbsp;"action": "Embarking on a new adventure"[^6],  
-&nbsp;&nbsp;&nbsp;&nbsp;"emotion": ["wonder", "trust"][^7],  
-&nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["eternal child", "free spirit", "faith in the future"][^8] }  
-}  
+### The Eight of Swords
 
-### 1. The Magician
+> "The Eight of Swords": "Restriction, imprisonment, powerlessness. Feeling trapped by limiting beliefs. Avoiding responsibility for one's circumstances."
 
-> "1 - The Magician": “Manifestation, resourcefulness, power. The visionary, skillfully wielding the tools of creation. Turning dreams into reality through willpower and inspired action.”
+```json
+{
+  "name": "The Eight of Swords",
+  "number": 8,
+  "arcanum": "Minor", // [?] Which attributes should be singular, and which should be plural?
+  "keywords": [
+    "Restriction",
+    "Imprisonment",
+    "Powerlessness"
+  ],
+  "description": "Feeling trapped by limiting beliefs. Avoiding responsibility for one's circumstances.",
+  "archetypes": null,
+  "named_entities": null, // I'm guessing this isn't "eight swords"
+  "actions": [
+    "Feeling trapped", // [?] Is this an action?
+    "Avoiding responsibility",
+  ],
+  "emotions": [
+    "Feeling trapped", // [?] Is this an emotion?
+  ],
+  "characteristics": [
+    "restricted",
+    "imprisoned",
+    "powerless",
+    "feeling trapped",
+    "avoiding responsibility",
+    "limiting beliefs" // What I really want is something like `"limiting_beliefs": True` (rofl)
+  ],
+}
+```
 
-{"1 - The Magician": {  
-&nbsp;&nbsp;&nbsp;&nbsp;"number": 1,  
-&nbsp;&nbsp;&nbsp;&nbsp;"arcanum: "Major",  
-&nbsp;&nbsp;&nbsp;&nbsp;"keywords": ["Manifestation", "Resourcefulness", "Power"],  
-&nbsp;&nbsp;&nbsp;&nbsp;"description": "The visionary, skillfully wielding the tools of creation. Turning dreams into reality through willpower and inspired action.”,  
-&nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The visionary",  
-&nbsp;&nbsp;&nbsp;&nbsp;"action": ["wielding the tools of creation", "turning dreams into reality"]  
-&nbsp;&nbsp;&nbsp;&nbsp;"entities": ["The tools of creation", "willpower"][^9],  
-&nbsp;&nbsp;&nbsp;&nbsp;"emotion": "inspired",  
-&nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["visionary", "skillful", "inspired"] }  
-}  
+### The Knight of Pentacles
 
-### 2. The High Priestess
+> "The Knight of Pentacles": "Reliability, hard work, productivity. The committed and responsible worker, steadily pursuing his goals with patience and determination. Bringing ideas into physical form through discipline."
 
-> "2 - The High Priestess": "Intuition, mystery, the subconscious mind. The guardian of hidden knowledge, sitting between the pillars of duality. Trusting in wisdom that comes through stillness and dreams."
+```json
+{
+  "name": "The Knight of Pentacles",
+  "arcanum": "Minor",
+  "court_card": true, // [?] Does this make sense as a Boolean? Might be a better label for it, too.
+  "keywords": [
+    "Reliability",
+    "Hard work",
+    "Productivity"
+  ],
+  "description": "The committed and responsible worker, steadily pursuing his goals with patience and determination. Bringing ideas into physical form through discipline.",
+  "archetypes": "The committed and responsible worker",
+  "named_entities": [
+    "The committed and responsible worker", // [?] The knight pentacles the guy, as opposed to "The Knight of Pentacles" the card?
+  ],
+  "actions": [
+    "Steadily pursuing his goals",
+    "Bringing ideas into physical form",
+  ],
+  "emotions": [
+    "patience",
+    "determinism"
+  ],
+  "characteristics": [
+    "reliable",
+    "hard-working",
+    "productive",
+    "committed",
+    "responsible",
+    "steady",
+    "patient",
+    "determined",
+    "disciplined"
+  ]
+}
+```
 
-{"2 - The High Priestess": {  
-&nbsp;&nbsp;&nbsp;&nbsp;"number": 2,  
-&nbsp;&nbsp;&nbsp;&nbsp;"arcanum: "Major",  
-&nbsp;&nbsp;&nbsp;&nbsp;"keywords": ["Intuition", "Mystery", "The subconscious mind"],  
-&nbsp;&nbsp;&nbsp;&nbsp;"description": "The guardian of hidden knowledge, sitting between the pillars of duality. Trusting in wisdom that comes through stillness and dreams.",  
-&nbsp;&nbsp;&nbsp;&nbsp;"archetype": "The guardian of hidden knowledge",  
-&nbsp;&nbsp;&nbsp;&nbsp;"action": ["sitting between the pillars of duality", "trusting in wisdom that comes through stillness and dreams"],  
-&nbsp;&nbsp;&nbsp;&nbsp;"entities": "The pillars of duality"[^10],  
-&nbsp;&nbsp;&nbsp;&nbsp;"emotion": "trusting",  
-&nbsp;&nbsp;&nbsp;&nbsp;"characteristics": ["guardian", "still"] }  
-}  
+## Desmuntar
 
 [^1]: We want to use the structure of the EAV model itself to make a procedural argument about how tarot "works"; the choice of entities, attributes and their relationships should reflect a coherent perspective.
-[^2]: Should any/all of these attributes be singular or plural?
-[^3]: I think the LLMs have provided three primary keywords for each card, which is handy. Need to look into the etymology and origins of "keyword", as a label. If these are immutable features, it'd be good to have them as something we can focus in on, and that user-querent annotations can get stuck to.
-[^4]: All of the provided interpretation string, minus the initial keywords/themes.
-[^5]: Is there only ever one archetype for each card? Is the titular entity also an entity, distinct from the card object? Do we need to distinguish between The Fool (the Major Arcanum) and The Fool (the depicted, eponymous entity)? What would it be like if we _didn't_, ontologically?
-[^6]: Verbs, basically.
-[^7]: Trickier. What is the emotion attached to? Is the emotion a property of the card, the archetype, a given entity, or an action? I guess we're aiming for a flat ontology, where it's just kind of floating around in the general vicinity, as more of an _atmosphere_.
-[^8]: Difference between emotion and characteristics might be tricky, even if these are qualities of the card-entity.
-[^9]: Can an attribute of an entity be an entity? Entityception. I _think_ "the tools of creation" makes sense here. "Willpower" might not.
-[^10]: I'm assuming this doesn't need to be: `"entities": ["One of the pillars of duality", "The other pillar of duality"]`, but who knows.
