@@ -232,7 +232,7 @@ Instrument fine-grained usage metrics to identify where expressive power is actu
   "emotions": [ // [?] Ontologically trickier; how do emotions work?
     "innocence", // [?] Is "innocent" an emotion?
     "wonder",
-    "trust",
+    "trust"
   ],
   "characteristics": [ // States or qualities, things that could be otherwise
     "innocent",
