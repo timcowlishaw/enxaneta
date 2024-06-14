@@ -1,6 +1,6 @@
 # Working Notes 1: Modelling Tarot Reversals
 
-In basic terms, I'm currently grappling with how to model card reversals in this weird little shonky tarot-reading prototype Python programme I've been working on. With the Tarot de Marseille as my main go-to, for now, I _think_ I only want reversals to apply to cards in the Major Arcana, based on it being difficult to discern the orientation of the "pips" of the Minor Arcana.
+In basic terms, I'm currently grappling with how to model card reversals in this weird little shonky tarot-reading prototype Python programme I've been working on. With the Tarot de Marseille as my main go-to, for now, I _think_ I only want reversals to apply to cards in the Major Arcana, based on it being difficult to discern the orientation of the "pips" of the Minor Arcana (?), but this is up for debate.
 
 I'm leaning towards a `Card` object class, as something that supports some of my other plans, and will (I think?) enable tracking and analysis (e.g. percentage of reversed cards in a given spread, different cards' orientations over time). That said, I'm keen to avoid accidentally painting myself into a corner, and want to make sure I haven't overlooked any obvious issues or drawbacks.
 
@@ -8,7 +8,7 @@ Keen to encode Jodorowsky's philosophy into the procedural rhetoric of the model
 
 ## "Yes, but what _is_ a reversal?"
 
-Reversed cards in a reading are a result of blind shuffling.
+In tangible terms, reversed cards in a reading are a result of blind shuffling.
 
 Rather than just a upright/reversed binary, reversals gesture to a spectrum of interpretive meanings for each card. A reversal can indicate the energy of the card is blocked, turned inwards, early or late in its appearance, or manifesting in a more challenging or "shadow" form.
 
@@ -18,31 +18,21 @@ It's also about the _relationship_ between reversed and upright cards. If lots o
 
 A reminder that situations and energies are not fixed or static, but constantly shifting.
 
-Ways to see through to "the other side", going beyond the limits of the known?
+Ways to see through to "the other side", going beyond the limits of the known? A realm of potentials and underlying causes. All a bit subjunctive?
 
-A realm of potentials and underlying causes. All a bit subjunctive?
-
-ADDING NUANCE. (though: cf. Kieran Healy, "Fuck Nuance")
-
-If the upright card represents one set of attributes, a reversal is one of multiple possible lenses transforming that set. The interpretive challenge is in figuring out which transformations should be applied.
-
-Contextual analysis, querent input.
-
-Adversity, challenge, tests of character?
+ADDING NUANCE (though: cf. Kieran Healy, "Fuck Nuance").
 
 From an OOO perspective, rather than simply inverting or negating the card's upright meaning, the reversal could be seen as activating _a different set of capacities_ within the card-object. The reversed position doesn't merely flip the meaning, but reconfigures the card's internal composition and its relations to the other cards in the spread.
 
 The reversal reshapes the relational field, opening up new lines of interpretation and insight. From this view, the choice to read reversals or not is less about technical proficiency or interpretive sophistication, and more about the reader's orientation to the cards as meaning-making objects. Reading reversals could be seen as a way of _attending to the hidden depths and alternative potentials lurking within each card_ - an invitation to explore the "strange stranger" that withdraws behind the card's surface meanings.
 
-Reversals as a negation or inversion of a card's core attributes or base meanings? Each card contains within itself both upright and reversed meanings, with the reversal acting as a switch or selector between these two sets of potentials.
+If the upright card represents one set of attributes, a reversal is one of multiple possible lenses transforming that set. The interpretive challenge is in figuring out which transformations should be applied, through querent input and contextual analysis.
 
 James Ricklef's "Five Ds": 1. _Delay_ of the original effect; 2. _Diminuation_ of the original effect; 3. _Direct opposite_ of the original meaning; 4. _Dark side_ of the original meaning; 5. _Direction change_.
 
 > 'Problems ... represent energy that is constrained and can be liberated.' (Greer 2002)
 
 > 'Since both upright and reversed images are part of the card's energy, its full range is there for you to access, but it may feel like jumping a hurdle or walking through molasses.' (Greer 2002)
-
-> 'Consider what the words `REVERSAL`, `UPSIDE-DOWN`, `TOPSY-TURVEY`, `TURNED AROUND`, `INVERTED` mean to you.' (Greer 2002)
 
 > 'In general, it helps to think of reversed cards as "red flagged," indicating that you should pay extra attention to them. They signal that something is not operating as usual. Upright cards tend to be conscious, outer, automatic, in process, and available. Reversed cards often indicate choice points, where you must be attentive. They may require conscientious, willful handling if you are to take full advantage of the energies and opportunities. It is like knowing that a car has a tendency to pull to the right and so you have to keep alert and make adjustments for it. Or they are places to stop struggling, relax, and let go of all expectations.' (Greer 2002: 25)
 
@@ -256,47 +246,20 @@ The interpretation might encourage the querent to question their assumptions, lo
 1. Presenting multiple reversal interpretations to the querent can provide rich insights but risks cognitive overload. An iterative, dialogic approach can help manage this complexity (are there other ways?).
 2. Combining complementary techniques into more abstract transformations can strike a balance between interpretive richness and coherence. This requires careful analysis of the techniques' underlying principles.
 3. The overall goal is to scaffold the querent's own meaning-making process, eliciting their reflections and associations to populate an evolving personal dictionary. The data model should be designed to support this incremental growth.
-4. Refactoring the `Card` class and EAV model to accommodate multiple reversal techniques is best approached iteratively, allowing for testing and reflection at each stage.
+4. Refactoring the `Card` class and data model to accommodate multiple reversal techniques is best approached iteratively, allowing for testing and reflection at each stage.
 
 ### Potential approach
 
 1. Analyse the 10 techniques to identify underlying principles and complementarities. For example, "Blocked/Resisted" and "Delayed/Difficult" both involve a hindrance to the card's energy, while "Inner/Unconscious" and "Projected" both deal with psychological dimensions.
 2. Based on this analysis, develop a set of more abstract reversal transformations that combine related techniques.
-
-    - "Hindrance" (combining Blocked/Resisted, Delayed/Difficult)
-    - "Shadow" (combining Inner/Unconscious, Projected)
-    - "Reversal" (combining No/Not, Lacking)
-    - "Excess" (Excessive/Over-compensating)
-    - "Misdirection" (Misused/Misdirected)
-    - "Reconsideration" (Re- words)
-    - "Subversion" (Unconventional/Shamanic)
-
 3. Refactor the `Card` class to include these abstract transformations as optional attributes, each pointing to a dictionary of the relevant techniques and their generated interpretations.
-
-```
-class Card:
-    def __init__(self, name, upright_meaning):
-        self.name = name
-        self.upright_meaning = upright_meaning
-        self.reversed = False
-        self.hindrance = None
-        self.shadow = None
-        self.reversal = None
-        # ... other transformations
-
-    def generate_reversal(self, transformation, technique, querent_input):
-        # Generate reversal interpretation based on technique and querent input
-        # Store in the relevant transformation dictionary
-        self.transformation[technique] = interpretation
-```
-
 4. Develop an interactive dialogue system that presents the querent with the abstract transformations relevant to their drawn card(s), based on some initial criteria (e.g., the querent's situation, the spread position meaning, etc.).
 5. For each selected transformation, guide the querent through a series of prompts and questions to elicit their reflections, associations, and interpretations. Use this input to generate personalized reversal interpretations using the underlying techniques.
 6. Present the querent with the generated interpretations, highlighting complementarities and tensions between the different techniques. Encourage further reflection and refinement.
 7. Store the querent's finalized interpretations, associations, and reflections in their personal dictionary, linked to the relevant `Card` and transformation. Over time, this dictionary becomes a rich resource for personalized readings.
 8. Iterate on the `Card` class and EAV model design based on insights from implementing and testing this dialogue system. Refine the abstract transformations and data structures as needed to better support the querent's meaning-making process.
 
-### Potential challenges
+### Challenges
 
 - Balancing structure and openness in the dialogue system to guide the querent's reflections while allowing for emergent insights
 - Managing the complexity of multiple transformations and techniques in the user interface and data model
@@ -304,28 +267,75 @@ class Card:
 - Ensuring the evolving personal dictionary remains coherent and navigable as it grows over time
 - Designing for the edge cases of contradictory or incompatible interpretations across techniques
 
-### Suggested procedures
+## Prototyping In-Progress
 
-#### 1. "Obstacles and Challenges" (Blocked/Resisted + Delayed/Difficult)
+```
+class Card:
+    def __init__(self, name, upright_meaning):
+        self.name = name
+        self.upright_meaning = upright_meaning
+        self.reversed = False
+        self.negation = None
+        self.obstruction = None
+        self.imbalance = None
+        self.shadow = None
+        self.transformation = None
+        self.subversion = None
 
-This transformation captures the essence of resistance, delays, and difficulties. It represents situations where the card's energy is hindered or obstructed.
+    def generate_reversal(self, transformation, technique, querent_input)
+        # Generate reversal interpretation based on technique and querent input
+        # Store in the relevant transformation dictionary
+        self.transformation[technique] = interpretation
+```
 
-#### 2. "Shadow" (Projected + Inner/Unconscious/Private)
+### Transformations
 
-This transformation focuses on the internal, hidden, or psychological dimensions of the card's energy. It represents aspects of the self that are projected, unconscious, or private.
+Broad transformations, linking related techniques.
 
-#### 3. "Transformation and Change" (Breaking Through/Overturning + "Re-" Words)
+#### 1. "Negation" ("No/Not/Lacking")
 
-This transformation highlights moments of change, reflection, and reevaluation. It represents pivotal choice points and the need to reconsider or correct one's path.
+Negation suggests a binary switch or toggle, where the reversed meaning is a direct inversion or absence of the upright. Modeling this could involve a boolean `reversed` attribute on the `Card` class, which, when `True`, negates or nullifies the upright meaning.
 
-#### 4. "Imbalance and Misapplication" (Misused/Misdirected + Excessive/Over/Undercompensating)
+The program would present reversed cards as negations of their upright meanings, suggesting a clear inversion or lack. Querent interactions would involve grappling with the implications of this absence or opposition.
 
-This transformation addresses the misapplication or imbalance of the card's energy. It represents situations where the card's energy is either excessive, deficient, or misdirected.
+e.g. If the upright Empress represents abundance and nurturing, a "negated" reversal would be interpreted as "No abundance" or "Lacking nurturing." The querent would be prompted to reflect on areas of scarcity or deficiency in their life related to the Empress's themes.
 
-#### 5. "Binary Negation" ("No/Not/Lacking")
+#### 2. "Obstruction" (Blocked/Resisted + Delayed/Difficult)
 
-This transformation serves as a baseline or entry point, representing the straightforward negation or absence of the card's core qualities.
+Obstruction implies a hindrance or barrier to the manifestation of the upright meaning. The reversed card's energy is present but impeded. Modeling this could involve attributes like `obstruction_type` or `difficulty_level` on the `Card` class.
+
+The program would frame reversed cards as obstacles to be overcome or delays to be navigated. Querent interactions would involve identifying and engaging with these barriers.
+
+e.g. An obstructed Chariot might be interpreted as "Progress blocked" or "Victory delayed." The querent would be guided to consider what internal or external factors are impeding their forward momentum, and how they might work through these challenges.
+
+#### 3. "Imbalance" (Misused/Misdirected + Excessive/Over/Undercompensating)
+
+Imbalance points to a distortion or misapplication of the card's upright energy. The reversal isn't a negation but a deviation from the ideal expression, suggesting a need for recalibration. Modeling this could use a `imbalance_type` attribute or a numeric `intensity` scale.
+
+The program would present reversed cards as imbalanced expressions of their upright qualities, inviting the querent to consider where and what they may be over- or under-doing.
+
+e.g. An excessively imbalanced Hermit might be interpreted as "Isolation overindulged" or "Withdrawal overcompensating." The querent would be prompted to reflect on where they may be taking the Hermit's qualities of solitude and introspection to an unhealthy extreme.
+
+#### 4. "Shadow" (Projected + Inner/Unconscious/Private)
+
+Shadow suggests the reversal turns the card's energy inward, pointing to unconscious or shadow aspects of the querent's psyche. It sets up a distinction between the external and the internal, the conscious and the unconscious. Modeling this could use a boolean `is_interior` flag or an `shadow_meaning` attribute.
+
+The program would frame reversed cards as reflections of the querent's inner state or unacknowledged projections. Interactions would involve introspection and shadow work.
+
+e.g. A shadow reversal of the Lovers might be interpreted as "Unconsciously projecting relationship ideals" or "Inner conflicts around partnership." The querent would be guided to examine their own unacknowledged desires and fears around love and intimacy.
+
+#### 5. "Transformation" (Breaking Through/Overturning + "Re-" Words)
+
+Transformation frames reversals as catalysts for change or reorientation, turning points where old patterns can be overturned. It emphasises process over state, framing the upright and reversed meanings as part of an ongoing evolution. Modeling this could involve a `transformation_type` attribute or `catalyst` boolean.
+
+The program would present reversed cards as invitations or opportunities for growth and change. Querent interactions would focus on identifying and engaging with these transformative openings.
+
+e.g. A "breaking through" reversal of the Tower might be interpreted as "Liberating upheaval" or "Breakthrough crisis." The querent would be prompted to consider how the Tower's disruptive energy could be harnessed for positive transformation and rebuilding.
 
 #### 6. "Subversion" (Unconventional/Shamanic)
 
-This transformation captures the unconventional, subversive, and humorous aspects of the card's energy. It represents the Trickster archetype and the need to question assumptions.
+Subversion positions reversals as challenges to conventional wisdom, revealing unexpected or even absurd perspectives. It emphasises the contextual fluidity of interpretation, and the value of unorthodox insight. Modeling this could use an `unconventional_meaning` attribute.
+
+The program would frame reversed cards as invitations to question assumptions and entertain alternative viewpoints. Querent interactions would involve playful and unconventional engagement with the cards' meanings.
+
+e.g. A subversive reversal of Death might be interpreted as "Unexpected rebirth" or "Playful ending." The querent would be encouraged to look for the humor or creative potential in experiences of loss and transformation.
