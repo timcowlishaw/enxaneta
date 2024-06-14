@@ -266,7 +266,7 @@ Broad transformations, linking related techniques. (could be an alternative way 
 
 Negation suggests a binary switch or toggle, where the reversed meaning is a direct inversion or absence of the upright. Modeling this could involve a boolean `reversed` attribute on the `Card` class, which, when `True`, negates or nullifies the upright meaning.
 
-The program would present reversed cards as negations of their upright meanings, suggesting a clear inversion or lack. Querent interactions would involve grappling with the implications of this absence or opposition, considering what's missing or contrary to their expectations
+The program would present reversed cards as negations of their upright meanings, suggesting a clear inversion or lack. Querent interactions would involve grappling with the implications of this absence or opposition, considering what's missing or contrary to their expectations.
 
 e.g. If the upright Empress represents abundance and nurturing, a "negated" reversal would be interpreted as "No abundance" or "Lacking nurturing." The querent would be prompted to reflect on areas of scarcity or deficiency in their life related to the Empress's themes.
 
