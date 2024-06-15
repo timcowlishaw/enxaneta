@@ -109,9 +109,9 @@ The program would present reversed cards as negations of their upright meanings,
 
 e.g. If the upright Empress represents abundance and nurturing, a "negated" reversal would be interpreted as "No abundance" or "Lacking nurturing." The querent would be prompted to reflect on areas of scarcity or deficiency in their life related to the Empress's themes.
 
-e.g. If the upright Chariot represents forward momentum and control, a Negation reversal might suggest "Lack of direction" or "Loss of control". The program could prompt the querent to reflect on areas where they feel directionless or powerless.
+e.g. If the upright Chariot represents forward momentum and control, a "Negation" reversal might suggest "Lacking direction" or "No momentum". The program could prompt the querent to reflect on areas where they feel directionless or powerless.[^1]
 
-Ontographically, this technique maps the tarot's symbolic world onto a binary space of presence and absence.[^1]
+Ontographically, this technique maps the tarot's symbolic world onto a binary space of presence and absence.[^2]
 
 ```python
 class Card:
@@ -122,7 +122,8 @@ class Card:
 
     def meaning(self):
         if self.reversed:
-            return f"No {self.upright_meaning}" or f"Lacking {self.upright_meaning}" # Maybe we need to use the keywords?
+            # Negate the meaning (the keywords?) by prepending (e.g.) "No" or "Lacking"
+            return f"No {self.upright_meaning}" or f"Lacking {self.upright_meaning}"
         else:
             return self.upright_meaning
 ```
@@ -135,7 +136,7 @@ If this a "ground level" reversal, a _first approximation_ of the card's inverte
 
 #### 2. "Obstruction" (Blocked/Resisted + Delayed/Difficult)
 
-Obstruction implies a hindrance or barrier to the (easy, timely) manifestation/expression of the upright meaning. The reversed card's energy is present but impeded. Modeling this will probably involve including an `obstruction` attribute on the `Card` class, which could be an enum or a string indicating the type of obstruction (e.g., "DELAYED", "THWARTED", "GATED", "UNAVAILABLE"[^2]).
+Obstruction implies a hindrance or barrier to the (easy, timely) manifestation/expression of the upright meaning. The reversed card's energy is present but impeded. Modeling this will probably involve including an `obstruction` attribute on the `Card` class, which could be an enum or a string indicating the type of obstruction (e.g., "DELAYED", "THWARTED", "GATED", "UNAVAILABLE"[^3]).
 
 The `meaning()` method could be modified to return different interpretations based on the obstruction attribute's value, encapsulating the reversal logic within the method? When interpreting a reversed card, the program would first check the `obstruction` attribute to determine the type of obstruction. Based on the obstruction type, the program would apply the corresponding operation to the card's base, upright `meaning` (or `archetype`?).
 
@@ -200,7 +201,7 @@ In a procedural model, this could involve a `project_attributes(querent)` method
 
 e.g. A shadow reversal of the Lovers might be interpreted as "Unconsciously projecting relationship ideals" or "Inner conflicts around partnership." The querent would be guided to examine their own unacknowledged desires and fears around love and intimacy.
 
-**Alternatively**: Instead of representing the querent's personal shadow, reversed cards could point to collective or archetypal shadow energies associated with the card. This frames reversals as portals into the universal unconscious, rather than the querent's private psyche. In the data model, this could be represented through a `shadow_archetype` attribute on the `Card` class, holding a symbolic description of the card's reversed meaning, e.g., "Repressed creativity", "Unacknowledged grief", "Denied power".[^3]
+**Alternatively**: Instead of representing the querent's personal shadow, reversed cards could point to collective or archetypal shadow energies associated with the card. This frames reversals as portals into the universal unconscious, rather than the querent's private psyche. In the data model, this could be represented through a `shadow_archetype` attribute on the `Card` class, holding a symbolic description of the card's reversed meaning, e.g., "Repressed creativity", "Unacknowledged grief", "Denied power".[^4]
 
 Interpreting a reversal would involve looking up the card's shadow_archetype and reflecting on how that archetypal energy might be manifesting in the user's situation, without requiring direct psychological analysis. Reversed cards could be treated as invitations for the querent to dialogue with the shadow archetype.
 
@@ -214,7 +215,7 @@ This positions the reading as a dialogue between the user's conscious situation 
 
 The technique frames reversals as markers of instability and potential transformation, aligning with an ontology of becoming and emergence. The meanings of the cards are fluid and dynamic. How do we model this fluidity in the data structure? Should we allow for multiple, context-dependent interpretations of each reversal, and if so, how do we manage the resulting complexity?
 
-This could involve adding a `transformation` attribute to the `Card` class, which could be an enum or string indicating the specific type of transformative energy associated with the reversal (e.g., "TOPPLING", "BREAKING_THROUGH", "LOOSENING", "RETRACTING", "RECONSIDERING", "REDEEMING"[^4]). 
+This could involve adding a `transformation` attribute to the `Card` class, which could be an enum or string indicating the specific type of transformative energy associated with the reversal (e.g., "TOPPLING", "BREAKING_THROUGH", "LOOSENING", "RETRACTING", "RECONSIDERING", "REDEEMING"[^5]). 
 
 **Alternatively**: We could use a boolean `catalyst` attribute (or similar) to signal whether the reversal represents a transformative catalyst, and then determine the specific transformation type procedurally based on the card's other attributes and the querent's situation. (Seems like a bit of a faff.)
 
@@ -260,7 +261,7 @@ How to structure the program's elicitation of `querent_context`, before or throu
 
 The program would present reversed cards as invitations or opportunities for growth and change. Querent interactions would focus on identifying and engaging with these transformative openings. The program should facilitate this active engagement, providing tools and prompts that empower the querent to explore and enact transformative changes.
 
-e.g. A "reconsidering" reversal of the Tower might be interpreted as "Reconsidering upheaval" or "Revelation reconsidered." The querent would be prompted to reflect on the value (or not) of Tower's disruptive energy at this point in time.[^5]
+e.g. A "reconsidering" reversal of the Tower might be interpreted as "Reconsidering upheaval" or "Revelation reconsidered." The querent would be prompted to reflect on the value (or not) of Tower's disruptive energy at this point in time.[^6]
 
 ```python
 tower_card = Card("The Tower", "Upheaval", "Revelation", "Awakening") # How will the card  handle keywords?
@@ -287,12 +288,12 @@ We could implement a `subversion` attribute on the `Card` class to store unconve
 We might want a function or method to generate subversive reversal interpretations based on the upright meaning. This could involve:
 
 - Identifying and inverting key concepts or assumptions in the upright meaning
-- Applying humour, irony, or absurdity to the upright meaning[^6]
+- Applying humour, irony, or absurdity to the upright meaning[^7]
 - Drawing from a predefined set of unconventional or trickster-like archetypes or themes
 
 We want a function that takes the upright meaning as an input, and returns a subverted or ironised version. Juxtaposition, exaggeration, reframing, alternative viewpoints?
 
-Are we looking at a predefined dictionary of subversive interpretations?
+Are we looking at a predefined dictionary of subversive interpretations? Not entirely sold on these examples, but:
 
 ```python
 def subvert_meaning(card, upright_meaning, querent_input):
@@ -318,9 +319,10 @@ def generate_subversive_prompts(card):
 
 ## Desmuntar
 
-[^1]: (J) However, this binary ontology does risk reducing the tarot's symbolic richness to a series of on/off switches, losing sight of more subtle shades of significance. As Greer cautions (and Jodorowsky echoes), a purely mechanical negation risks generating interpretations that are overly machinic or pessimistic. The program may need to incorporate additional heuristics to maintain a balanced perspective.
-[^2]: (J) Deliberately ridiculous examples; need to figure out a proper enum grammar.
-[^3]: (J) This is better, I think. Less ethically dubious, in terms of accidentally harvesting loads of sensitive user data. A way of honouring the querent's autonomy, even if/as they are just one object among many (lol).
-[^4]: (J) I think it makes sense to format these as verbs, foregrounding the processual nature of the operation.
-[^5]: (J) A little bit tenuous, but let's see.
-[^6]: (J) Ah yes, operationalising humour, what could possibly go wrong? ("What _is_ irony?" etc.)
+[^1]: (J) In this example, "Lacking control" might not be as clean as "Out of control" or "Uncontrolled". We might want to consider a more sophisticated negation strategy, taking into account the specific meaning of each card.
+[^2]: (J) However, this binary ontology does risk reducing the tarot's symbolic richness to a series of on/off switches, losing sight of more subtle shades of significance. As Greer cautions (and Jodorowsky echoes), a purely mechanical negation risks generating interpretations that are overly machinic or pessimistic. The program may need to incorporate additional heuristics to maintain a balanced perspective.
+[^3]: (J) Deliberately ridiculous examples; need to figure out a proper enum grammar.
+[^4]: (J) This is better, I think. Less ethically dubious, in terms of accidentally harvesting loads of sensitive user data. A way of honouring the querent's autonomy, even if/as they are just one object among many (lol).
+[^5]: (J) I think it makes sense to format these as verbs, foregrounding the processual nature of the operation.
+[^6]: (J) A little bit tenuous, but let's see.
+[^7]: (J) Ah yes, operationalising humour, what could possibly go wrong? ("What _is_ irony?" etc.)
