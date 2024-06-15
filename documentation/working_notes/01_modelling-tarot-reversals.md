@@ -20,9 +20,13 @@ Ways to see through to "the other side", going beyond the limits of the known? A
 
 A reminder that situations and energies are not fixed or static, but constantly shifting.
 
-ADDING NUANCE (though: cf. Kieran Healy, "Fuck Nuance").
+ADDING NUANCE (though: cf. Kieran Healy, "[Fuck Nuance](https://kieranhealy.org/files/papers/fuck-nuance.pdf)").
 
 From an OOO perspective, the reversal activates _a different set of capacities_ within the card-object. The reversed position reconfigures the card's internal composition and its relations to the other cards in the spread, opening up new lines of interpretation and insight.
+
+(Both upright and reversed are sensual surfaces, not the essence itself. 
+Use reversals to challenge the illusion that upright cards are complete manifestations of their archetypes. Every reading is an indirect, imperfect translation of something withdrawn. 
+Let reversals be an invitation to apophatic interpretation; describing the card by what it is not, gesturing at its ineffable withdrawn essence.)
 
 From this standpoint, the choice to read reversals or not is less about technical proficiency or interpretive sophistication, and more about the reader's orientation to the cards as meaning-making objects. Reading reversals could be seen as a way of _attending to the hidden depths and alternative potentials lurking within each card_ - an invitation to explore the "strange stranger" that withdraws behind the card's surface meanings.
 
@@ -239,13 +243,13 @@ The interpretation might encourage the querent to question their assumptions, lo
 
 ## Prototyping In-Progress
 
-```
+```python
 class Card:
     def __init__(self, name, upright_meaning):
         self.name = name
         self.upright_meaning = upright_meaning
         self.reversed = False
-        self.negation = None
+        self.negation = None # Do we need a seperate negation attribute, or could this be inferred from the reversed Boolean, if no other reversal/transformation attributes are active?
         self.obstruction = None
         self.imbalance = None
         self.shadow = None
@@ -260,7 +264,7 @@ class Card:
 
 ### Transformations
 
-Broad transformations, linking related techniques. (could be an alternative way of slicing this, around latency and manifestation?)
+I think we're going to try modelling 6x broad transformations, bundling related techniques identified by Mary Greer under headings of "negation" (the "ground level" or baseline transformation), "obstruction", "imbalance", "shadow", "transformation", and "subversion" (a wildcard).
 
 #### 1. "Negation" ("No/Not/Lacking")
 
@@ -270,15 +274,50 @@ The program would present reversed cards as negations of their upright meanings,
 
 e.g. If the upright Empress represents abundance and nurturing, a "negated" reversal would be interpreted as "No abundance" or "Lacking nurturing." The querent would be prompted to reflect on areas of scarcity or deficiency in their life related to the Empress's themes.
 
-e.g. If the upright Chariot represents forward momentum and control, a Negation reversal might suggest "Lack of direction" or "Loss of control". The program could prompt the querent to reflect on areas where they feel directionless or powerless. 
+e.g. If the upright Chariot represents forward momentum and control, a Negation reversal might suggest "Lack of direction" or "Loss of control". The program could prompt the querent to reflect on areas where they feel directionless or powerless.
+
+Ontographically, this technique maps the tarot's symbolic world onto a binary space of presence and absence.[^1]
+
+```python
+class Card:
+    def __init__(self, name, upright_meaning):
+        self.name = name
+        self.upright_meaning = upright_meaning
+        self.reversed = False
+
+    def meaning(self):
+        if self.reversed:
+            return f"No {self.upright_meaning}" or f"Lacking {self.upright_meaning}" # Maybe we need to use the keywords?
+        else:
+            return self.upright_meaning
+```
+
+Using a Boolean aligns with the ontological framing of reversals as a binary switch, toggling between the presence and absence of a card's core qualities. It's a straightforward way to represent the negation technique within the object-oriented structure of the `Card` class.
+
+Reason to model reversals-as-negations with an attribute rather than a function, at least initially, is because we want querent-elicted interpretations and associations to get "attached" to the card; latent but remembered, available for future retrieval.
+
+If this a "ground level" reversal, a _first approximation_ of the card's inverted meaning, as a placeholder and prelude to greater semantic (?) resolution or fidelity to the situation at-hand, I guess we're looking at a `negate()` function, appending "no", "not", "non-", "un-" or "lacking" to the `upright_meaning` or default keyword strings, which then get shown to the querent as a dialogue prompt? A practical entry point, this is the "baseline" interpretive procedure/operation from which the other transformations depart.
 
 #### 2. "Obstruction" (Blocked/Resisted + Delayed/Difficult)
 
-Obstruction implies a hindrance or barrier to the manifestation of the upright meaning. The reversed card's energy is present but impeded. Modeling this could involve attributes like `obstruction_type` or `difficulty_level` on the `Card` class.
+Obstruction implies a hindrance or barrier to the (easy, timely) manifestation/expression of the upright meaning. The reversed card's energy is present but impeded. Modeling this will probably involve including an `obstruction` attribute on the `Card` class, which could be an enum or a string indicating the type of obstruction (e.g., "DELAYED", "THWARTED", "GATED", "UNAVAILABLE"[^2]).
 
-The program would frame reversed cards as obstacles to be overcome or delays to be navigated. Querent interactions would involve identifying and engaging with these barriers.
+The `meaning()` method could be modified to return different interpretations based on the obstruction attribute's value, encapsulating the reversal logic within the method? When interpreting a reversed card, the program would first check the `obstruction` attribute to determine the type of obstruction. Based on the obstruction type, the program would apply the corresponding operation to the card's base, upright `meaning` (or `archetype`?).
+
+The program would frame reversed cards as temporary challenges rather than permanent, immutable obstacles. Querent interactions would involve identifying and engaging with these barriers. The program should emphasise the querent's agency and ability to overcome blockages and delays. This could be based on predefined mappings between obstruction types and suggested actions, presented as prompts or questions.
 
 e.g. An obstructed Chariot might be interpreted as "Progress blocked" or "Victory delayed." The querent would be guided to consider what internal or external factors are impeding their forward momentum, and how they might work through these challenges.
+
+```python
+card = Card("The Chariot", "Willpower, determination, victory")
+card.set_reversal(True)
+card.set_obstruction(ObstructionType.BLOCKED, "Feeling stuck, lack of progress")
+
+print(card.get_meaning())
+# Output: Blocked: Feeling stuck, lack of progress
+```
+
+The program could also track the presence and frequency of obstructions across a querent's multiple readings, identifying recurring patterns of blockage or delay and offer insights or recommendations based on these patterns.
 
 #### 3. "Imbalance" (Misused/Misdirected + Excessive/Over/Undercompensating)
 
@@ -311,3 +350,8 @@ Subversion positions reversals as challenges to conventional wisdom, revealing u
 The program would frame reversed cards as invitations to question assumptions and entertain alternative viewpoints. Querent interactions would involve playful, lateral, or oblique engagement with the cards' meanings.
 
 e.g. A subversive reversal of Death might be interpreted as "Unexpected rebirth" or "Playful ending." The querent would be encouraged to look for the humor or creative potential in experiences of loss and transformation.
+
+## Desmuntar
+
+[^1] (J) However, this binary ontology does risk reducing the tarot's symbolic richness to a series of on/off switches, losing sight of more subtle shades of significance. As Greer cautions (and Jodorowsky echoes), a purely mechanical negation risks generating interpretations that are overly machinic or pessimistic. The program may need to incorporate additional heuristics to maintain a balanced perspective.
+[^2] (J) Deliberately ridiculous examples; need to figure out a proper enum grammar.
