@@ -174,9 +174,9 @@ def diagnose_imbalance(card, querent_situation):
 ```python
 def interpret_imbalance(card):
     if card.imbalance == Imbalance.MISUSED:
-        return f"{card.name}'s energy of {card.upright_meaning} may be misused or misapplied. Consider how to redirect this energy more constructively."
+        return f"{card.name}'s energy of {card.upright_meaning} may be misused or misapplied."
     elif card.imbalance == Imbalance.EXCESSIVE:
-        return f"An excessive or overcompensating expression of {card.name}'s {card.upright_meaning}. Reflect on where you may need to scale back or find balance."
+        return f"An excessive or overcompensating expression of {card.name}'s {card.upright_meaning}."
     # ... handle other Imbalance types
 ```
 
@@ -201,7 +201,7 @@ In a procedural model, this could involve a `project_attributes(querent)` method
 
 e.g. A shadow reversal of the Lovers might be interpreted as "Unconsciously projecting relationship ideals" or "Inner conflicts around partnership." The querent would be guided to examine their own unacknowledged desires and fears around love and intimacy.
 
-**Alternatively**: Instead of representing the querent's personal shadow, reversed cards could point to collective or archetypal shadow energies associated with the card. This frames reversals as portals into the universal unconscious, rather than the querent's private psyche. In the data model, this could be represented through a `shadow_archetype` attribute on the `Card` class, holding a symbolic description of the card's reversed meaning, e.g., "Repressed creativity", "Unacknowledged grief", "Denied power".[^4]
+**Alternatively** (my preference): Instead of representing the querent's personal shadow, reversed cards could point to collective or archetypal shadow energies associated with the card. This frames reversals as portals into the universal unconscious, rather than the querent's private psyche. In the data model, this could be represented through a `shadow_archetype` attribute on the `Card` class, holding a symbolic description of the card's reversed meaning, e.g., "Repressed creativity", "Unacknowledged grief", "Denied power".[^4]
 
 Interpreting a reversal would involve looking up the card's shadow_archetype and reflecting on how that archetypal energy might be manifesting in the user's situation, without requiring direct psychological analysis. Reversed cards could be treated as invitations for the querent to dialogue with the shadow archetype.
 
@@ -243,7 +243,7 @@ transformed_card = card.transformation(querent_context)
 print(transformed_card.reversed_meaning)
 ```
 
-How to structure the program's elicitation of `querent_context`, before or through the reading?
+How to structure the elicitation of `querent_context`? The program could elicit `querent_context` before the reading by asking a series of questions or by providing a text input field, as a "focus" question. This could be done at the beginning of the reading or as part of the reading process.
 
 ```python
     def assess_relationship(self, querent_input):

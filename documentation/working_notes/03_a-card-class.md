@@ -1,6 +1,6 @@
 # Working Notes 3: Roughing Out a Card Class
 
-More to come soon.
+More to come soon (inevitably).
 
 The `card` class needs to:
 
@@ -25,6 +25,7 @@ class Card:
     self.keywords = keywords # Three main keywords, with room for the querent to add others at the same level, without overwriting these (though they could change their behaviour?)
     self.description = description # [?] A string of two sentences, material for NLP operations and named entity extraction?
     self.archetype = archetype
+    self.shadow_archetype = shadow_archetype # Spooky and latent (and probably usually null)
     self.named_entities = named_entities # Figure out how to name this attribute
     self.actions = actions
     self.emotions = emotions
@@ -78,6 +79,10 @@ class Card:
         else:
             return f"Imbalance: {self.imbalance}" # [?] Aaaaah, what does this do?
 
+    # ?????
+    def retrieve_shadows(self): # A ridiculous name for this function
+        return f"The reversed {self.name} indicates you are currently experiencing the shadow archetype of '{self.shadow_archetype}'. Reflect on how this energy might be manifesting in your situation, and consider where there may be opportunities for dialogue." # Hopefully not literal dialogue, but who knows
+
     # Got to be a better name for this function (is it a function?), surely
     def generate_subversive_prompts(self):
         prompts = [
@@ -86,6 +91,18 @@ class Card:
             f"Consider how {self.subversion} might offer a new perspective on your situation."
         ]
         return prompts
+
+    def generate_subversive_interpretation(self):
+        # Select a subversive meaning at random
+        subversive_meaning = random.choice(self.subversive_meanings)
+        # Apply subversion techniques to the upright meaning. This could involve identifying and inverting key concepts or assumptions, applying humor, irony, or absurdity, or drawing from a predefined set of unconventional or trickster-like archetypes or themes. For example:
+        subversive_interpretation = self.invert_concepts(self.upright_meaning, subversive_meaning)
+
+        return subversive_interpretation
+
+    def invert_concepts(self, upright_meaning, subversive_meaning):
+        # Placeholder function. In a real implementation, this function would contain the logic for identifying and inverting key concepts or assumptions in the upright meaning.
+        return f"Instead of {upright_meaning}, consider {subversive_meaning}." # Hahahahahaha
 
     # Less sure about all this
     def assess_relationship(self, querent_input):
@@ -145,6 +162,6 @@ card.add_querent_note("Querent feels uncertain about new beginnings.") # Highly 
 print(card.querent_notes)
 ```
 
-(Could be useul to think about the inclusion/implementation of a possible `shadow_archetype` attribute?)
+(Could be useul to think, here, about the inclusion/implementation of a possible `shadow_archetype` attribute?)
 
 ## Desmuntar
