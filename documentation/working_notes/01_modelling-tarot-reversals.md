@@ -350,11 +350,26 @@ e.g. An excessively imbalanced Hermit might be interpreted as "Excessive isolati
 
 #### 4. "Shadow" (Projected + Inner/Unconscious/Private)
 
-Shadow suggests the reversal turns the card's energy inward, pointing to unconscious or shadow aspects of the querent's psyche. It sets up a distinction between the external and the internal, the conscious and the unconscious. Modeling this could use a boolean `is_interior` flag or an `shadow_meaning` attribute.
+Shadow suggests the reversal turns the card's energy inward, pointing to unconscious or shadow aspects of the querent's psyche. It sets up a distinction between the external and the internal, the conscious and the unconscious. Modeling this could use a `shadow` attribute.
 
 The program would frame reversed cards as reflections of the querent's inner state or unacknowledged projections. Interactions would involve introspection and shadow work.
 
+```python
+def interiorise(self, card_meaning):
+    return f"In your inner world, {card_meaning.lower()}" # "Lower"? No idea what's going on here
+```
+
+In a procedural model, this could involve a `project_attributes(querent)` method on the `Card` class that compares the `projected_attributes` to the `querent` object's own attributes (!!!), looking for matches or discrepancies. This method could return a interpretation string highlighting any projections.
+
 e.g. A shadow reversal of the Lovers might be interpreted as "Unconsciously projecting relationship ideals" or "Inner conflicts around partnership." The querent would be guided to examine their own unacknowledged desires and fears around love and intimacy.
+
+**Alternatively**: Instead of representing the querent's personal shadow, reversed cards could point to collective or archetypal shadow energies associated with the card. This frames reversals as portals into the universal unconscious, rather than the querent's private psyche. In the data model, this could be represented through a `shadow_archetype` attribute on the `Card` class, holding a symbolic description of the card's reversed meaning, e.g., "Repressed creativity", "Unacknowledged grief", "Denied power".[^3]
+
+Interpreting a reversal would involve looking up the card's shadow_archetype and reflecting on how that archetypal energy might be manifesting in the user's situation, without requiring direct psychological analysis. Reversed cards could be treated as invitations for the querent to dialogue with the shadow archetype.
+
+This positions the reading as a dialogue between the user's conscious situation and the deeper archetypal energies at play, represented by the upright and reversed cards respectively. The spread becomes a map of the interplay between light and shadow.
+
+**Or**: Even more broadly, this transformation could access "hidden" or "latent" dimensions of the cards upright meaning? We'd need to give some thought to what this might look like in practice; perhaps using enums (e.g. "DEEP", "CONCEALED", "UNEXPRESSED", "INDIRECT", "UNDERGROUND").
 
 #### 5. "Transformation" (Breaking Through/Overturning + "Re-" Words)
 
@@ -376,3 +391,4 @@ e.g. A subversive reversal of Death might be interpreted as "Unexpected rebirth"
 
 [^1]: (J) However, this binary ontology does risk reducing the tarot's symbolic richness to a series of on/off switches, losing sight of more subtle shades of significance. As Greer cautions (and Jodorowsky echoes), a purely mechanical negation risks generating interpretations that are overly machinic or pessimistic. The program may need to incorporate additional heuristics to maintain a balanced perspective.
 [^2]: (J) Deliberately ridiculous examples; need to figure out a proper enum grammar.
+[^3]: (J) This is better, I think. Less ethically dubious, in terms of accidentally harvesting loads of sensitive user data. A way of honouring the querent's autonomy and self-sovereignty, even as they are just one object among many (lol).
