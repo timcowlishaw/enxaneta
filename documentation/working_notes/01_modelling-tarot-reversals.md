@@ -8,37 +8,26 @@ Keen to encode Jodorowsky's philosophy into the procedural rhetoric of the model
 
 ## "Yes, but what _is_ a reversal?"
 
-In tangible terms, reversed cards in a reading are a result of blind shuffling.
-
-Rather than just a upright/reversed binary, reversals gesture to a spectrum of interpretive meanings for each card. A reversal can indicate the energy of the card is blocked, turned inwards, early or late in its appearance, or manifesting in a more challenging or "shadow" form.
-
-I'm interested in modelling reversals in a way that is less about opposition or negativity, and more about a card's _latency_, or hidden properties (blockages, delays, etc.).
-
-It's also about the _relationship_ between reversed and upright cards. If lots of cards are upright, the few reversals stand out more, and vice versa. 
-
-Ways to see through to "the other side", going beyond the limits of the known? A realm of potentials and underlying causes. All a bit subjunctive?
-
-A reminder that situations and energies are not fixed or static, but constantly shifting.
-
-ADDING NUANCE (though: cf. Kieran Healy, "[Fuck Nuance](https://kieranhealy.org/files/papers/fuck-nuance.pdf)").
-
-From an OOO perspective, the reversal activates _a different set of capacities_ within the card-object. The reversed position reconfigures the card's internal composition and its relations to the other cards in the spread, opening up new lines of interpretation and insight.
-
-(Both upright and reversed are sensual surfaces, not the essence itself. Use reversals to challenge the illusion that upright cards are complete manifestations of their archetypes. Every reading is an indirect, imperfect translation of something withdrawn. Let reversals be an invitation to "[apophatic](https://en.wikipedia.org/wiki/Apophasis)" interpretation; describing the card by what it is not, gesturing at its ineffable withdrawn essence.)
-
-From this standpoint, the choice to read reversals or not is less about technical proficiency or interpretive sophistication, and more about the reader's orientation to the cards as meaning-making objects. Reading reversals could be seen as a way of _attending to the hidden depths and alternative potentials lurking within each card_ - an invitation to explore the "strange stranger" that withdraws behind the card's surface meanings.
-
-If the upright card represents one set of attributes, a reversal is one of multiple possible lenses transforming that set. The interpretive challenge is in figuring out which transformations should be applied, through querent input and contextual analysis.
-
-James Ricklef's "Five Ds": 1. _Delay_ of the original effect; 2. _Diminuation_ of the original effect; 3. _Direct opposite_ of the original meaning; 4. _Dark side_ of the original meaning; 5. _Direction change_.
-
-> 'Problems ... represent energy that is constrained and can be liberated.' (Greer 2002)
-
-> 'Since both upright and reversed images are part of the card's energy, its full range is there for you to access, but it may feel like jumping a hurdle or walking through molasses.' (Greer 2002)
 
 > 'In general, it helps to think of reversed cards as "red flagged," indicating that you should pay extra attention to them. They signal that something is not operating as usual. Upright cards tend to be conscious, outer, automatic, in process, and available. Reversed cards often indicate choice points, where you must be attentive. They may require conscientious, willful handling if you are to take full advantage of the energies and opportunities. It is like knowing that a car has a tendency to pull to the right and so you have to keep alert and make adjustments for it. Or they are places to stop struggling, relax, and let go of all expectations.' (Greer 2002: 25)
 
-## 12 main ways to read reversals (after Greer 2002); of which the following 10 are relevant to us:
+In tangible, material terms, reversed cards in a reading are a result of blind shuffling. Rather than just a upright/reversed binary, reversals gesture to a spectrum of interpretive meanings for each card. A reversal can indicate the energy of the card is blocked, turned inwards, early or late in its appearance, or manifesting in a more challenging or "shadow" form.
+
+I'm interested in modelling reversals in a way that is less about opposition or negativity, and more about a card's _latency_, or hidden properties (blockages, delays, etc.).
+
+Reading with reversals also requires considering the _relationship_ between reversed and upright cards. If lots of cards are upright, the few reversals stand out more, and vice versa. 
+
+Ways to see through to "the other side", going beyond the limits of the known? A realm of potentials and underlying causes. All a bit subjunctive? A reminder that situations and energies are not fixed or static, but constantly shifting.
+
+A way of adding nuance (though: cf. Kieran Healy, "[Fuck Nuance](https://kieranhealy.org/files/papers/fuck-nuance.pdf)"), destablising and swerving away from the fixed, immutable dictionary approach to tarot interpretation.
+
+From an OOO perspective, the reversal activates a _different set of capacities_ within the card-object. The reversed position reconfigures the card's internal composition and its relations to the other cards in the spread, opening up new lines of interpretation and insight. From this standpoint, the choice to read reversals or not is less about technical proficiency or interpretive sophistication, and more about the reader's orientation to the cards as meaning-making objects. Reading reversals could be seen as a way of _attending to the hidden depths and alternative potentials lurking within each card_.
+
+If the upright card represents one set of attributes, a reversal is one of multiple possible lenses transforming that set. The interpretive challenge is in figuring out which transformations should be applied, through querent input and contextual analysis.
+
+Mary Greer presents a longer list of possible reading techniques (10 of which I work with below), but an even shorter heuristic comes in James Ricklef's "Five Ds": 1. _Delay_ of the original effect; 2. _Diminuation_ of the original effect; 3. _Direct opposite_ of the original meaning; 4. _Dark side_ of the original meaning; 5. _Direction change_.
+
+## 12 ways to read reversals (Greer 2002); of which the following 10 are relevant to us:
 
 1. **Blocked, Resisted**: Obstacles, hindrances, and resistance to the card's energy. ("Blocked", "Stuck", "Stymied", "Thwarted", "Struggled with", "Denied", "Avoided", "Defied", "Resisted", "Repressed", "Refused", "Rejected")
 
@@ -62,23 +51,22 @@ James Ricklef's "Five Ds": 1. _Delay_ of the original effect; 2. _Diminuation_ o
 
 ## Prototyping
 
-### Key Considerations:
+### Key assumptions
 
-1. Presenting multiple reversal interpretations to the querent can provide rich insights but risks cognitive overload. An iterative, dialogic approach can help manage this complexity (are there other ways?).
-2. Combining complementary techniques into more abstract transformations can strike a balance between interpretive richness and coherence. This requires careful analysis of the techniques' underlying principles.
+1. Presenting multiple reversal interpretations to the querent can elicit more meaningful, personalised insights, but also risks cognitive overload. An iterative, dialogic approach can help manage this complexity (are there other ways?).
+2. Combining complementary techniques (from Greer 2002) into more abstract transformations can strike a balance between interpretive richness and coherence. This requires careful analysis of the techniques' underlying principles.
 3. The overall goal is to scaffold the querent's own meaning-making process, eliciting their reflections and associations to populate an evolving personal dictionary. The data model should be designed to support this incremental growth.
 4. Refactoring the `Card` class and data model to accommodate multiple reversal techniques is best approached iteratively, allowing for testing and reflection at each stage.
 
 ### Potential approach
 
-1. Analyse Greer's 10 techniques to identify underlying principles and complementarities. For example, "Blocked/Resisted" and "Delayed/Difficult" both involve a hindrance to the card's energy, while "Inner/Unconscious" and "Projected" both deal with psychological dimensions.
-2. Based on this analysis, develop a set of more abstract reversal transformations that combine related techniques.
-3. Refactor the `Card` class to include these abstract transformations as optional attributes, each pointing to a dictionary of the relevant techniques and their generated interpretations.
-4. Develop an interactive dialogue system that presents the querent with the abstract transformations relevant to their drawn card(s), based on some initial criteria (e.g., the querent's situation, the spread position meaning, etc.).
-5. For each selected transformation, guide the querent through a series of prompts and questions to elicit their reflections, associations, and interpretations. Use this input to generate personalised reversal interpretations using the underlying techniques.
-6. Present the querent with the generated interpretations, highlighting complementarities and tensions between the different techniques. Encourage further reflection and refinement.
-7. Store the querent's finalised interpretations, associations, and reflections in their personal dictionary, linked to the relevant `Card` and transformation. Over time, this dictionary becomes a rich resource for personalised readings.
-8. Iterate on the `Card` class and data model design based on insights from implementing and testing this dialogue system. Refine the abstract transformations and data structures as needed to better support the querent's meaning-making process.
+1. [x] Analyse Greer's 10 techniques to identify underlying principles and complementarities. Based on this analysis, develop a set of more abstract reversal transformations that combine related techniques.
+2. Refactor the `Card` class to include these abstract transformations as optional attributes, each pointing to a dictionary of the relevant techniques and their generated interpretations.
+3. Develop an interactive dialogue system that presents the querent with the abstract transformations relevant to their drawn card(s), based on some initial criteria (e.g., the querent's situation, the spread position meaning, etc.).
+4. For each selected transformation, guide the querent through a series of prompts and questions to elicit their reflections, associations, and interpretations. Use this input to generate personalised reversal interpretations using the underlying techniques.
+5. Present the querent with the generated interpretations, highlighting complementarities and tensions between the different techniques. Encourage further reflection and refinement.
+6. Store the querent's finalised interpretations, associations, and reflections in their personal dictionary, linked to the relevant `Card` and transformation. Over time, this dictionary becomes a rich resource for personalised readings.
+7. Iterate on the `Card` class and data model design based on insights from implementing and testing this dialogue system. Refine the abstract transformations and data structures as needed to better support the querent's meaning-making process.
 
 ### Challenges
 
@@ -88,7 +76,7 @@ James Ricklef's "Five Ds": 1. _Delay_ of the original effect; 2. _Diminuation_ o
 - Ensuring the evolving personal dictionary remains coherent and navigable over time
 - Designing for the edge cases of contradictory or incompatible interpretations across techniques
 
-## Prototyping In-Progress
+## Prototyping in-progress
 
 ```python
 class Card:
@@ -111,7 +99,7 @@ class Card:
 
 ### Transformations
 
-I think we're going to try modelling 6x broad transformations, bundling related techniques identified by Mary Greer under headings of "negation" (the "ground level" or baseline transformation), "obstruction", "imbalance", "shadow", "transformation", and "subversion" (a wildcard).
+I think we're going to try modelling 6x broad transformations, bundling related techniques identified by Mary Greer under headings of "negation" (the "ground level" or baseline transformation), "obstruction", "imbalance", "shadow", "transformation", and "subversion" (a bit of a wildcard).
 
 #### 1. "Negation" ("No/Not/Lacking")
 
