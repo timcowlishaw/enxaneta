@@ -24,9 +24,7 @@ ADDING NUANCE (though: cf. Kieran Healy, "[Fuck Nuance](https://kieranhealy.org/
 
 From an OOO perspective, the reversal activates _a different set of capacities_ within the card-object. The reversed position reconfigures the card's internal composition and its relations to the other cards in the spread, opening up new lines of interpretation and insight.
 
-(Both upright and reversed are sensual surfaces, not the essence itself. 
-Use reversals to challenge the illusion that upright cards are complete manifestations of their archetypes. Every reading is an indirect, imperfect translation of something withdrawn. 
-Let reversals be an invitation to apophatic interpretation; describing the card by what it is not, gesturing at its ineffable withdrawn essence.)
+(Both upright and reversed are sensual surfaces, not the essence itself. Use reversals to challenge the illusion that upright cards are complete manifestations of their archetypes. Every reading is an indirect, imperfect translation of something withdrawn. Let reversals be an invitation to "[apophatic](https://en.wikipedia.org/wiki/Apophasis)" interpretation; describing the card by what it is not, gesturing at its ineffable withdrawn essence.)
 
 From this standpoint, the choice to read reversals or not is less about technical proficiency or interpretive sophistication, and more about the reader's orientation to the cards as meaning-making objects. Reading reversals could be seen as a way of _attending to the hidden depths and alternative potentials lurking within each card_ - an invitation to explore the "strange stranger" that withdraws behind the card's surface meanings.
 
@@ -321,11 +319,34 @@ The program could also track the presence and frequency of obstructions across a
 
 #### 3. "Imbalance" (Misused/Misdirected + Excessive/Over/Undercompensating)
 
-Imbalance points to a distortion or misapplication of the card's upright energy. The reversal isn't a negation but a deviation from the ideal expression, suggesting a need for recalibration. Modeling this could use a `imbalance_type` attribute or a numeric `intensity` scale.
+Imbalance points to a distortion or misapplication of the card's upright energy. The reversal isn't a negation but a deviation from the ideal expression, suggesting a need for recalibration. Modeling this could use a `imbalance` attribute.
 
-The program would present reversed cards as imbalanced expressions of their upright qualities, inviting the querent to consider where and what they may be over- or under-doing.
+Could define an `imbalance` enum to represent the different types of imbalance (e.g., "MISUSED", "MISDIRECTED", "EXCESSIVE", "DEFICIENT", "NARROW", "UNSTABLE", "INAPPROPRIATE"), providing a structured way to categorise and interpret the nature of the imbalance in reversed cards.
 
-e.g. An excessively imbalanced Hermit might be interpreted as "Isolation overindulged" or "Withdrawal overcompensating." The querent would be prompted to reflect on where they may be taking the Hermit's qualities of solitude and introspection to an unhealthy extreme.
+Could include a `diagnose_imbalance()` (`discern_imbalance`?) function that analyses the querent's situation and the card's upright meaning to determine the specific type of imbalance present in a reversed card. This could involve a dialogic interaction with the querent, or pattern matching against common misuses or misdirections associated with each card.
+
+```python
+def diagnose_imbalance(card, querent_situation):
+    # Review querent_situation and card.upright_meaning
+    # to determine the type of imbalance
+    # Return an Imbalance enum value
+    pass
+```
+
+```python
+def interpret_imbalance(card):
+    if card.imbalance == Imbalance.MISUSED:
+        return f"{card.name}'s energy of {card.upright_meaning} may be misused or misapplied. Consider how to redirect this energy more constructively."
+    elif card.imbalance == Imbalance.EXCESSIVE:
+        return f"An excessive or overcompensating expression of {card.name}'s {card.upright_meaning}. Reflect on where you may need to scale back or find balance."
+    # ... handle other Imbalance types
+```
+
+Ontographically, this transformation frames the tarot reading as a landscape of energetic intensities and/or potential misalignments. The spread becomes a map of imbalances and compensations, pointing to areas of excessive, deficient, or misapplied expression, needing correction or realignment. Each reversed card represents a point where the application that energy has gone awry.
+
+The program will present reversed cards as imbalanced expressions of their upright qualities, inviting the querent to consider where and what they may be over- or under-doing.
+
+e.g. An excessively imbalanced Hermit might be interpreted as "Excessive isolation." The querent would be prompted to reflect on where they may be taking the Hermit's qualities of solitude and introspection to an unhealthy extreme.
 
 #### 4. "Shadow" (Projected + Inner/Unconscious/Private)
 
