@@ -222,13 +222,13 @@ This positions the reading as a dialogue between the user's conscious situation 
 
 #### 5. "Transformation" (Breaking Through/Overturning + "Re-" Words)
 
-Transformation frames reversals as catalysts for change and/or reorientation, pivots or turning points where old patterns can be overturned. The querent might be getting out from under, breaking free of, rejecting, refusing, or turning away from the energy or condition depicted. It could also designate the end or passing of a situation, a loosening, or change in direction. The transformation operation (?) emphasises process over state, framing the upright and reversed meanings as part of an ongoing evolution. A reversed card becomes a fork in the path, inviting the querent to overturn old patterns or correct course.
+"Transformation" frames reversals as catalysts for change and/or reorientation, pivots or turning points where old patterns can be overturned. The querent might be getting out from under, breaking free of, rejecting, refusing, or turning away from the energy or condition depicted. It could also designate the end or passing of a situation, a loosening, or change in direction. The "transformation" operation (?) emphasises process over state, framing the upright and reversed meanings as part of an ongoing evolution. A reversed card becomes a fork in the path, inviting the querent to overturn old patterns or correct course.
 
 The technique frames reversals as markers of instability and potential transformation, aligning with an ontology of becoming and emergence. The meanings of the cards are fluid and dynamic. How do we model this fluidity in the data structure? Should we allow for multiple, context-dependent interpretations of each reversal, and if so, how do we manage the resulting complexity?
 
 This could involve adding a `transformation` attribute to the `Card` class, which could be an enum or string indicating the specific type of transformative energy associated with the reversal (e.g., "TOPPLING", "BREAKING_THROUGH", "LOOSENING", "RETRACTING", "RECONSIDERING", "REDEEMING"[^4]). 
 
-**Alternatively**: We could use a boolean `catalyst` attribute (or similar) to signal whether the reversal represents a transformative catalyst, and then determine the specific transformation type procedurally based on the card's other attributes and the querent's situation.
+**Alternatively**: We could use a boolean `catalyst` attribute (or similar) to signal whether the reversal represents a transformative catalyst, and then determine the specific transformation type procedurally based on the card's other attributes and the querent's situation. (Seems like a bit of a faff.)
 
 ```python
     def apply_reversal(self, relationship):
@@ -335,4 +335,4 @@ def generate_subversive_prompts(card):
 [^3]: (J) This is better, I think. Less ethically dubious, in terms of accidentally harvesting loads of sensitive user data. A way of honouring the querent's autonomy, even if/as they are just one object among many (lol).
 [^4]: (J) I think it makes sense to format these as verbs, foregrounding the processual nature of the operation.
 [^5]: (J) A little bit tenuous, but let's see.
-[^6]: (J) Ah yes, operationalising humour, what could possibly go wrong? (What _is_ irony?)
+[^6]: (J) Ah yes, operationalising humour, what could possibly go wrong? ("What _is_ irony?" etc.)
