@@ -197,7 +197,7 @@ Procedurally, this technique lends itself to an iterative, dialogic model of tar
 
 ### 10. **Unconventional, Shamanic, Magical, Humorous**
 
-> 'If an upright card depicts conventional siwdom, then the reversal illustrates unconventional wisdom. It quests all the assumptions indicated by the upright meaning. It is not straight, but crooked and crazy. Each card has a place that you can "see through and into." you have to look under the mask of what "seems to be." Thus there could be a trickster aspect to a reversed card. Perhaps a sense of humour is required; you are being instructed not to take the situation too seriously. … The shamanic or magical view, in particular, asks you to enter the card and journey to an Alice-in-Wonderland realm in order to bring back a vital message or understanding.' (Greer 2002)
+> 'If an upright card depicts conventional wisdom, then the reversal illustrates unconventional wisdom. It quests all the assumptions indicated by the upright meaning. It is not straight, but crooked and crazy. Each card has a place that you can "see through and into." you have to look under the mask of what "seems to be." Thus there could be a trickster aspect to a reversed card. Perhaps a sense of humour is required; you are being instructed not to take the situation too seriously. … The shamanic or magical view, in particular, asks you to enter the card and journey to an Alice-in-Wonderland realm in order to bring back a vital message or understanding.' (Greer 2002)
 
 [Subversion, unconventional wisdom, and Trickster energy.] ["Humorous", "Trickster", "Coyote", "Joke", "Topsy-turvy", "See through", "Unconventional", "Contrary", "Subverted", "Iconoclastic", "Crooked", "Baffled", "Twisted", "New Perspective"]
 
@@ -367,23 +367,107 @@ e.g. A shadow reversal of the Lovers might be interpreted as "Unconsciously proj
 
 Interpreting a reversal would involve looking up the card's shadow_archetype and reflecting on how that archetypal energy might be manifesting in the user's situation, without requiring direct psychological analysis. Reversed cards could be treated as invitations for the querent to dialogue with the shadow archetype.
 
-This positions the reading as a dialogue between the user's conscious situation and the deeper archetypal energies at play, represented by the upright and reversed cards respectively. The spread becomes a map of the interplay between light and shadow.
+This positions the reading as a dialogue between the user's conscious situation and the deeper archetypal energies in play. The spread becomes a map of the interplay between light and shadow.
 
 **Or**: Even more broadly, this transformation could access "hidden" or "latent" dimensions of the cards upright meaning? We'd need to give some thought to what this might look like in practice; perhaps using enums (e.g. "DEEP", "CONCEALED", "UNEXPRESSED", "INDIRECT", "UNDERGROUND").
 
 #### 5. "Transformation" (Breaking Through/Overturning + "Re-" Words)
 
-Transformation frames reversals as catalysts for change or reorientation, turning points where old patterns can be overturned. It emphasises process over state, framing the upright and reversed meanings as part of an ongoing evolution. Modeling this could involve a `transformation_type` attribute or `catalyst` boolean.
+Transformation frames reversals as catalysts for change and/or reorientation, pivots or turning points where old patterns can be overturned. The querent might be getting out from under, breaking free of, rejecting, refusing, or turning away from the energy or condition depicted. It could also designate the end or passing of a situation, a loosening, or change in direction. The transformation operation (?) emphasises process over state, framing the upright and reversed meanings as part of an ongoing evolution. A reversed card becomes a fork in the path, inviting the querent to overturn old patterns or correct course.
 
-The program would present reversed cards as invitations or opportunities for growth and change. Querent interactions would focus on identifying and engaging with these transformative openings.
+The technique frames reversals as markers of instability and potential transformation, aligning with an ontology of becoming and emergence. The meanings of the cards are fluid and dynamic. How do we model this fluidity in the data structure? Should we allow for multiple, context-dependent interpretations of each reversal, and if so, how do we manage the resulting complexity?
 
-e.g. A "breaking through" reversal of the Tower might be interpreted as "Liberating upheaval" or "Breakthrough crisis." The querent would be prompted to consider how the Tower's disruptive energy could be harnessed for positive transformation and rebuilding.
+This could involve adding a `transformation` attribute to the `Card` class, which could be an enum or string indicating the specific type of transformative energy associated with the reversal (e.g., "TOPPLING", "BREAKING_THROUGH", "LOOSENING", "RETRACTING", "RECONSIDERING", "REDEEMING"[^4]). 
+
+**Alternatively**: We could use a boolean `catalyst` attribute (or similar) to signal whether the reversal represents a transformative catalyst, and then determine the specific transformation type procedurally based on the card's other attributes and the querent's situation.
+
+```python
+    def apply_reversal(self, relationship):
+        if self.catalyst:
+            if relationship == "stuck":
+                return f"Breaking free from limitation: {self.upright_meaning}"
+            elif relationship == "resisting":
+                return f"Overturning resistance: {self.upright_meaning}"
+            # Add other relationship mappings as needed
+        else:
+            return f"Reconsidering: {self.upright_meaning}"
+```
+
+(I like this. Three pipes, for example, with a default. How to make these pipes sufficiently chunky?)
+
+**Or**: Implement an `assess_relationship()` function that takes the querent's situation (perhaps as a string or a more structured object) and the card's upright meaning, and returns a description of the querent's current relationship to that energy (e.g., "stuck", "resisting", "outgrowing"). Then create a `propose_reversal()` function that takes the querent's current relationship to the upright meaning (from `assess_relationship()`) and generates a transformative reversal interpretation.
+
+Procedurally, interpreting a reversal as "breaking through" or "changing direction" involves identifying the querent's current relationship to the upright meaning, and then signaling a potential point of departure or transformation. Ontographically, this frames the tarot reading as a space of potential revision and reconsideration. This aligns with an ontology of change and process, where the meanings of the cards are not fixed but subject to ongoing adjustment.
+
+```python
+querent_context = "Feeling stuck in a rut"
+transformed_card = card.transformation(querent_context)
+print(transformed_card.reversed_meaning)
+```
+
+How to structure the program's elicitation of `querent_context`, before or through the reading?
+
+```python
+    def assess_relationship(self, querent_input):
+        # Placeholder for assessing the querent's relationship to the upright meaning
+        # This could involve NLP techniques or predefined mappings
+        return "stuck"  # Example output
+
+    def propose_reversal(self, relationship):
+        if relationship == "stuck":
+            return TransformationType.BREAKING_THROUGH
+        elif relationship == "resisting":
+            return TransformationType.OVERTURNING
+        # Add other mappings as needed
+```
+
+The program would present reversed cards as invitations or opportunities for growth and change. Querent interactions would focus on identifying and engaging with these transformative openings. The program should facilitate this active engagement, providing tools and prompts that empower the querent to explore and enact transformative changes.
+
+e.g. A "reconsidering" reversal of the Tower might be interpreted as "Reconsidering upheaval" or "Revelation reconsidered." The querent would be prompted to reflect on the value (or not) of Tower's disruptive energy at this point in time.[^5]
+
+```python
+tower_card = Card("The Tower", "Upheaval", "Revelation", "Awakening") # How will the card  handle keywords?
+tower_card.set_transformation_type("reconsidering")
+querent_state = "feeling trapped"
+if tower_card.assess_relationship(querent_state):
+    reversed_interpretation = tower_card.propose_reversal()
+    print(reversed_interpretation) # Example output: "Reconsidering upheaval: The Tower suggests reconsidering sudden change.
+```
+
+Philosophically, this operation resonates with ideas of self-creation, framing the querent as an agent actively shaping their path, not just passively receiving the cards' meanings. The "transformation" reversal is a "clinamen", an invitation to overturn determinism.
+
+- How do we encode the specific actions or reflections associated with each transformation type? Should these be predefined or generated dynamically (procedurally?) based on the querent's input?
+- How do we guide the querent through the process of identifying their relationship to the upright meaning and proposed transformation? Should we use a decision tree, an iterative dialogue, or another method to scaffold this interaction?
 
 #### 6. "Subversion" (Unconventional/Shamanic)
 
-Subversion positions reversals as challenges to conventional wisdom, revealing unexpected or even absurd perspectives. It emphasises the contextual fluidity of interpretation, and the value of unorthodox insight. Modeling this could use an `unconventional_meaning` attribute.
+Subversion positions reversals as challenges to conventional wisdom, revealing unexpected, oblique, or even absurd perspectives. It emphasises the contextual fluidity of interpretation, and the value of unorthodox insight.
 
-The program would frame reversed cards as invitations to question assumptions and entertain alternative viewpoints. Querent interactions would involve playful, lateral, or oblique engagement with the cards' meanings.
+Operationalising the trickster archetype and/or shamanic wisdom is no mean feat.
+
+We could implement a `subversion` attribute on the `Card` class to store unconventional or trickster-like meanings associated with reversals. This could be a string, array, or even a nested object with multiple subversive interpretations.
+
+We might want a function or method to generate subversive reversal interpretations based on the upright meaning. This could involve:
+
+- Identifying and inverting key concepts or assumptions in the upright meaning
+- Applying humour, irony, or absurdity to the upright meaning[^6]
+- Drawing from a predefined set of unconventional or trickster-like archetypes or themes
+
+We want a function that takes the upright meaning as an input, and returns a subverted or ironised version. Juxtaposition, exaggeration, reframing, alternative viewpoints?
+
+Are we looking at a predefined dictionary of subversive interpretations?
+
+```python
+def subvert_meaning(card, upright_meaning, querent_input):
+    subversions = {
+        "The Fool": [
+            "The wisdom of folly: embracing the unknown with reckless abandon.",
+            "The holy fool: finding enlightenment in the absurd and the unexpected."
+        ]
+    }
+```
+
+The program needs to frame reversed cards as invitations to question assumptions and entertain alternative viewpoints. Querent interactions should support playful, lateral, or oblique engagement with the cards' meanings. The querent could be invited to question their assumptions about the situation or the card's upright meaning ("What else might be going on here?"); look for humour/irony, opportunity, or unexpected lessons in challenging circumstances; or consider how a trickster might approach or _reframe_ the issue at hand.
 
 e.g. A subversive reversal of Death might be interpreted as "Unexpected rebirth" or "Playful ending." The querent would be encouraged to look for the humor or creative potential in experiences of loss and transformation.
 
@@ -391,4 +475,7 @@ e.g. A subversive reversal of Death might be interpreted as "Unexpected rebirth"
 
 [^1]: (J) However, this binary ontology does risk reducing the tarot's symbolic richness to a series of on/off switches, losing sight of more subtle shades of significance. As Greer cautions (and Jodorowsky echoes), a purely mechanical negation risks generating interpretations that are overly machinic or pessimistic. The program may need to incorporate additional heuristics to maintain a balanced perspective.
 [^2]: (J) Deliberately ridiculous examples; need to figure out a proper enum grammar.
-[^3]: (J) This is better, I think. Less ethically dubious, in terms of accidentally harvesting loads of sensitive user data. A way of honouring the querent's autonomy and self-sovereignty, even as they are just one object among many (lol).
+[^3]: (J) This is better, I think. Less ethically dubious, in terms of accidentally harvesting loads of sensitive user data. A way of honouring the querent's autonomy, even if/as they are just one object among many (lol).
+[^4]: (J) I think it makes sense to format these as verbs, foregrounding the processual nature of the operation.
+[^5]: (J) A little bit tenuous, but let's see.
+[^6]: (J) Ah yes, operationalising humour, what could possibly go wrong? (What _is_ irony?)
