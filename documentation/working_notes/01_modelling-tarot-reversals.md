@@ -40,176 +40,25 @@ James Ricklef's "Five Ds": 1. _Delay_ of the original effect; 2. _Diminuation_ o
 
 ## 12 main ways to read reversals (after Greer 2002); of which the following 10 are relevant to us:
 
-### 1. **Blocked, Resisted**
+1. **Blocked, Resisted**: Obstacles, hindrances, and resistance to the card's energy. ("Blocked", "Stuck", "Stymied", "Thwarted", "Struggled with", "Denied", "Avoided", "Defied", "Resisted", "Repressed", "Refused", "Rejected")
 
-> 'The energy normally described by the card may be blocked, repressed, denied, rejected, or resisted.' (Greer 2002)
+2. **Projected**: Psychological mirroring, reflecting denied or disowned aspects of the self: qualities we may see in others but fail to recognise in ourselves. The reversal acts as a kind of flip, _turning the card's energy outward_ rather than inward. 
 
-[Obstacles, hindrances, and resistance to the card's energy.] ["Blocked", "Stuck", "Stymied", "Thwarted", "Struggled with", "Denied", "Avoided", "Defied", "Resisted", "Repressed", "Refused", "Rejected"]
+3. **Delayed, Difficult, Unavailable**: Temporal challenges, delays, and difficulties in manifesting the card's energy. Each card contains latent potentials that may be delayed, made difficult, or rendered temporarily unavailable by a reversal. The reversal doesn't negate the card's core meaning, but rather modifies the ease and timeline of its manifestation. Temporary challenges, rather than permanent, immutable obstacles. ("Delayed", "Hestitated", "Held back", "Set back", "Made difficult", "Rough road", "Indecisive", "Distracted", "Obstructed", "Hindered", "Suspended", "Inhibited", "Turned away from")
 
-In an object-oriented `Card` class model, this could be represented through a `reversed` boolean attribute that, when `True`, triggers an alternate set of meanings or interpretations associated with blockage or resistance. These alternate meanings could be stored as additional attributes on the Card object, such as `blocked_meaning` or `resisted_archetype`, paralleling the standard `meaning` and `archetype` attributes.
+4. **Inner, Unconscious, Private**: Internal, hidden, or unconscious aspects of the card's energy. This technique maps the tarot system onto a model of the psyche, with upright cards representing conscious phenomena and reversals representing the querent's unconscious or internal state. ("Inner", "Inward", "Unconscious", "Internal", "Personal", "Private", "Deep", "Secret", "Covert", "Unexpressed", "Indirect", "Underground", "Underlying", "Concealed", "Unseen", "Beneath", "Below")
 
-_Alternatively_, the `Card` class could include methods like `meaning()` and `archetype()` that return different values based on the state of the reversed attribute, encapsulating the reversal logic.
+5. **Breaking Through, Overturning, Refusing, Changing Direction**: Transformative thresholds, pivotal choice points, and active change. This frames the reading as a space of potential transformation, a landscape of thresholds and pivotal moments. Reversals mark points of instability where new possibilities can emerge through the querent's choices. The reversed card is an assertion of agency, an invitation to overturn determinism. ("Overturned", "Overthrown", "Overcome", "Broken through", "Put down", "Changed", "Adjusted", "Toppled", "Out from under", "Falling away", "Unseated", "Breached", "Loosened", "Freed", "Released")
 
-In a procedural model like a tuple `(card, reversed)`, this negation operation could be applied when the `reversed` boolean is `True`, perhaps via a function like `apply_reversal(meaning)` that takes a base meaning and returns its negated or inverted form.
+6. **No or Not (X); Lacking**: Binary negation or absence of the card's core qualities. The reversal flips the card's polarity. A simple "ground level" of reversal, a _first approximation_ of the card's inverted meaning that sets the stage for deeper, more individualised interpretations. ("No", "Not", "Negated", "Inverse of", "Lacking", "Absent", "Without", "Ended", "End of", "Discontinued")
 
-- [?] These two approaches are essentially equivalent, right?
+7. **Excessive, Over- or Undercompensating**: Spectrum of intensity, over- or under-expression of the card's energy. Frames the reading as a landscape of energetic intensities, or a map of imbalances and compensations, with each card manifesting its archetypal meaning to a greater or lesser degree. Modelling a dynamic system (the psyche?) seeking equilibrum. ("Too much", "Too strong", "Overwhelmed", "Overly", "Excessive", "Exaggerated", "Intensified", "Overindulged",  "Ungrounded", "Out of control", "Tentative", "Toned down", "Softened", "Embryonic", "Too little", "Lessened", "Narrowed")
 
-Procedurally, applying this technique would involve an additional step in the interpretation process, where the reversal status of each card is checked and the appropriate negation or inversion operation is applied to generate the final reversed meaning. This additional reversal step could be encapsulated in the `Card` class methods or in standalone functions, depending on the overall architecture of the program. 
+8. **Misused or Misdirected**: Distortion or deviation from the card's true nature. Each reversed card represents a point where the querent's application of that energy has gone awry. The spread becomes a landscape of potential misalignments. Interpreting a reversal as "misused" or "misdirected" involves identifying how the card's upright energy is being misapplied in the querent's situation, and suggesting corrective actions. ("Misused", "Misdirected", "Misplaced", "Mistrust", "Mishap", "Mistaken", "Miss", "Instability", "Irresponsible", "Problematic", "Inappropriate")
 
-Interpreting a spread with multiple reversed cards would involve repeatedly applying this negation procedure to each card's base meanings, then synthesising the results into a coherent interpretation. Tracking the history of a card's reversals over multiple readings could yield interesting insights into patterns of blockage or resistance over time.
+9. **"Re-" Words: Retried, Retracted, Reviewed, Reconsidered**: Reflection, correction, and/or reevaluation. Reversals mark moments of opposition and negation, spurring reevaluation. The reading becomes a space of revision, subject to ongoing adjustment. Each reversed card becomes an invitation to look again with fresh eyes, charting a new course if needed. ("Retreated", "Reconsidered", "Reviewed", "Retracted", "Retrograde", "Reverse direction", "Rectified", "Relieved", "Relaxed", "Returned", "Renewed", "Remedied", "Rectified", "Relieved", "Redeemed", "Corrected", "Countered")
 
-### 2. **Projected**
-
-> 'There could be a tendency to project denied material onto others. These may be qualities you admire as well as those you do not like.' (Greer 2002)
-
-[Psychological mirroring, reflecting denied or disowned aspects of the self.] ["Projected"]
-
-**Summary**: Reversals as a kind of psychological mirror, reflecting aspects of the self that are denied or disowned. Each card contains within itself a set of potential projections: qualities that we may see in others but fail to recognise in ourselves. The reversal acts as a kind of flip, _turning the card's energy outward_ rather than inward. Procedurally, the interpretation of a reversed card should involve a kind of psychological mirroring or reflection process, where the qualities of the card are examined as potential projections of the querent.
-
-In an object-oriented Card class model, this could be represented through a `projected_attributes` property that holds an array of qualities associated with the card when reversed. These attributes would be distinct from the card's core `attributes`, representing a shadow or denied aspect of the self. The `projected_attributes` could include both positive and negative traits. For example, the reversed King of Wands might have projected_attributes like `["confident", "arrogant", "passionate", "impulsive"]`.
-
-In a procedural model, this could involve a `project_attributes(querent)` method on the `Card` class that compares the `projected_attributes` to the `querent` object's own attributes (!!!), looking for matches or discrepancies. This method could return a interpretation string highlighting any projections. 
-
-Applying this technique would involve an additional step in the interpretation process, where each reversed card is examined for potential projections based on the querent's psychological profile. This profile could be gathered through an initial intake form (YIKES) or dynamically throughout the reading.
-
-### 3. **Delayed, Difficult, Unavailable**
-
-> 'There could be hesitation, uncertainty, unavailability, or an external delay. With many cards reversed, overall change may take longer that expected.' (Greer 2002)
-
-[Temporal challenges, delays, and difficulties in manifesting the card's energy.] ["Delayed", "Hestitated", "Held back", "Set back", "Made difficult", "Rough road", "Indecisive", "Distracted", "Obstructed", "Hindered", "Suspended", "Inhibited", "Turned away from"]
-
-**Summary**: Reversals as modifiers of the card's temporal unfolding or accessibility, rather than negations of its fundamental meaning. Each card contains latent potentials that may be delayed, made difficult, or rendered temporarily unavailable by a reversal. The reversal doesn't negate the card's core meaning, but rather modifies the ease and timeline of its manifestation. The querent's actions and choices can impact the degree of delay or difficulty, with 'negative' reversals as temporary challenges rather than permanent, immutable obstacles.
-
-This framing implies that the querent's actions and choices can impact the degree of delay or difficulty, and that 'negative' reversals may be temporary challenges rather than permanent, immutable obstacles. The data model could reflect this by allowing reversal attributes to be updated based on the querent's evolving context.
-
-In an object-oriented `Card` class model, this could be represented through attributes like `delay`, `difficulty`, or `availability`, which could hold values indicating the degree or nature of the impediment (lol).
-
-Reversal attributes could be set based on the specific reversal keyword, e.g., `card.set_reversal('delay', 'Hesitated')`, allowing for nuanced descriptions of the blockage.
-
-In a procedural model, this could involve applying functions like `delay()`, `make_difficult()`, or `make_unavailable()` to the card's upright meaning, based on the specific reversal keyword.
-
-The interpretation could also suggest potential actions or choices the querent could make to overcome the delay or difficulty, based on the specific nature of the blockage. For example, a "Hesitated" reversal might prompt the querent to examine and overcome their indecision, while an "Obstructed" reversal might suggest identifying and removing external barriers.
-
-In a multi-card spread, the presence of multiple reversals with delay or difficulty keywords could suggest a slowdown in the querent's progress or development. The program could track the frequency and severity of such reversals across readings to identify persistent patterns of blockage.
-
-### 4. **Inner, Unconscious, Private**
-
-> 'The energy might be unconscious, inner, or private rather than conscious, outer, or public.' (Greer 2002)
-
-[Internal, hidden, or unconscious aspects of the card's energy.] ["Inner", "Inward", "Unconscious", "Internal", "Personal", "Private", "Deep", "Secret", "Covert", "Unexpressed", "Indirect", "Underground", "Underlying", "Concealed", "Unseen", "Beneath", "Below"]
-
-**Summary**: Reversals as pointers to the querent's inner world, in contrast to the outer, public face represented by upright cards. The technique maps the tarot system onto a model of the psyche, with upright cards representing conscious phenomena and reversals representing the unconscious. Procedurally, interpreting a reversed card as "inner, unconscious, private" involves a kind of psychological mirroring or reflection, where the card's energy is understood as an internal state or process of the querent.
-
-In an object-oriented `Card` class model, this could be represented through a `facing` attribute with values like `"upright"`, `"reversed"`, `"inner"`, `"outer"`, etc. The facing would indicate the ontological status of the card's energy - whether it manifests internally or externally. Alternatively, a `reversed_meaning` attribute could hold interpretations specific to the inner/unconscious reading, distinct from the upright meaning. This separates the two ontological realms. (I think this is too binary?)
-
-In a procedural model, this could involve functions like `interiorise()` or `reflect()` that transform the card's upright meaning into a statement about the querent's inner world, e.g., `interiorise("Creative abundance")` yields `"In your inner world, creative abundance"`.
-
-### 5. **Breaking Through, Overturning, Refusing, Changing Direction**
-
-> 'The querent could be overturning, getting out from under, breaking free of, rejecting, refusing, or turning away from the condition pictured. It can also show the end of passing away of a situation, a loosening, or a change in direction.' (Greer 2002)
-
-[Transformative thresholds, pivotal choice points, and active change.] ["Overturned", "Overthrown", "Overcome", "Broken through", "Put down", "Changed", "Adjusted", "Toppled", "Out from under", "Falling away", "Unseated", "Breached", "Loosened", "Freed", "Released"]
-
-**Summary**: Reversals as transformative thresholds or pivotal choice points. Ontographically, this frames the tarot reading as a space of potential transformation, where each reversed card is a fork in the path, inviting the querent to overturn old patterns or change direction. Reversals mark points of instability where new possibilities can emerge through the querent's active choices. Procedurally, interpreting a reversal as "breaking through" or "changing direction" involves identifying the querent's current relationship to the upright meaning, and then signaling a potential point of departure or transformation.
-
-This technique aligns with an ontology of becoming and emergence, where the querent's engagement with the cards' energies is fluid and dynamic. The spread maps a landscape of thresholds and pivotal moments. Reversals mark points of instability where new possibilities can emerge through the querent's active choices (yesssss). Philosophically, it resonates with ideas of radical freedom and self-creation, framing the querent as an agent actively shaping their path, not just passively receiving the cards' meanings. The reversal is an invitation to overturn determinism.
-
-In an object-oriented model, this could be represented through a `reversed_action` attribute on the Card class, holding values like `"overturning"`, `"breaking free"`, `"rejecting"`, `"turning away"`, etc. This attribute signifies the querent's active stance towards the card's energy.
-
-In a procedural model, this could involve functions like `assess_relationship()` and `propose_reversal()` that analyse the querent's situation and suggest potential reversed meanings.
-
-Applying this technique would involve first calling `assess_relationship()` to diagnose the querent's current state, then feeding that into `propose_reversal()` to generate the specific reversal interpretation, e.g. "breaking free from limitation". The reading becomes a springboard for embodied change.
-
-### 6. **No or Not (the upright meaning); Lacking**
-
-> 'Occasionally you can preface a standard upright interpretation with "no" or "not." Or try adding prefixes such as "non-" or "un-" to upright meanings. ... Take care that this does not lead to a judgemental, overly deterministic, or negative attitude.' (Greer 2002)
-
-[Binary negation or absence of the card's core qualities.] ["No", "Not", "Negated", "Inverse of", "Lacking", "Absent", "Without", "Ended", "End of", "Discontinued"]
-
-**Summary**: Reversals as a kind of binary switch, toggling between the presence and absence of a card's core qualities. Each card's meaning oscillates between its upright significance and its negation, with no intermediate states. The reversal flips the card's polarity. Procedurally, interpreting a reversal as "No or Not (the upright meaning)" involves a straightforward negation operation. Perhaps best understood as a kind of "ground level" of reversal, a _first approximation_ of the card's inverted meaning that sets the stage for deeper, more individualised interpretations to emerge, in dialogue with the querent. A practical entry point to begin grappling with the tarot's inverted meanings.
-
-Ontographically, this technique maps the tarot's symbolic world onto a binary space of presence and absence. (However, this binary ontology risks reducing the tarot's symbolic richness to a series of on/off switches, losing sight of more subtle shades of significance.)
-
-In an object-oriented `Card` class model, this could be represented through a reversed boolean attribute. When `True`, the card's meaning would be interpreted as the negation of its upright attributes.
-
-Procedurally, the program would prepend "No" or "Not" to the card's upright meaning, or add negating prefixes like "non-" or "un-" to key terms. In a procedural model, this could be implemented as a `negate()` function that takes the upright meaning string and returns its negated form.
-
-Applying this technique would involve checking the `reversed` attribute of each card and, if `True`, passing its `upright_meaning` through the `negate()` function to generate the reversed interpretation. This negation operation could be extended with more sophisticated natural language processing techniques, such as identifying and negating key sentiment words or phrases within the upright meaning. (However, as Greer cautions, this mechanical negation risks generating interpretations that are overly machinic or pessimistic. The program may need to incorporate additional heuristics to maintain a balanced perspective.)
-
-The program could also track the frequency of negated interpretations across a reading and provide compensatory prompts for reflection if they exceed a certain threshold, to avoid an overly negative tone (rofl).
-
-### 7. **Excessive, Over- or Undercompensating**
-
-> 'The reversal may intensify or lessen the meaning of the card, or take it to extremes and overindulgence: too little or too much, under or overdeveloped, immature or senile. In pyschological terms it can indicate over- or undercompensation, or a tendency to flip dramatically between polarities.' (Greer 2002)
-
-[Spectrum of intensity, over- or under-expression of the card's energy.] ["Too much", "Too strong", "Overwhelmed", "Overly", "Excessive", "Exaggerated", "Intensified", "Overindulged",  "Ungrounded", "Out of control", "Tentative", "Toned down", "Softened", "Embryonic", "Too little", "Lessened", "Narrowed"]
-
-**Summary**: Reversals as a spectrum of intensity, rather than a binary state. Ontographically, it frames the tarot reading as a landscape of energetic intensities, with each card manifesting its archetypal meaning to a greater or lesser degree. The spread becomes a map of imbalances and compensations (_nice_). This aligns with an ontology of the psyche as a dynamic system seeking equilibrium. Reversals represent over- or under-compensations in that system, pointing to areas of excessive or deficient expression. Procedurally, interpreting a reversal as "excessive" or "deficient" involves scaling the intensity of the card's core meaning up or down, based on the degree of reversal.
-
-In an object-oriented `Card` class model, this could be represented through an intensity attribute, perhaps an integer or enum type, indicating the degree of over- or under-expression of the card's energy.
-
-In a procedural model, this could involve functions like `intensify()` or `diminish()` that modify the card's upright meaning based on its intensity attribute. Applying this technique would involve setting the `intensity` attribute of reversed cards, then calling the `interpret()` function to generate the modified meaning.
-
-The interpretation could suggest reflections or actions to bring the energy into balance, based on whether it is excessive or deficient. For example, an excessively assertive King of Wands might prompt the querent to practice humility and collaboration (lol).
-
-In a multi-card spread, the program could appraise the overall balance of intensities, highlighting areas of overcompensation or deficiency in the querent's life. It could suggest practices to harmonise these energies.
-Over a series of readings, the program could track the querent's progress in balancing the energies of frequently reversed cards, offering guidance and affirmation.
-
-### 8. **Misused or Misdirected**
-
-> 'Misfiring, misuse, or misdirection implies a faulty start, bad timing, or something that is not used appropriately. … Try other forms of the prefix mis-.' (Greer 2002)
-
-[Distortion or deviation from the card's true nature.] ["Misused", "Misdirected", "Misplaced", "Mistrust", "Mishap", "Mistaken", "Miss", "Instability", "Irresponsible", "Problematic", "Inappropriate"]
-
-**Summary**: Reversals as a kind of distortion or deviation from the card's "true" nature. Each reversed card represents a point where the querent's application of that energy has gone awry. This aligns with an ontology that sees the tarot archetypes as having true, essential natures that can be misapplied through human error or misunderstanding. Reversals represent a departure from the card's authentic expression. Procedurally, interpreting a reversal as "misused" or "misdirected" involves identifying how the card's upright energy is being misapplied in the querent's situation, and suggesting corrective actions.
-
-Ontographically, this frames the tarot reading as a landscape of potential misalignments. The spread becomes a map of areas needing correction or realignment.
-
-It also resonates with the idea of the "shadow" in Jungian psychology, where unintegrated aspects of the psyche can manifest in distorted or problematic ways. Reversals could represent the querent's shadow energies needing integration.
-
-In an object-oriented `Card` class model, this could be represented through a `misuse_type` attribute, perhaps an enum or string, indicating the specific way the card's energy is being misapplied.
-
-In a procedural model, this could involve functions like `diagnose_misuse()` and `suggest_realignment()` that analyse the querent's situation and propose ways to redirect the card's energy. Applying this technique would involve first calling `diagnose_misuse()` to identify the specific way the card's energy is being misapplied, then passing that to `suggest_realignment()` to generate advice for the querent.
-
-The interpretation could draw on a knowledge base of common misuses and misdirections associated with each card, and corresponding corrective actions. For example, the reversed Chariot might suggest the querent is misusing their willpower to control others rather than master themselves.
-
-Over a series of readings, the program could track patterns in the querent's misuses, offering insights into recurring shadow tendencies or areas for growth. It could celebrate when previously misused energies show up in upright positions, reflecting successful integration (lol what, imagining a confetti animation).
-
-Modelling this in the data structures and algorithms of the tarot program would position Querent.py as a kind of "wise friend" or mentor, helping the querent recognise where they've gone off track and gently guiding them back to the authentic expression of each card's highest potential. (Bit paternalistic?)
-
-### 9. **"Re-" Words: Retried, Retracted, Reviewed, Reconsidered**
-
-> 'Reversals immediate suggest other "re-" words such as those above. The prefix "re-" denotes backward motion, withdrawal, opposition, negation, or to do again.' (Greer 2002)
-
-[Reflection, correction, and reevaluation.] ["Retreated", "Reconsidered", "Reviewed", "Retracted", "Retrograde", "Reverse direction", "Rectified", "Relieved", "Relaxed", "Returned", "Renewed", "Remedied", "Rectified", "Relieved", "Redeemed", "Corrected", "Countered"]
-
-**Summary**: Reversals as markers of change, correction, or opposition to the card's initial state. Each reversed card represents a point of reflection or course correction in relation to the upright meaning. Reversals mark moments of opposition and negation spurring reevaluation. Reversals prompt the querent to revisit their assumptions, reconsider their actions, and potentially change course. Each reversal becomes an invitation to look again with fresh eyes, charting a new course if needed.
-
-(It's kind of processual?) Ontographically, this frames the tarot reading as a space of potential revision and reconsideration. This aligns with an ontology of change and process, where the meanings of the cards are not fixed but subject to ongoing adjustment.
-
-In an object-oriented `Card` class model, this could be represented through a `reversed_action` attribute, perhaps an enum or string, indicating the specific "re-" action associated with the reversal.
-
-Procedurally, interpreting a reversal as a "re-" action involves identifying the initial upright meaning, and then applying the specific "re-" operation to generate the reversed interpretation. In a procedural model, this could involve functions like `apply_reversal()` that take the upright meaning and the "re-" action and return the modified interpretation.
-
-Applying this technique would involve setting the reversed_action attribute of reversed cards, then calling `apply_reversal()` with the card's `upright_meaning` and `reversed_action` to generate the interpretation. The interpretation could suggest reflections or actions for the querent to take in light of the "re-" action. For example, a "reconsidered" reversal might prompt the querent to question their assumptions about the upright meaning.
-
-Procedurally, this technique lends itself to an iterative, dialogic model of tarot reading, where the interpretation of a card is not a one-time event but an ongoing process of reflection and revision. Each reversal becomes an invitation to look again, charting a new course if needed.
-
-### 10. **Unconventional, Shamanic, Magical, Humorous**
-
-> 'If an upright card depicts conventional wisdom, then the reversal illustrates unconventional wisdom. It quests all the assumptions indicated by the upright meaning. It is not straight, but crooked and crazy. Each card has a place that you can "see through and into." you have to look under the mask of what "seems to be." Thus there could be a trickster aspect to a reversed card. Perhaps a sense of humour is required; you are being instructed not to take the situation too seriously. … The shamanic or magical view, in particular, asks you to enter the card and journey to an Alice-in-Wonderland realm in order to bring back a vital message or understanding.' (Greer 2002)
-
-[Subversion, unconventional wisdom, and Trickster energy.] ["Humorous", "Trickster", "Coyote", "Joke", "Topsy-turvy", "See through", "Unconventional", "Contrary", "Subverted", "Iconoclastic", "Crooked", "Baffled", "Twisted", "New Perspective"]
-
-**Summary**: Reversed cards as a subversion or inversion of conventional wisdom, revealing hidden or unconventional truths. Reversals serve as indicators that we need to question our assumptions and look beyond the obvious. This resonates with the Jungian concept of the Trickster archetype, a boundary-crossing figure who subverts norms and reveals unexpected insights. Reversed cards may embody this Trickster energy, playfully challenging our preconceptions. Procedurally, interpreting a reversal through this lens involves a kind of perspectival shift or cognitive reframing. The querent is invited to step outside their conventional viewpoint and entertain a radically different, even humorous or absurd, perspective.
-
-Ontographically, this frames the tarot reading as a liminal space where conventional meanings can be overturned, and hidden wisdom can emerge. This aligns with an ontology that sees reality as multi-layered, with surface appearances masking deeper, often paradoxical truths.
-
-In an object-oriented `Card` class model, this could be represented through a `reversed_perspective` attribute, perhaps a string or array, holding the unconventional or trickster-like meanings associated with the card's reversal.
-
-In a procedural model, this could involve functions like `conventional_meaning()` and `unconventional_meaning()` that return different interpretations based on the card's reversal status. Applying this technique would involve first setting the `reversed_perspective` attribute with an appropriate unconventional meaning, then calling the `unconventional_meaning()` function for reversed cards.
-
-The interpretation might encourage the querent to question their assumptions, look for humor in the situation, or embrace a "crooked" path. Procedurally, this technique lends itself to a more open-ended, exploratory style of tarot reading, where unexpected insights are welcomed and conventional meanings are held lightly.
+10. **Unconventional, Shamanic, Magical, Humorous**: Subversion, unconventional wisdom, and Trickster energy. The reversed cards invert conventional wisdom, revealing hidden or oblique truths. Reversals serve as indicators that we need to question our assumptions and look beyond the obvious. Reversed cards may embody a boundary-crossing, norm-subverting Trickster energy, playfully challenging or reframing our preconceptions. The reading becomes a liminal space where conventional meanings can be overturned, and hidden wisdom can emerge. The querent is invited to step outside their conventional viewpoint and entertain a radically different, even humorous or absurd, perspective. ("Humorous", "Trickster", "Coyote", "Joke", "Topsy-turvy", "See through", "Unconventional", "Contrary", "Subverted", "Iconoclastic", "Crooked", "Baffled", "Twisted", "New Perspective")
 
 ## Prototyping
 
@@ -222,7 +71,7 @@ The interpretation might encourage the querent to question their assumptions, lo
 
 ### Potential approach
 
-1. Analyse the 10 techniques to identify underlying principles and complementarities. For example, "Blocked/Resisted" and "Delayed/Difficult" both involve a hindrance to the card's energy, while "Inner/Unconscious" and "Projected" both deal with psychological dimensions.
+1. Analyse Greer's 10 techniques to identify underlying principles and complementarities. For example, "Blocked/Resisted" and "Delayed/Difficult" both involve a hindrance to the card's energy, while "Inner/Unconscious" and "Projected" both deal with psychological dimensions.
 2. Based on this analysis, develop a set of more abstract reversal transformations that combine related techniques.
 3. Refactor the `Card` class to include these abstract transformations as optional attributes, each pointing to a dictionary of the relevant techniques and their generated interpretations.
 4. Develop an interactive dialogue system that presents the querent with the abstract transformations relevant to their drawn card(s), based on some initial criteria (e.g., the querent's situation, the spread position meaning, etc.).
@@ -443,7 +292,7 @@ Philosophically, this operation resonates with ideas of self-creation, framing t
 
 Subversion positions reversals as challenges to conventional wisdom, revealing unexpected, oblique, or even absurd perspectives. It emphasises the contextual fluidity of interpretation, and the value of unorthodox insight.
 
-Operationalising the trickster archetype and/or shamanic wisdom is no mean feat.
+Operationalising the trickster archetype and/or shamanic wisdom is no mean feat. The program needs to generate subversive interpretations that are still meaningful and relevant to the querent's situation. This involves balancing randomness with coherence.
 
 We could implement a `subversion` attribute on the `Card` class to store unconventional or trickster-like meanings associated with reversals. This could be a string, array, or even a nested object with multiple subversive interpretations.
 
@@ -469,7 +318,15 @@ def subvert_meaning(card, upright_meaning, querent_input):
 
 The program needs to frame reversed cards as invitations to question assumptions and entertain alternative viewpoints. Querent interactions should support playful, lateral, or oblique engagement with the cards' meanings. The querent could be invited to question their assumptions about the situation or the card's upright meaning ("What else might be going on here?"); look for humour/irony, opportunity, or unexpected lessons in challenging circumstances; or consider how a trickster might approach or _reframe_ the issue at hand.
 
-e.g. A subversive reversal of Death might be interpreted as "Unexpected rebirth" or "Playful ending." The querent would be encouraged to look for the humor or creative potential in experiences of loss and transformation.
+```python
+def generate_subversive_prompts(card):
+    prompts = [
+        f"How might a trickster see the humor or opportunity in {card.subversive_meaning()}?",
+        f"What assumptions are being challenged by {card.subversive_meaning()}?",
+        f"Consider how {card.subversive_meaning()} might offer a new perspective on your current situation."
+    ]
+    return prompts
+```
 
 ## Desmuntar
 
