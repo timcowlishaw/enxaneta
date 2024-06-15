@@ -353,5 +353,5 @@ e.g. A subversive reversal of Death might be interpreted as "Unexpected rebirth"
 
 ## Desmuntar
 
-[^1] (J) However, this binary ontology does risk reducing the tarot's symbolic richness to a series of on/off switches, losing sight of more subtle shades of significance. As Greer cautions (and Jodorowsky echoes), a purely mechanical negation risks generating interpretations that are overly machinic or pessimistic. The program may need to incorporate additional heuristics to maintain a balanced perspective.
-[^2] (J) Deliberately ridiculous examples; need to figure out a proper enum grammar.
+[^1]: (J) However, this binary ontology does risk reducing the tarot's symbolic richness to a series of on/off switches, losing sight of more subtle shades of significance. As Greer cautions (and Jodorowsky echoes), a purely mechanical negation risks generating interpretations that are overly machinic or pessimistic. The program may need to incorporate additional heuristics to maintain a balanced perspective.
+[^2]: (J) Deliberately ridiculous examples; need to figure out a proper enum grammar.
