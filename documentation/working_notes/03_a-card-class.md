@@ -2,6 +2,10 @@
 
 More to come soon (inevitably).
 
+## "Yes, but what _is_ a card?"
+
+## Prototyping in-progress
+
 The `card` class needs to:
 
 - Include attributes to capture multiple techniques for reading/interpreting tarot card reversals
@@ -11,12 +15,10 @@ The `card` class needs to:
 
 What else does it need to do?
 
-## Prototyping in-progress
-
 ```Python
 class Card:
     def __init__ # (self, id, name, number ... )
-    self.id = id # Card number, denoting its position within the full deck
+    self.id = id # Card number, denoting its position within the full 72-card deck
     self.name = name # A string
     self.number = number # Card number, either within the Major Arcana, or a suit (Jodorowsky is hot on numerology)
     self.arcanum = arcanum # Major or minor (or an Oblique Strategies/MtG card, lol)

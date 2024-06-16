@@ -8,7 +8,6 @@ Keen to encode Jodorowsky's philosophy into the procedural rhetoric of the model
 
 ## "Yes, but what _is_ a reversal?"
 
-
 > 'In general, it helps to think of reversed cards as "red flagged," indicating that you should pay extra attention to them. They signal that something is not operating as usual. Upright cards tend to be conscious, outer, automatic, in process, and available. Reversed cards often indicate choice points, where you must be attentive. They may require conscientious, willful handling if you are to take full advantage of the energies and opportunities. It is like knowing that a car has a tendency to pull to the right and so you have to keep alert and make adjustments for it. Or they are places to stop struggling, relax, and let go of all expectations.' (Greer 2002: 25)
 
 In tangible, material terms, reversed cards in a reading are a result of blind shuffling. Rather than just a upright/reversed binary, reversals gesture to a spectrum of interpretive meanings for each card. A reversal can indicate the energy of the card is blocked, turned inwards, early or late in its appearance, or manifesting in a more challenging or "shadow" form.
@@ -264,7 +263,7 @@ The program would present reversed cards as invitations or opportunities for gro
 e.g. A "reconsidering" reversal of the Tower might be interpreted as "Reconsidering upheaval" or "Revelation reconsidered." The querent would be prompted to reflect on the value (or not) of Tower's disruptive energy at this point in time.[^6]
 
 ```python
-tower_card = Card("The Tower", "Upheaval", "Revelation", "Awakening") # How will the card  handle keywords?
+tower_card = Card("The Tower", ["Upheaval", "Revelation", "Awakening"]) # How will the operation handle keywords?
 tower_card.set_transformation_type("reconsidering")
 querent_state = "feeling trapped"
 if tower_card.assess_relationship(querent_state):
@@ -272,7 +271,7 @@ if tower_card.assess_relationship(querent_state):
     print(reversed_interpretation) # Example output: "Reconsidering upheaval: The Tower suggests reconsidering sudden change.
 ```
 
-Philosophically, this operation resonates with ideas of self-creation, framing the querent as an agent actively shaping their path, not just passively receiving the cards' meanings. The "transformation" reversal is a "clinamen", an invitation to overturn determinism.
+Philosophically, this operation resonates with ideas of self-creation, positioning the querent as an agent actively shaping their path, rather than passively receiving the cards' meanings. The "transformation" reversal is a "clinamen", an invitation to overturn or depart from determinism.
 
 - How do we encode the specific actions or reflections associated with each transformation type? Should these be predefined or generated dynamically (procedurally?) based on the querent's input?
 - How do we guide the querent through the process of identifying their relationship to the upright meaning and proposed transformation? Should we use a decision tree, an iterative dialogue, or another method to scaffold this interaction?
