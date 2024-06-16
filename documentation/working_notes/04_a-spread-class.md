@@ -4,7 +4,7 @@
 
 A _spread_, in tarot, is the specific layout or arrangement of cards used for a reading. It provides the structure and positions into which the cards are dealt. Each position in the spread has a predefined meaning or interpretation that contextualises the card placed there. (link with anthropologist Pascal Boyer on "ostensive detachment")
 
-An externally supplied context, or scaffold for eliciting/isolating salient details of the situation or predicament? Like a thrown quadrat? A way of cutting through the noise? Forcing the querent/reader to do reparative work, working to bridge/align the pre-defined meanings of the cards and the pre-defined meanings of the positions. A question of combinatorics?
+An externally supplied context, or scaffold for eliciting/isolating salient details of the situation or predicament? Like a thrown quadrat? A way of cutting through the noise? Forcing the querent/reader to do reparative work, working to bridge/align the predefined meanings of the cards and the predefined meanings of the positions. A question of combinatorics?
 
 ### [?] Oh god what's the difference between a "spread" and a "reading"?
 
