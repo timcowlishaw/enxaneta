@@ -9,7 +9,7 @@ An externally supplied context, or scaffold for eliciting/isolating salient deta
 A _reading_, then, is the actual act of interpreting the cards dealt into a spread. It involves considering the meanings of the individual cards, their positions in the spread, and the relationships and patterns formed between them. A reading is the dynamic, emergent process of deriving insights from the static structure of the spread.
 
 | Spread     | Reading          |
-| ---------- | ---------------- |
+| :--------- | :--------------- |
 | Structure  | Meaning          |
 | Predefined | Emergent         |
 | Layout     | Interpretation   |
