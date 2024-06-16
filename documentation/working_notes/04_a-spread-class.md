@@ -68,6 +68,7 @@ The `Spread` class could support the evolution of spreads over time, allowing qu
 (_This_ is the point where I'm starting to struggle with the difference between a class and an object, it turns out. Like, is the `Spread` class storing the procedural rules for a particular type of spread layout, or is it providing a blueprint to be populated, anticipating its instantiation as a specific instance? The answer's _both_, isn't it? My head hurts.)
 
 - [!] Need to challenge the assumption that a spread's interpretation relies solely on the individual card meanings and their positions. While this is the foundation, there may be emergent or holistic meanings that arise from the interaction of cards, which the current attributes might not fully capture.
+- [!] Be cautious about overloading the `Spread` class with too many responsibilities.
 
 ```Python
 class Spread
@@ -91,11 +92,11 @@ class Spread
     self.visualisation = visualisation # Eventually piping this into a JSON Canvas format, that can be ingested by e.g.Obsidian/Kinopio/similar; very much "stretch goals"? Also explore SVG or HTML templates.
     self.related_spreads = related_spreads # Sure, but related _how_, exactly? List of spread ids, if we've got ids.
 
-    # More speculative
+    # More speculative (maybe have these as seperate functions, to be calculated on-demand?)
     self.archetypal_patterns # Extracing all the archetypes in the spread, and doing a compare & contrast
     self.elemental_balance # Birds'-eye view of the balance of suits and elemental energies in the spread, and how they're distributed
     self.numerological_patterns # Looking for and storing/caching sets of similarly numbered cards, or sequential runs
-    self.chorus = chorus # Putting all the `named_entities` (or similar) in a given spread into some kind of box and letting them slug it out
+    self.chorus = chorus # Exporting all the `named_entities` (or similar) in a given spread into some kind of box and letting them slug it out (or, what if crew.ai but a ship of fools)
 ```
 
 #### To-dos
@@ -103,6 +104,8 @@ class Spread
 - [ ] Instead of having a single `interpretation` attribute, consider breaking it down into multiple attributes or methods that capture different aspects of the interpretation process. At the moment, it's a bit "black-boxed."
 - [ ] Rather than storing `card_interactions` directly in the `Spread` class, consider creating a separate `Interaction` class that encapsulates the logic for determining and interpreting card interactions. This could help keep the `Spread` class more focused and modular. The drawback, I guess, is that `card_interactions` occur in a particular, situated context? Any `card_interactions` attribute could lead to a "combinatorial explosion", making it computationally expensive to process. Think about ways to efficiently store and retrieve these interactions, possibly using caching or lazy evaluation. (how would permacomputing or "reconstrained design" handle this?)
 - [ ] Consider incorporating more querent-centric attributes, such as `querent_goals`, `querent_reflections`, or `querent_feedback`, to capture the querent's evolving relationship with the spread and its interpretation.
+- [ ] The `archetypal_patterns`, `elemental_balance`, and `numerological_patterns` attributes might require significant preprocessing or real-time computation. Consider the performance implications and whether these attributes should be calculated on-demand or stored as part of the spread.
+- [ ] Think about how the `Spread` class will handle missing or incomplete data, such as spreads with empty positions or cards with unknown attributes. Develop strategies for graceful failure, providing meaningful defaults or error handling.
 
 ### Edge cases or outliers
 
@@ -114,8 +117,74 @@ Overlapping cards: Think about the first two positions in the Celtic Cross sprea
 
 ## Example: Time & Tide Spread
 
-A simple, previously non-existent three-card spread.
+A simple, previously non-existent three-card spread. Anchor, Tide, Horizon.
 
-1. ANCHOR
-2. TIDE
-3. HORIZON
+```Python
+time_and_tide_spread = Spread(
+    name="Time & Tide",
+    creator="Justin Pickard",
+    spread_type="Three-card",
+    spread_keywords=["Time", "Change", "Perspective"],
+    spread_layout=[(0, 0), (1, 0), (2, 0)],  # Representing the positions as (x, y) coordinates
+    reversals=True, # Allowing for reversed cards in this spread
+    positions=[
+        {"name": "Anchor", "meaning": "The present situation, what grounds you"},
+        {"name": "Tide", "meaning": "The changing influences, what's in flux"},
+        {"name": "Horizon", "meaning": "The long-term outlook, what's ahead"}
+    ]
+)
+```
+
+```Python
+time_and_tide_spread.cards = [
+    Card(name="The Tower", reversed=False),
+    Card(name="The Moon", reversed=True),
+    Card(name="The Star", reversed=False)
+]
+```
+
+```Python
+time_and_tide_spread.date = "2023-06-16"
+time_and_tide_spread.querent = Querent(name="Alice", question="What do I need to know about my career transition?")
+time_and_tide_spread.context = "Alice is considering a major career change and wants guidance on navigating the transition."
+```
+
+Example:
+
+```Python
+time_and_tide_spread.interpretation = """
+The Tower in the Anchor position suggests that your current situation is characterised by upheaval and change. The structures you've relied on may be crumbling, forcing you to confront uncomfortable truths. However, this disruption is necessary for growth and transformation.
+
+The reversed Moon in the Tide position indicates that the influences around you are murky and uncertain. You may be grappling with fears, anxieties, or self-doubt as you navigate this transition. It's important to trust your intuition and be open to the unknown.
+
+The Star in the Horizon position offers hope and renewal. Though the path ahead may be challenging, this card suggests that you have the resilience and inspiration to guide you forward. Stay true to your authentic self and have faith in your journey.
+"""
+```
+
+```Python
+time_and_tide_spread.archetypal_patterns = ["The Tower: The Revolutionary, The Phoenix", "The Moon (Rx): The Escapist" "The Star: The Cosmic Healer, The Humanitarian"] # Gods know how this will actually work in practice; in this scenario, The Moon's reversal has been pegged as a `shadow` transformation, performing a retrieval on the latent `shadow_archetypes` attribute (???)
+time_and_tide_spread.elemental_balance = {"Major Arcana": 3} # No minor arcana suits represented, which is itself a whole thing
+time_and_tide_spread.numerological_patterns = "The Tower: 16", "The Moon: 18", "The Star: 17" # Something here about a sequential run of the Major Arcana being present (16, 17, 18), even if they're out of order
+```
+
+### Speculating about / roughing out further interactions
+
+```Python
+archetypal_patterns.guidance = """
+The Revolutionary archetype of The Tower may be in tension with the Escapist archetype of the reversed Moon. While The Revolutionary seeks to actively challenge and dismantle outdated structures, The Escapist may be tempted to avoid or withdraw from the challenges at hand. However, the presence of The Star's Cosmic Healer and Humanitarian archetypes suggests a potential resolution to this conflict, offering a path of transformation and service that integrates the energies of both The Tower and The Moon.
+"""
+```
+
+```Python
+elemental_balance.guidance = """
+The absence of Minor Arcana suits in this spread suggests that the focus is on the overarching spiritual themes and life lessons, rather than on the day-to-day aspects of your situation. The lack of elemental diversity may indicate a need to step back from the details and consider the bigger picture.
+
+Considering the strong presence of Major Arcana energies, what significant themes or challenges have been emerging in your life lately? How might these experiences be contributing to your spiritual growth and evolution?
+"""
+```
+
+```Python
+numerological_patterns.guidance = """
+This spread contains a sequential run of Major Arcana cards (The Tower, The Star, The Moon), indicating a powerful and transformative journey unfolding across past, present, and future. The presence of these cards out of order suggests that the journey may not be straightforward, with twists, turns, and switchbacks along the way.
+"""
+```
