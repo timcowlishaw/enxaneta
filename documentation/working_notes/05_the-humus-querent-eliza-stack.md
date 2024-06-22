@@ -29,7 +29,7 @@ Implementing a "decay function" in Humus (LOL) that not only forgets less-access
 A "digital patina" in Humus, where the decay process leaves visible traces that influence future interpretations; a "heat map" of the tarot deck, showing which cards and interpretations have been most influential over time?
 
 - [?] Could we implement a system where frequently accessed Querent interpretations leave stronger "traces" in the database, influencing future readings more heavily?
-- [?] Are we looking at an experimental platform for exploring new forms of human-computer interaction and digital meaning-making? What are the limitations of the "platform" metaphor, as opposed to a "digital ecosystem"/"noetic garden" evolving through use?
+- [?] Are we looking at an experimental platform for exploring human-computer interaction and digital meaning-making? What are the limitations of the "platform" metaphor, as opposed to a "digital ecosystem"/"noetic garden", evolving through use?
 - [?] How could the system could be designed as a tool for expression and/or brainstorming, using the interplay of decay, active interpretation, and reparative dialogue to inspire new ideas?
 
 [^1]: (J) Incorporate an idea of "forced first-perspective-taking" by prompting users to imagine themselves within the card imagery.
