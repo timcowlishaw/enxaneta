@@ -10,10 +10,10 @@ This database structure challenges the dominant "accumulation" model of typical 
 
 ## The Stack
 
-1. User interacts with an ELIZA-like interface, which prompts for input and guides the tarot reading process.
+1. User interacts with an ELIZA-like interface, which prompts for input and guides the tarot reading process.[^1]
 2. Querent.py handles the tarot-specific logic, drawing cards, and generating initial interpretations.
-3. These interpretations are stored in and retrieved from Humus, which allows for the accumulation and gradual decay of meanings over time.
-4. The ELIZA interface then presents these interpretations back to the user, encouraging further reflection and input.
+3. These interpretations are stored in and retrieved from Humus, which allows for the accumulation and gradual decay of meanings over time.[^2]
+4. The ELIZA interface then presents these interpretations back to the user, encouraging further reflection and input.[^3]
 5. New insights and interpretations from the user are fed back into the system, stored in Humus, and influence future readings.
 
 ## Further notes
@@ -26,10 +26,12 @@ The Humus database could now be seen as storing not just decaying data, but the 
 
 Implementing a "decay function" in Humus (LOL) that not only forgets less-accessed data but also blends or mutates interpretations over time, creating new, emergent meanings.
 
-A "decay gradient"?
-
 A "digital patina" in Humus, where the decay process leaves visible traces that influence future interpretations; a "heat map" of the tarot deck, showing which cards and interpretations have been most influential over time?
 
 - [?] Could we implement a system where frequently accessed Querent interpretations leave stronger "traces" in the database, influencing future readings more heavily?
 - [?] Are we looking at an experimental platform for exploring new forms of human-computer interaction and digital meaning-making? What are the limitations of the "platform" metaphor, as opposed to a "digital ecosystem"/"noetic garden" evolving through use?
 - [?] How could the system could be designed as a tool for expression and/or brainstorming, using the interplay of decay, active interpretation, and reparative dialogue to inspire new ideas?
+
+[^1]: (J) Incorporate an idea of "forced first-perspective-taking" by prompting users to imagine themselves within the card imagery.
+[^2]: (J) Implementing a "decay gradient" where frequently accessed or querent-modified interpretations decay more slowly?
+[^3]: (J) Include visual representations of the cards alongside textual interpretations. Implement a feature to highlight specific symbols, colours, or characters in the card imagery as prompts for user intuition. Allow users to add, edit, group, and link attributes as they explore associations.
