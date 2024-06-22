@@ -6,7 +6,7 @@ So, let's see: Tim's working on [Humus](https://github.com/timcowlishaw/humus), 
 
 This database structure challenges the dominant "accumulation" model of typical digital systems. It aligns with permacomputing principles by questioning resource use and data permanence. Tim's use of Rust is a bit of an Oulipic constraint, but also suggests a focus on performance and memory safety.
 
-"Humus" is a permacomputing-inspired "composting database" rendered in Rust, Querent is a Python tarot-reading programme inspired by the work of Ian Bogost and Alejandro Jodorowsky, and ELIZA is the 1960s chatbot developed by Joseph Weizenbaum.
+Humus is a permacomputing-inspired "composting database" rendered in Rust, Querent is a Python tarot-reading programme inspired by the work of Ian Bogost and Alejandro Jodorowsky, and ELIZA is the 1960s chatbot developed by Joseph Weizenbaum.
 
 ## The Stack
 
