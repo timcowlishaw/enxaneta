@@ -2,7 +2,7 @@
 
 So, let's see: Tim's working on [Humus](https://github.com/timcowlishaw/humus), a composting database in Rust.
 
-> 'This is a small experiment in deliberate data decay. a simple (at present) in memory [entity-attribute-value database](documentation\working_notes\02_eav-data-model.md) that slowly forgets the things that you don't revisit.'
+> 'This is a small experiment in deliberate data decay. a simple (at present) in memory [entity-attribute-value database](\02_eav-data-model.md) that slowly forgets the things that you don't revisit.'
 
 This database structure challenges the dominant "accumulation" model of typical digital systems. It aligns with permacomputing principles by questioning resource use and data permanence. Tim's use of Rust is a bit of an Oulipic constraint, but also suggests a focus on performance and memory safety.
 
