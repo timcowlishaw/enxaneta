@@ -56,5 +56,7 @@ Draft a brief (250-500 word) ethnographic vignette imagining a scene from fieldw
 
 TO COME TO COME.
 
+(Last updated: Saturday, 6 July 2024)
+
 [^1]: Imagined here less as a community than, say, an emerging, inchoate subject position (???); not-yet-actually-existing, more a figure/figuration of a particular knot of trends and developments?
 [^2]: You might consider, for example, digital trace ethnography for analysing online interactions, virtual interviews or focus groups,  "interface ethnography", [chaines operatoires](https://justinpickard.net/compost/cha%C3%AEne-op%C3%A9ratoires/), collaborative mapping exercises, close readings of particular media artifacts, analysis of code repositories or documentation practices. Bring me your weirdest methods, and we can talk them through.
