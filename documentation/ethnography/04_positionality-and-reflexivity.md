@@ -53,10 +53,10 @@ What's perhaps distinctive about ethnography is the extent to which you are your
 
 Reflecting on your initial observational exercises, and looking ahead to what you might be going on to do next, it'll be useful to reflect on:
 
-- Methodological reflexivity: Evaluating the suitability of research methods and analytical approaches for studying digital practices.
-- Interpersonal reflexivity: Reflecting on dynamics and power relations between researcher and participants.
-- Analytical reflexivity: Examining how your positionality and theoretical lenses shape your interpretations and representations.
-- Ethical reflexivity: Considering the ethical implications of your research decisions, particularly concerning issues of power, privacy, consent, and potential harms.
+- _Methodological reflexivity:_ Evaluating the suitability of research methods and analytical approaches for studying digital practices.
+- _Interpersonal reflexivity:_ Reflecting on dynamics and power relations between researcher and participants.
+- _Analytical reflexivity:_ Examining how your positionality and theoretical lenses shape your interpretations and representations.
+- _Ethical reflexivity:_ Considering the ethical implications of your research decisions, particularly concerning issues of power, privacy, consent, and potential harms.
 
 Rather than seeking definitive answers or universal truths, your research can contribute to ongoing conversations and debates surrounding the co-construction of technology and society. This might require reflecting on your actions and identity, and/or writing and talking openly about the difficulties of research, struggles, mess and
 uncertainty (as handholds for the reader, to see how you got to your results). 
