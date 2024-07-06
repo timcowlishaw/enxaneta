@@ -6,7 +6,7 @@ Building on our exploration of participant observation, thick description, and p
 
 ## Concluding exercise
 
-Riffing on [your own notes](documentation\computational_thinking\02a_signs_and_portents.md) on "The Zen of Python" PEP, and [Fedorova et al.'s article](https://doi.org/10.1177/01622439241245746) on the organisational and disciplinary (?) effects of "ugly code" at Yandex, I want us to start roughing out plans for a small, 2-3 month ethnographic pilot project.
+Riffing on [your own notes](documentation\computational_thinking\02a_signs_and_portents.md) on "The Zen of Python" PEP, and [Fedorova et al.'s article](https://doi.org/10.1177/01622439241245746) on the organisational and disciplining (?) effects of "ugly code" at Yandex, I want us to start roughing out plans for a small, 2-3 month ethnographic pilot project.
 
 ### 1. **Research questions** 
 
