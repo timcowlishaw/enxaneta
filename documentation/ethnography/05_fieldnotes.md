@@ -2,7 +2,7 @@
 
 MORE ON ALL OF THIS TO COME.
 
-<< [Session 4](04_positionality-and-reflexivity.md) | Session 6 >>
+<< [Session 4](04_positionality-and-reflexivity.md) | [Session 6](06_end-of-block-synthesis.md) >>
 
 ## Fieldnotes
 
