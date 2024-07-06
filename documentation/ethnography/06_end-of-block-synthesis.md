@@ -10,7 +10,7 @@ Riffing on [your own notes](documentation\computational_thinking\02a_signs_and_p
 
 ### 1. **Research questions** 
 
-Develop 2-3 research questions for each of the following groups, focusing on aesthetics and valuation:
+Develop 2-3 research questions for each of the following groups, focusing on _aesthetics_ and _valuation_:  
 (a) Python programmers  
 (b) The permacomputing community  
 (c) [Barefoot developers](https://justinpickard.net/log/2024/06/17/barefoot-and-malleable/)[^1]
