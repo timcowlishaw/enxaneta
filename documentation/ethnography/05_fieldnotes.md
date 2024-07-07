@@ -104,7 +104,7 @@ Its Possible Futures", Matthew J. Wolf-Meyer and Denielle Elliott (ix-xxi)
 - Jackson, J.E. (1990). '“I am a fieldnote”: Fieldnotes as a symbol of professional identity', in: Sanjek, R. (Ed.), _Fieldnotes: The Makings of Anthropology_, Cornell University Press, Ithaca and London: pp. 3–33.[^4]
 - Timmermans and Tavory, 'Collecting', in: _Data Analysis in Qualitative Research_ (2022), University of Chicago Press, Chicago and London, pp. 47–68.[^5]
 - Nicolas H. Wolfinger, 'On Writing Fieldnotes: Collection Strategies and Background Expectancies’ (2002). _Qualitative Research_ 2(1): 85–93.[^6]
-- _Naked Fieldnotes_ (2023)
+- Elliott, D., Wolf-Meyer, M. (2023). _Naked Fieldnotes: A Rough Guide to Ethnographic Writing_, University of Minnesota Press, Minneapolis and London.
 
 (Last updated: Sunday, 7 July 2024)
 
