@@ -1,6 +1,4 @@
 # enxaneta
 Initially, a Python-for-ethnography skill exchange. Thinking about Romans, Catalan human towers, the knowledge of volunteer tour guides, generative language models, waste, infrastructure, appropriate technology, figures of the user, and/or “commitment to the bit.” 
 
-![Annotated postcard of Castellers from the Roman port city of Tarragona](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/home_tarragona.jpg)
-
-![The Science of Energism](https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/home_energism.jpg)
+<img src="Annotated postcard of Castellers from the Roman port city of Tarragona" alt="Autoportrait Dans le train Paris-Le Havre (Constantin Brancusi, 1933)" height="350"/> <img src="https://raw.githubusercontent.com/timcowlishaw/enxaneta/main/assets/images/home_energism.jpg" alt="The Science of Energism" height="350"/></a>
