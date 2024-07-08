@@ -250,7 +250,7 @@ If we wanted to be really explicit, we could even pass every argument by name, s
 ```python
 cards = [
     TarotCard(is_major=True, rank=1, name="The Magician"),
-    TarotCard(is_major=False, rank=3, "Swords"),
+    TarotCard(is_major=False, rank=3, suit="Swords"),
     TarotCard(is_major=True, rank=16, name="The Tower")
 ]
 
