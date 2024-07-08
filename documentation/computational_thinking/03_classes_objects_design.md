@@ -47,10 +47,11 @@ We call it with our list of cards, and finally we call the built-in `print` meth
 We can see here examples of methods being called (`.append`, `join`) and objects being passed as arguments to functions, and we should start to get some idea of the things-that-make-an-object-an-object, at least in python terms.
 
 An object:
-    - Can be created, with some data representing its _state_ (like one of our "card" dictionaries: each one has a broadly similar "shape" (or _interface_), but the data stored inside it varies)
-    - Can have methods called on it (either by appending a dot and the method name, as with `.append` on string, or with some more "special" syntax, such as the two square brackets that allow us to get a value from a dictionary: this, as we shall see presently, is also a method.)
-    - Can be stored in a variable
-    - Can be passed as an argument to another function or method.
+
+ - Can be created, with some data representing its _state_ (like one of our "card" dictionaries: each one has a broadly similar "shape" (or _interface_), but the data stored inside it varies)
+ - Can have methods called on it (either by appending a dot and the method name, as with `.append` on string, or with some more "special" syntax, such as the two square brackets that allow us to get a value from a dictionary: this, as we shall see presently, is also a method.)
+ - Can be stored in a variable
+ - Can be passed as an argument to another function or method.
 
 (This is a kinda tentative list for now, we'll carry on refining this ontology-of-objects as we go.)
 
@@ -386,11 +387,11 @@ print(draw_summary(cards))
 
 ## Exercises
 
-- Try and think of another way of refactoring our first attempt at writing `summarize_draw`. What are the benefits and drawbacks of your version relative to each of the others we've derived here?
-- Think of an example of a function or method which takes a default value that **isn't** none and implement it. (Clue: what if we wanted to separate the cards in our draw summary with something other than a newline?)
-- Define a class to hold a _draw_ of cards, and allow it to summarise itself.
-- Have another look at [The Zen of python](https://peps.python.org/pep-0020/) - how the are norms/values/virtutes it describes reflected (or not) in each of our refactorings?
-- `__init__` isn't the only special "double underscore" method in python - they're called "dunder methods" (why, i have no idea), and [there are many of them which do various different things](https://www.pythonmorsels.com/every-dunder-method/https://www.pythonmorsels.com/every-dunder-method/). They're typically not called directly, but are used to support other bits of python syntax. Have a look at the list at this link: which do you understand, and which not? Which might be appropriate to implement for our `TarotCard` class?
+ - Try and think of another way of refactoring our first attempt at writing `summarize_draw`. What are the benefits and drawbacks of your version relative to each of the others we've derived here?
+ - Think of an example of a function or method which takes a default value that **isn't** none and implement it. (Clue: what if we wanted to separate the cards in our draw summary with something other than a newline?)
+ - Define a class to hold a _draw_ of cards, and allow it to summarise itself.
+ - Have another look at [The Zen of python](https://peps.python.org/pep-0020/) - how the are norms/values/virtutes it describes reflected (or not) in each of our refactorings?
+ - `__init__` isn't the only special "double underscore" method in python - they're called "dunder methods" (why, i have no idea), and [there are many of them which do various different things](https://www.pythonmorsels.com/every-dunder-method/https://www.pythonmorsels.com/every-dunder-method/). They're typically not called directly, but are used to support other bits of python syntax. Have a look at the list at this link: which do you understand, and which not? Which might be appropriate to implement for our `TarotCard` class?
 
 
 
