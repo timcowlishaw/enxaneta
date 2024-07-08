@@ -388,6 +388,7 @@ print(draw_summary(cards))
 ## Exercises
 
  - Try and think of another way of refactoring our first attempt at writing `summarize_draw`. What are the benefits and drawbacks of your version relative to each of the others we've derived here?
+ - Go back to our version of the `summarise_draw` method where cards were represented as dictionaries. What error would we get if we accidentally included a casteller instead of a card in our draw? at what point would that error manifest itself?
  - Think of an example of a function or method which takes a default value that **isn't** none and implement it. (Clue: what if we wanted to separate the cards in our draw summary with something other than a newline?)
  - Define a class to hold a _draw_ of cards, and allow it to summarise itself.
  - Have another look at [The Zen of python](https://peps.python.org/pep-0020/) - how the are norms/values/virtutes it describes reflected (or not) in each of our refactorings?
@@ -396,5 +397,6 @@ print(draw_summary(cards))
 
 
 _(Next Time: **Some SOLID heuristics for object oriented design**)_
+
 _(Subsequently: **PIPs, libraries, APIs: standing on the shoulders of giants and talking to the outside world**)_
 
