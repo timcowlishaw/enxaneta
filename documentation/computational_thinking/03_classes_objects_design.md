@@ -270,10 +270,10 @@ silly_2 = TarotCard(is_major=False, rank=4, name="of coins")
 
 The problem here is redundancy: we're got three bits of state which explicitly implicitly describe the difference between a major and a minor arcanum: the `is_major` variable itself, and the presence or absence of both `suit` and `name` respectively. It'd be nice to make sure there was a clear dependency between these: if an arcana is major it _must not_ have a suit, and _must_ have a name, and if it's minor, vice-versa.
 
-To me, this is a signal that we have two types of things which are the same in some respects (and which we want to have the same `interface` -  we want to  be able to use them interchangably), but different in others (their specific internal representation and the way they're created). They're distinct _subtypes_ of a more general TarotCard type, and python (and object-oriented programming) in general offers us a way of dealing with this: _inheritance_.
+To me, this is a signal that we have two types of things which are the same in some respects (and which we want to have the same _interface_ -  we want to  be able to use them interchangably), but different in others (their specific internal representation and the way they're created). They're distinct _subtypes_ of a more general TarotCard type, and python (and object-oriented programming) in general offers us a way of dealing with this: _inheritance_.
 
 
-Inheritence means that classes can _inherit_ behaviour and methods from a _parent_: we can use this to define _all-the-things-that-a-card-has-in-common in one place, and then deal with the specifics of major and minor arcana separately. Let's have a look at how we might do that.
+Inheritence means that classes can _inherit_ behaviour and methods from a _parent_: we can use this to define _all-the-things-that-a-card-has-in-common_ in one place, and then deal with the specifics of major and minor arcana separately. Let's have a look at how we might do that.
 
 
 
