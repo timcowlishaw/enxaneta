@@ -323,7 +323,7 @@ Our subclasses then need only take the data they particularly need in their cons
 
 We then define a different _implementation_ of the `summary` method for each of the subclasses, which also allows us to get rid of the `if` we needed before.
 
-The end result is that both our Major and Minor  arcana respond to the `TarotCard` _interface_ - we can call `summary` and `greet` on either of them without caring what concrete type of card they are, but each one encapsulates only the data it needs, and provides its own _implementation_ for summary. This is an example of the benefits of this type of encapsulation: nothing else that needs to deal with a tarot card needs to care about the details of its internal logic, the existence of major and minor arcana, etc, it just needs to ask it how it would summarise itself.
+The end result is that both our Major and Minor  arcana respond to the `TarotCard` _interface_ - we can call `summary` and `greet` on either of them without caring what concrete type of card they are (this is called _polymorphism_), but each one encapsulates only the data it needs, and provides its own _implementation_ for summary. This is an example of the benefits of this type of encapsulation: nothing else that needs to deal with a tarot card needs to care about the details of its internal logic, the existence of major and minor arcana, etc, it just needs to ask it how it would summarise itself.
 
 We've one loose end to tie up later: There's nothing stopping us creating a `TarotCard` class directly, which would be pretty useless: it doesn't provide a summary, and it would error on calling `greet` as it doesn't have a `rank`. It's an _**abstract** base class_ - it represents some shared behaviour or concept which never exists in isolation, and python provides a way of marking it as such, ensuring that we will be prevented from tying to instantiate it. We do this by making it itself inherit from the `ABC` class (for "Abstract Base Class" [in the package `abc` of the python standard library](https://docs.python.org/3/library/abc.html).
 
@@ -392,9 +392,7 @@ print(draw_summary(cards))
  - Think of an example of a function or method which takes a default value that **isn't** none and implement it. (Clue: what if we wanted to separate the cards in our draw summary with something other than a newline?)
  - Define a class to hold a _draw_ of cards, and allow it to summarise itself.
  - Have another look at [The Zen of python](https://peps.python.org/pep-0020/) - how the are norms/values/virtutes it describes reflected (or not) in each of our refactorings?
- - `__init__` isn't the only special "double underscore" method in python - they're called "dunder methods" (why, i have no idea), and [there are many of them which do various different things](https://www.pythonmorsels.com/every-dunder-method/https://www.pythonmorsels.com/every-dunder-method/). They're typically not called directly, but are used to support other bits of python syntax. Have a look at the list at this link: which do you understand, and which not? Which might be appropriate to implement for our `TarotCard` class?
-
-
+ - `__init__` isn't the only special "double underscore" method in python - they're called "dunder methods" (why, i have no idea), and [there are many of them which do various different things](https://www.pythonmorsels.com/every-dunder-method/https://www.pythonmorsels.com/every-dunder-method/). They're typically not called directly, but are used to support other bits of python syntax. Have a look at the list at this link: which do you understand, and which not? Which might be appropriate to implement for our `TarotCard` class and subclasses? Which could be implemented in the TarotCard superclass itself, and which would need to live in the specific subclass?
 
 _(Next Time: **Some SOLID heuristics for object oriented design**)_
 
