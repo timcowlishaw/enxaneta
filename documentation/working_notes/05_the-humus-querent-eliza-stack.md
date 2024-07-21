@@ -1,6 +1,12 @@
 # Working Notes 5: Speculating on the "Humus-Querent-ELIZA Stack"
 
-So, let's see: Tim's working on [Humus](https://github.com/timcowlishaw/humus), a composting database in Rust.
+The proposed "stack" combines three distinct software components:
+
+- [Humus](https://github.com/timcowlishaw/humus): A "composting" database that implements deliberate data decay
+- Querent: A tarot reading program inspired by Ian Bogost and Alejandro Jodorowsky
+- ELIZA: An early chatbot simulating a Rogerian psychotherapist
+
+The core aim is to support and sustain an interaction between data storage, divination, and conversational AI. This combination challenges traditional notions of data permanence, user interaction, and AI capabilities.
 
 > 'This is a small experiment in deliberate data decay. a simple (at present) in memory [entity-attribute-value database](\02_eav-data-model.md) that slowly forgets the things that you don't revisit.'
 
