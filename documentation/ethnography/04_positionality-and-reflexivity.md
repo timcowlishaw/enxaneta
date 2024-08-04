@@ -53,23 +53,21 @@ What's perhaps distinctive about ethnography is the extent to which you are your
 
 Reflecting on your initial observational exercises, and looking ahead to what you might be going on to do next, it'll be useful to reflect on:
 
-- _Methodological reflexivity:_ Evaluating the suitability of research methods and analytical approaches for studying digital practices.
+- _Methodological reflexivity:_ Evaluating the suitability of research methods, tools, and analytical approaches for studying digital practices.
 - _Interpersonal reflexivity:_ Reflecting on dynamics and power relations between researcher and participants.
 - _Analytical reflexivity:_ Examining how your positionality and theoretical lenses shape your interpretations and representations.
 - _Ethical reflexivity:_ Considering the ethical implications of your research decisions, particularly concerning issues of power, privacy, consent, and potential harms.
 
-Rather than seeking definitive answers or universal truths, your research can contribute to ongoing conversations and debates surrounding the co-construction of technology and society. This might require reflecting on your actions and identity, and/or writing and talking openly about the difficulties of research, struggles, mess and
-uncertainty (as handholds for the reader, to see how you got to your results). 
+Rather than seeking definitive answers or universal truths, your research can contribute to ongoing conversations and debates surrounding the co-construction of technology and society. This might require reflecting on your actions and identity, and/or writing and talking openly about the difficulties of research, struggles, mess and uncertainty (as handholds for the reader, to see how you got to your results). 
 
-There are few clear answers about how much to show of the otherwise obscured ‘assumptions, motivations, narratives, and relations’ which comprise the ‘backstage’ of qualitative research. (McCorkel and Myers, 2003: 200)
-But by engaging in reflexive practices, you can situate your findings in relation to broader discourses, while acknowledging the partiality and situatedness of your knowledge claims.
+There are few clear answers about how much to show of the otherwise obscured ‘assumptions, motivations, narratives, and relations’ which comprise the ‘backstage’ of qualitative research. (McCorkel and Myers, 2003: 200) But by engaging in reflexive practices, you can situate your findings in relation to broader discourses, while acknowledging the partiality and situatedness of your knowledge claims.
 
 
 ## 🗪 Some specific prompts and questions
 
-- Reflect on your motivations for wanting to studying the Castell Colla community and their use of the app. Beyond intellectual curiosity, are there any personal experiences or values driving your interest in this topic? How might these shape what you focus on or overlook in your observations and analysis?
-- How does your status as a non-native resident of Catalonia affect your access to and rapport with the Castell Colla community? In what ways might you be perceived as an outsider, and how can you navigate those dynamics sensitively? Conversely, are there any aspects of your identity or experience that help you build trust/credibility with participants?[^2] How can you (ethically) leverage those points of connection?
-- As an English researcher, how might your cultural background influence your perceptions of Catalan traditions like the human towers? Are there aspects that feel especially foreign, intriguing, or in need of explanation from your outsider perspective? Conversely, are there ways your extended time in Catalonia provides useful context for understanding the significance of these practices?
+- Reflect on your motivations for wanting to study, e.g., the Castell Colla community and their use of the app. Beyond intellectual curiosity, are there any personal experiences or values driving your interest in this topic? How might these shape what you focus on or overlook in your observations and analysis?
+- How does your status as a non-native resident of Catalonia affect your access to and rapport with, e.g., the Castell Colla community? In what ways might you be perceived as an outsider, and how can you navigate those dynamics sensitively? Conversely, are there any aspects of your identity or experience that help you build trust/credibility with participants?[^2] How can you (ethically) leverage those points of connection?
+- As an English researcher, how might your cultural background influence your perceptions of, e.g., Catalan traditions like the human towers? Are there aspects that feel especially foreign, intriguing, or in need of explanation from your outsider perspective? Conversely, are there ways your extended time in Catalonia provides useful context for understanding the significance of these practices?
 - Your interdisciplinary identity spans fields with very different epistemological assumptions, from the arts to computer science. How do you navigate these in your research? Are there tensions you have to reconcile or make explicit?
 - How does your role as a practice-based researcher using research-through-design methods impact your relationship with research participants and the knowledge production process? How do your skills and sensibilities as a maker shape the types of research products you develop? How do you see your role in relation to your participants - as an interpreter, collaborator, provocateur? What power dynamics or ethical considerations might arise?
 - As we discussed last time, studying digital technologies ethnographically means your research field is not a fixed location. How do you conceive of your "field site(s)" in this project (and others), and how does your identity/positionality shift across contexts? What different types of insider/outsider statuses might you need to negotiate?
@@ -85,7 +83,7 @@ But by engaging in reflexive practices, you can situate your findings in relatio
 - Nancy Scheper-Hughes, ‘Ire in Ireland’ (2000), _Ethnography_ 1(1):117–40. doi: 10.1177/14661380022230660.
 - Ed Simpson, 'Is anthropology legal? Earthquakes, blitzkrieg, and ethical futures' (2016), _Focaal_ 74, 113–128. doi:10.3167/fcl.2016.740109
 
-(Last updated: Tuesday, 4 June 2024)
+(Last updated: Tuesday, 30 July 2024)
 
 [^1]: A line of criticism also levelled against autoethnographic approaches, as I am _sure_ we will discuss further in the coming months.
 [^2]: Beyond joining everyone else in fleeing when the authorities turn up to bust the illegal cockfight you were attending with your wife.

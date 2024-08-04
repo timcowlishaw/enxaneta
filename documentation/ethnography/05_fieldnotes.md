@@ -87,6 +87,7 @@ Its Possible Futures", Matthew J. Wolf-Meyer and Denielle Elliott (ix-xxi)
 - "Paignton and Bristol Zoos, Listening to the Zoo Project, 2019", Tom Rice (265-271)
 - "Antarctica, Scott Base, Sociality and Extremes, 2017", Richard Vokes (291-300)
 
+
 ## Reflective prompts & questions (once you've read some of the above)
 
 - What does it mean to think about fieldnotes as _evidence_? As "evidentiary documents of everyday life"? (Wolf-Meyer and Elliot 2023: xvi)
@@ -97,6 +98,14 @@ Its Possible Futures", Matthew J. Wolf-Meyer and Denielle Elliott (ix-xxi)
 
 - 'Fieldnotes seem to be the thing that reveals to others and ourselves the caliber of our ethnographic skills; they are construed as being an extension of ourselves through the documentation of our empirical skills, our attentions and interests, our ways of navigating relationships and the world.' (Wolf-Meyer and Elliot 2023: ix) Discuss.
 
+- How might screenshots, screen recordings, or even snippets of code be integrated into fieldnotes?
+
+- Reflect on specific tools for capturing digital interactions (e.g., screen recording software, digital note-taking apps), and the benefits and drawbacks of using AI-assisted transcription or note-taking tools in ethnographic research.[^3]
+
+- Consider how to document ephemeral digital content (e.g., stories on social media platforms, live streams).
+
+- What might be the opportunities and trade-offs in using shared digital notebooks or collaborative platforms for ethnographic notetaking? How might different research perspectives be integrated into a single set of fieldnotes?
+
 
 ## Readings and supporting materials
 
@@ -106,11 +115,12 @@ Its Possible Futures", Matthew J. Wolf-Meyer and Denielle Elliott (ix-xxi)
 - Nicolas H. Wolfinger, 'On Writing Fieldnotes: Collection Strategies and Background Expectancies’ (2002). _Qualitative Research_ 2(1): 85–93.[^6]
 - Elliott, D., Wolf-Meyer, M. (2023). _Naked Fieldnotes: A Rough Guide to Ethnographic Writing_, University of Minnesota Press, Minneapolis and London.
 
-(Last updated: Sunday, 7 July 2024)
+(Last updated: Tuesday, 30 July 2024)
 
 [^1]: Written as a conversational dialogue, in a way that's super-helpful.
 [^2]: Hard sidebar, but [this Hutchins paper](https://journals.openedition.org/emscat/5165), on _ovoo_, is superb.
-[^3]: Have uploaded this to the shared Zotero. Focus on sections titled: ‘What are jottings?’, and ‘Making jottings: How, where, and when’, pp. 29–41.
-[^4]: Revealing summary of a survey of 70 anthropologists' attitudes to fieldnotes; gets a bit repetitive beyond page 15, so just skim it.
-[^5]: As a confirmed "abductive analysis guy" (don't ask), cannot recommend this book more highly. Look at sections titled: ‘Techniques of focusing’ and ‘Being a field note’, pp. 57–63.
-[^6]: Also in the Zotero. Focus on section titled: 'Two strategies for writing fieldnotes', pp. 89-92.
+[^3]: See [Mark Carriagan on machine-supported notetaking](https://markcarrigan.net/2024/07/17/the-risk-to-authorship-when-using-genai-for-notetaking/).
+[^4]: Have uploaded this to the shared Zotero. Focus on sections titled: ‘What are jottings?’, and ‘Making jottings: How, where, and when’, pp. 29–41.
+[^5]: Revealing summary of a survey of 70 anthropologists' attitudes to fieldnotes; gets a bit repetitive beyond page 15, so just skim it.
+[^6]: As a confirmed "abductive analysis guy" (don't ask), cannot recommend this book more highly. Look at sections titled: ‘Techniques of focusing’ and ‘Being a field note’, pp. 57–63.
+[^7]: Also in the Zotero. Focus on section titled: 'Two strategies for writing fieldnotes', pp. 89-92.
