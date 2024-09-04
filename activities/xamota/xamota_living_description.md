@@ -5,7 +5,7 @@ A collaboration between an anthropologist and an interaction designer, this rese
 
 ## Key components
 
-- **[Humus](https://github.com/timcowlishaw/humus):** A "composting database" programmed in Rust, exploring the concept of dynamic, decaying data storage. It uses flexible, "counterfactual" database structures to challenge conventional notions of data persistence, mimicking natural processes of memory decay and information loss.
+- **[Humus](https://github.com/timcowlishaw/humus):** A speculative "composting database" programmed in Rust, exploring the concept of dynamic, decaying data storage, challenging conventional notions of data persistence, and mimicking natural processes of memory decay and information loss.
 - **Querent.py:** A Python-based tool for personal tarot practice, designed for local deployment. The system incorporates both pre-populated traditional card meanings and user-generated interpretations, allowing for the evolution of meanings over time. It requires a physical tarot deck, using card draws as triggers for retrieving information from Humus. This inverts standard RAG (retrieval-augmented generation) approaches, emphasising the embodied nature of tarot practice.
 
 Humus and Querent.py are both designed for local, single-user deployment, supporting situated knowledges and personal practice.
