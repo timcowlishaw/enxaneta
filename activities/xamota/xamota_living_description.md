@@ -1,4 +1,4 @@
-# Xamota: "Ethnography through sotware development" with Humus and Querent.py
+# Xamota: "Ethnography through software development" with Humus and Querent.py
 
 A collaboration between an anthropologist and an interaction designer, this research explores the interplay of structured data and intuitive "knowing" through the development of two interconnected software tools: Querent.py and Humus. Using an approach of "ethnography through software development," we explore how recent advancements in generative AI and machine learning are influencing our understanding of knowledge, databases, and information retrieval.
 
