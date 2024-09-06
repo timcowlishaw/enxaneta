@@ -22,28 +22,28 @@ Our primary method is what we call "ethnography through software development." I
 - Reflexively engaging with the qualities of our respective codebases, IDEs, version control systems, and data structures
 - Exploring how the choice of development tools and practices shapes our outputs and their capacity to support "knowing otherwise"
 
-This method allows us to pursue insights that purely theoretical or ethnographic approaches might miss, bridging the gap between technical practice and conceptual exploration.
+This method allows us to pursue insights that purely theoretical or ethnographic approaches might miss, bridging the gap between conceptual exploration and technical practice.
 
 ### Autoethnography and reflexivity
 
-Our research heavily relies on autoethnography, positioning ourselves as both researchers and subjects. This involves:
+Our research relies on autoethnographic methods, positioning ourselves as both researchers and subjects. This involves:
 
 - Regular critical reflection on the software development process and our decision-making
 - Documenting our personal experiences with tarot practice and database use, and how they inform our software design
 - Exploring the bodily and tactile elements of our research through techniques such as autoethnographic writing
 - Examining how our roles as software developers interacts with degrowth imaginaries
-- Reflecting on the challenges and opportunities of conducting this research across two locations (York and Tarragona)
+- Reflecting on the challenges and opportunities of conducting this research across two locations (the "small" cities of York and Tarragona)
 
 This autoethnographic approach allows for a deep, reflexive exploration of the software development process and its implications for intuitive knowledge practices.
 
 ### Ecological thinking and alternative temporalities
 
-Our project incorporates ecological thinking and alternative temporalities as both subjects of study and methodological principles. This involves:
+"Xamota" incorporates ecological thinking and alternative temporalities as both subjects of study and methodological principles. This involves:
 
 - Implementing and experimenting with data decay mechanisms in Humus, documenting how this affects our interaction with and understanding of stored information
-- Exploring alternative temporalities in our software design, contrasting with conventional notions of seamless, on-demand retrieval
-- Applying ecological thinking to our development process, considering the "ecosystem" of our software, its users, and broader technological contexts
-- Experimenting with different rhythms and paces in our software interactions, documenting how this affects our intuitive knowledge practices
+- Exploring alternative temporalities in our software design, contrasting with dominant visions of seamless, on-demand retrieval
+- Applying ecological thinking to our development process, considering the "ecosystem" of our software, its users, and wider technological contexts
+- Experimenting with different rhythms and paces in our software interactions, and documenting the implications for our knowledge practices
 
 By integrating these concepts into our methodology, we aim to challenge traditional notions of data persistence and retrieval, offering insights into more sustainable, context-aware approaches to software development.
 
@@ -59,7 +59,7 @@ Our research unfolds across multiple interconnected sites, both physical and dig
 
 2. **Query formulation and interpretation:** Investigating how people formulate questions and interpret results in both structured (database queries) and intuitive (tarot readings) contexts; exploring this comparison can inform alternative approaches to information retrieval and AI, particularly as constrasted with RAG (retrieval-augmented generation) systems.
 
-3. **Temporality and decay in digital systems:** Investigating alternative temporalities in digital systems through the development of a 'composting database' (Humus) and tarot-inspired software (Querent.py); exploring how concepts of decay and ecological thinking can rework our understanding of data relevance, persistence, and retrieval.
+3. **Temporality and decay in computational systems:** Investigating alternative temporalities in digital systems through the development of a "composting database" (Humus) and tarot-inspired software (Querent.py); exploring how concepts of decay and ecological thinking can rework our understanding of data relevance, persistence, and retrieval.
 
 4. **"Smallness" and situated software:** Developing "small", situated software as a form of critical practice; exploring how local, context-specific tools can embody "degrowth imaginaries"; challenging dominant narratives of scalability and growth in technology development.
 
