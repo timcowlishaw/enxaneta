@@ -4,9 +4,9 @@
 
 ## Some related projects:
 
-[Xic](https://github.com/timcowlishaw/xic), a tiny tool for ethnographic notetaking in programming projects,
-[Querent](https://github.com/jcalpickard/querent.py),  a situated-software tool for personal tarot practice,
-[Humus](https://github.com/timcowlishaw/humus), a "composting database."
+ - [Xic](https://github.com/timcowlishaw/xic), a tiny tool for ethnographic notetaking in programming projects,
+ - [Querent](https://github.com/jcalpickard/querent.py),  a situated-software tool for personal tarot practice,
+ - [Humus](https://github.com/timcowlishaw/humus), a "composting database."
 
 See also [The short presentation](https://gist.github.com/timcowlishaw/7864124c24b5575446e465977ae47b33) we did at [Híbrides](https://hibrides.axolot.cat/) on (some) of this (also available [as images](https://docs.google.com/presentation/d/1cYtbjCpr9A5UpixmT3OPQIlfqWmjuNug_41H4Pe7Lxw/edit#slide=id.g31a33a3111c_0_71)).
 
